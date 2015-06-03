@@ -1,0 +1,4 @@
+#!/bin/bash
+TRASH=$HOME/.Trash
+[[ "$HOME" ]] || exit 1
+rm -rf $TRASH/*

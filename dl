@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# safer than rm. create date-based folder in trash and move things there.
+
+TRASH=$HOME/.Trash/
+
+until [ "$#" = "0" ];do
+    dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S)
+    [[ -e "$dest" ]] || mkdir $dest
+    mv -v "$@" "$dest"
+    shift
+done
