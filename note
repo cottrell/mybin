@@ -1,0 +1,6 @@
+#!/bin/bash
+[ $# -ne 1 ] && echo "usage: note notename" && exit 1
+tag=$1
+NOTESDIR=$HOME/notes
+[ -e "$NOTESDIR" ] || mkdir $NOTESDIR
+$EDITOR $NOTESDIR/"note_"$tag
