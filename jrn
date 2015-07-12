@@ -4,4 +4,6 @@ tag=""
 today=$(/bin/date +$Y$m$d)
 NOTESDIR=$HOME/notes
 [ -e "$NOTESDIR" ] || mkdir $NOTESDIR
-$EDITOR $NOTESDIR/"journal_"$today$tag
+filename=$NOTESDIR/"journal_"$today$tag
+echo $(pwd)": " >> $filename
+$EDITOR $filename
