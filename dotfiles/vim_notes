@@ -1,0 +1,14 @@
+autoload:
+pathogen.vim
+
+bundle:
+emmet-vim
+jedi-vim
+vim-flavored-markdown
+vim-javascript-syntax
+
+syntax:
+autoload
+doc
+plugin
+python3.0.vim
