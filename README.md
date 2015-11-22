@@ -24,3 +24,6 @@ https://pypi.python.org/packages/source/p/pickleshare/pickleshare-0.5.tar.gz
 https://pypi.python.org/packages/source/p/ptyprocess/ptyprocess-0.5.tar.gz
 https://pypi.python.org/packages/source/s/simplegeneric/simplegeneric-0.8.1.zip
 https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
+
+## misc
+http://selection.datavisualization.ch/
