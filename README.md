@@ -29,3 +29,4 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 http://selection.datavisualization.ch/
 http://irods.org/
 https://github.com/transmart
+http://datatables.net
