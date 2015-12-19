@@ -19,7 +19,7 @@ class GP:
         self.xtrain = xtrain  # hstack(self.xtrain, xtrain)
         self.ytrain = ytrain  # hstack(self.ytrain, ytrain)
         self.K = self.kernel(self.xtrain, self.xtrain)
-        self.Ky = self.K + sigma ** 2 * eye(self.K.shape[0])
+        self.Ky = self.K + self.sigma ** 2 * eye(self.K.shape[0])
 
     def posterior(self, xtest):
         """ compute mu_star, K_star, sigma_star """
