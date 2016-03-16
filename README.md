@@ -30,3 +30,10 @@ http://selection.datavisualization.ch/
 http://irods.org/
 https://github.com/transmart
 http://datatables.net
+
+## mixture density network links
+http://gitxiv.com/posts/KPQqJzafhQ5uyZcMP/mixture-density-networks
+https://github.com/fchollet/keras/issues/1061
+https://github.com/karpathy/randomfun/blob/master/MixtureDensityNets.ipynb
+http://blog.otoro.net/2015/06/14/mixture-density-networks/
+http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/
