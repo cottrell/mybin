@@ -37,3 +37,7 @@ https://github.com/fchollet/keras/issues/1061
 https://github.com/karpathy/randomfun/blob/master/MixtureDensityNets.ipynb
 http://blog.otoro.net/2015/06/14/mixture-density-networks/
 http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/
+
+## various ml
+http://mlwave.com/kaggle-ensembling-guide/
+http://fastml.com/toy-store/
