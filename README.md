@@ -44,3 +44,4 @@ BIDMach ... supposed to be fast
 
 ## GP
 http://dan.iel.fm/george/current/
+http://arxiv.org/abs/1403.6015
