@@ -1,7 +1,6 @@
 # mybin
 Misc scripts.
 
-
 ## startup notes
 
 Until I get a good dotfiles and clean up the chaos.
@@ -41,3 +40,7 @@ http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/
 ## various ml
 http://mlwave.com/kaggle-ensembling-guide/
 http://fastml.com/toy-store/
+BIDMach ... supposed to be fast
+
+## GP
+http://dan.iel.fm/george/current/

@@ -1,7 +1,7 @@
 #!/bin/bash
 tag=""
 [ "$1" ] && tag="_$1"
-today=$(/bin/date +$Y$m$d)
+today=$(/bin/date +%Y%m%d)
 NOTESDIR=$HOME/notes
 [ -e "$NOTESDIR" ] || mkdir $NOTESDIR
 filename=$NOTESDIR/"journal_"$today$tag
