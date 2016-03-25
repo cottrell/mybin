@@ -1,6 +1,5 @@
 [user]
         name = David Cottrell
-        email = david_cottrell@scotiacapital.com
 [alias]
         ist = rev-parse --short ist
         a = add
