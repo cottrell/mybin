@@ -1,5 +1,6 @@
 [user]
         name = David Cottrell
+	email = cottrell@users.noreply.github.com
 [alias]
         ist = rev-parse --short ist
         a = add

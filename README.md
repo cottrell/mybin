@@ -45,3 +45,6 @@ BIDMach ... supposed to be fast
 ## GP
 http://dan.iel.fm/george/current/
 http://arxiv.org/abs/1403.6015
+
+## CV exploratory approaches
+https://www.kaggle.com/selfishgene/santander-customer-satisfaction/advanced-feature-exploration
