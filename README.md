@@ -29,6 +29,12 @@ http://selection.datavisualization.ch/
 http://irods.org/
 https://github.com/transmart
 http://datatables.net
+http://www.wanghailuo.com/deeplearning/deep-learning-resources/
+
+## density estimation
+* autoencoer
+	* http://arxiv.org/pdf/1502.03509v2.pdf
+	* https://github.com/mgermain/MADE
 
 ## mixture density network links
 http://gitxiv.com/posts/KPQqJzafhQ5uyZcMP/mixture-density-networks
@@ -42,9 +48,15 @@ http://mlwave.com/kaggle-ensembling-guide/
 http://fastml.com/toy-store/
 BIDMach ... supposed to be fast
 
+
 ## GP
 http://dan.iel.fm/george/current/
 http://arxiv.org/abs/1403.6015
 
 ## CV exploratory approaches
 https://www.kaggle.com/selfishgene/santander-customer-satisfaction/advanced-feature-exploration
+
+## sum product
+https://github.com/arranger1044/spyn # this one seems more used
+https://github.com/ilyakava/sumproduct/
+http://libra.cs.uoregon.edu/ (OCaml)
