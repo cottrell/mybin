@@ -47,6 +47,7 @@ http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/
 http://mlwave.com/kaggle-ensembling-guide/
 http://fastml.com/toy-store/
 BIDMach ... supposed to be fast
+http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.81233&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification
 
 
 ## GP
