@@ -30,6 +30,7 @@ http://irods.org/
 https://github.com/transmart
 http://datatables.net
 http://www.wanghailuo.com/deeplearning/deep-learning-resources/
+http://numenta.org/
 
 ## density estimation
 * autoencoer
