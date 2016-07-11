@@ -41,7 +41,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://github.com/FALCONN-LIB/FALCONN
 
 ## density estimation
-* autoencoer
+* autoencoder
 	* http://arxiv.org/pdf/1502.03509v2.pdf
 	* https://github.com/mgermain/MADE (distrubtion estimation http://arxiv.org/pdf/1502.03509v2.pdf)
 
