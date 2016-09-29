@@ -60,6 +60,10 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * BIDMach ... supposed to be fast
 * http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.81233&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification
 
+## ml/rl env
+* https://gym.openai.com/envs#parameter_tuning
+* https://github.com/facebookresearch/CommAI-env
+
 
 ## GP
 
@@ -79,4 +83,8 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 ## custom objectives
 
 * https://github.com/fchollet/keras/blob/master/keras/objectives.py
+
+## hardware
+
+* https://puri.sm/store
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
