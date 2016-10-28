@@ -96,3 +96,4 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://aws.amazon.com/datapipeline/
 * (fb) https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpt1/t39.2365-6/13331599_975087972607457_1796386216_n/Realtime_Data_Processing_at_Facebook.pdf
 * http://techblog.netflix.com/2016/03/caching-for-global-netflix.html
+* https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
