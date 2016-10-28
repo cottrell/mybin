@@ -88,3 +88,11 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 * https://puri.sm/store
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
+
+# misc eng
+
+* https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
+* https://blog.twitter.com/2014/manhattan-our-real-time-multi-tenant-distributed-database-for-twitter-scale
+* https://aws.amazon.com/datapipeline/
+* (fb) https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpt1/t39.2365-6/13331599_975087972607457_1796386216_n/Realtime_Data_Processing_at_Facebook.pdf
+* http://techblog.netflix.com/2016/03/caching-for-global-netflix.html
