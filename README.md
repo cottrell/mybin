@@ -32,6 +32,9 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://github.com/transmart
 * http://datatables.net
 * http://www.wanghailuo.com/deeplearning/deep-learning-resources
+* http://www.ke.tu-darmstadt.de/lehre/arbeiten/studien/2015/Dong_Ying.pdf (beating Kaggle the easy way)
+* useful hashing tricks in python https://discussions.udacity.com/t/assignment-1-problem-5/45657/59
+* http://www.samim.io deep dream etc
 
 ## nearest neighbor
 
@@ -64,7 +67,6 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://gym.openai.com/envs#parameter_tuning
 * https://github.com/facebookresearch/CommAI-env
 
-
 ## GP
 
 * http://dan.iel.fm/george/current/
@@ -79,10 +81,12 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://github.com/arranger1044/spyn # this one seems more used
 * https://github.com/ilyakava/sumproduct/
 * http://libra.cs.uoregon.edu/ (OCaml)
+* http://turing.cs.washington.edu/papers/uai11-poon.pdf
 
 ## custom objectives
 
 * https://github.com/fchollet/keras/blob/master/keras/objectives.py
+* https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
 
 ## hardware
 
