@@ -35,6 +35,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * http://www.ke.tu-darmstadt.de/lehre/arbeiten/studien/2015/Dong_Ying.pdf (beating Kaggle the easy way)
 * useful hashing tricks in python https://discussions.udacity.com/t/assignment-1-problem-5/45657/59
 * http://www.samim.io deep dream etc
+* nmap examples http://security.stackexchange.com/questions/36198/how-to-find-live-hosts-on-my-network
 
 ## nearest neighbor
 
