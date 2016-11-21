@@ -106,3 +106,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 # maybe useful libs to watch
 
 * https://github.com/wiseio/paratext
+
+# misc historical
+
+* http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726
