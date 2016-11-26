@@ -110,3 +110,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 # misc historical
 
 * http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726
+
+# web
+
+* http://stackoverflow.com/questions/21198977/difference-between-grunt-npm-and-bower-package-json-vs-bower-json
