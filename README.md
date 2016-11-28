@@ -114,3 +114,4 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 # web
 
 * http://stackoverflow.com/questions/21198977/difference-between-grunt-npm-and-bower-package-json-vs-bower-json
+* https://github.com/valor-software/angular2-quickstart.git
