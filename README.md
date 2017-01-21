@@ -115,3 +115,48 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 * http://stackoverflow.com/questions/21198977/difference-between-grunt-npm-and-bower-package-json-vs-bower-json
 * https://github.com/valor-software/angular2-quickstart.git
+
+# coursera misc
+
+* https://www.coursera.org/specializations/jhu-data-science
+* https://www.coursera.org/specializations/computer-fundamentals
+* https://www.coursera.org/specializations/project-management
+* https://www.coursera.org/specializations/wharton-business-foundations
+* https://www.coursera.org/specializations/interaction-design
+* https://www.coursera.org/specializations/data-science-python
+* https://www.coursera.org/specializations/genomic-data-science
+* https://www.coursera.org/specializations/machine-learning
+* https://www.coursera.org/specializations/power-electronics
+* https://www.coursera.org/specializations/cyber-security
+* https://www.coursera.org/specializations/investment-management
+* https://www.coursera.org/specializations/wharton-entrepreneurship
+* https://www.coursera.org/specializations/big-data
+* https://www.coursera.org/specializations/probabilistic-graphical-models
+* https://www.coursera.org/specializations/data-science
+* https://www.coursera.org/specializations/learn-finance
+* https://www.coursera.org/specializations/business-strategy
+* https://www.coursera.org/specializations/systems-biology
+* https://www.coursera.org/specializations/data-structures-algorithms
+* https://www.coursera.org/specializations/strategic-leadership
+* https://www.coursera.org/specializations/bioinformatics
+* https://www.coursera.org/specializations/trading-strategy
+* https://www.coursera.org/specializations/startup-valuation
+* https://www.coursera.org/specializations/recommender-systems
+* https://www.coursera.org/specializations/hsk-learn-chinese
+* https://www.coursera.org/learn/learn-chinese
+* https://www.coursera.org/learn/cryptocurrency
+* https://www.coursera.org/learn/medical-neuroscience
+* https://www.coursera.org/learn/python-machine-learning
+* https://www.coursera.org/learn/java-data-structures-algorithms-2
+* https://www.coursera.org/learn/comparch
+* https://www.coursera.org/learn/probability-intro
+* https://www.coursera.org/learn/crypto
+
+# DB
+
+* https://www.pipelinedb.com/
+* http://gun.js.org/
+* http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
+* https://www.arangodb.com/
+* https://grakn.ai/
+

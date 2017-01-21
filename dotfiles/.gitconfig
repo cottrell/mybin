@@ -32,3 +32,5 @@
         ui = auto
 [hub]
 	protocol = https
+[push]
+	default = matching
