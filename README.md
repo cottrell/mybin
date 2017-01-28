@@ -1,4 +1,5 @@
 # mybin
+
 Misc scripts.
 
 ## startup notes
@@ -9,21 +10,6 @@ Until I get a good dotfiles and clean up the chaos.
 * managing multiple repos https://github.com/joeyh/myrepos
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
-
-## ipython deps (maybe)
-
-https://pypi.python.org/packages/source/a/appnope/appnope-0.1.0.tar.gz
-https://pypi.python.org/packages/source/d/decorator/decorator-4.0.4.tar.gz
-https://pypi.python.org/packages/source/f/filename_to_pypi.py/filename_to_pypi.py
-https://pypi.python.org/packages/source/g/gnureadline/gnureadline-6.3.3.tar.gz
-https://pypi.python.org/packages/source/i/ipython/ipython-4.0.0.tar.gz
-https://pypi.python.org/packages/source/i/ipython_genutils/ipython_genutils-0.1.0.tar.gz
-https://pypi.python.org/packages/source/p/path.py/path.py-8.1.2.tar.gz
-https://pypi.python.org/packages/source/p/pexpect/pexpect-4.0.1.tar.gz
-https://pypi.python.org/packages/source/p/pickleshare/pickleshare-0.5.tar.gz
-https://pypi.python.org/packages/source/p/ptyprocess/ptyprocess-0.5.tar.gz
-https://pypi.python.org/packages/source/s/simplegeneric/simplegeneric-0.8.1.zip
-https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 ## misc
 
@@ -94,7 +80,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://puri.sm/store
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
 
-# misc eng
+## misc eng
 
 * https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
 * https://blog.twitter.com/2014/manhattan-our-real-time-multi-tenant-distributed-database-for-twitter-scale
@@ -103,20 +89,20 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * http://techblog.netflix.com/2016/03/caching-for-global-netflix.html
 * https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
 
-# maybe useful libs to watch
+## maybe useful libs to watch
 
 * https://github.com/wiseio/paratext
 
-# misc historical
+## misc historical
 
 * http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726
 
-# web
+## web
 
 * http://stackoverflow.com/questions/21198977/difference-between-grunt-npm-and-bower-package-json-vs-bower-json
 * https://github.com/valor-software/angular2-quickstart.git
 
-# coursera misc
+## coursera misc
 
 * https://www.coursera.org/specializations/jhu-data-science
 * https://www.coursera.org/specializations/computer-fundamentals
@@ -152,7 +138,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://www.coursera.org/learn/probability-intro
 * https://www.coursera.org/learn/crypto
 
-# DB
+## DB
 
 * https://www.pipelinedb.com
 * http://gun.js.org
@@ -160,7 +146,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * https://www.arangodb.com
 * https://grakn.ai
 
-# messaging
+## messaging
 
 * https://ricochet.im
 * https://github.com/agl/pond
