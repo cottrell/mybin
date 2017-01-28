@@ -164,4 +164,4 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 * https://ricochet.im
 * https://github.com/agl/pond
-* https://ricochet.im
+* https://otr.cypherpunks.ca
