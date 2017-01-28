@@ -41,7 +41,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 * https://github.com/erikbern/ann-benchmarks
 * https://github.com/spotify/annoy
-* http://www.cs.ubc.ca/research/flann/
+* http://www.cs.ubc.ca/research/flann
 * https://github.com/FALCONN-LIB/FALCONN
 
 ## density estimation
@@ -54,13 +54,13 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 * http://gitxiv.com/posts/KPQqJzafhQ5uyZcMP/mixture-density-networks
 * https://github.com/fchollet/keras/issues/1061
 * https://github.com/karpathy/randomfun/blob/master/MixtureDensityNets.ipynb
-* http://blog.otoro.net/2015/06/14/mixture-density-networks/
-* http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/
+* http://blog.otoro.net/2015/06/14/mixture-density-networks
+* http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow
 
 ## various ml
 
-* http://mlwave.com/kaggle-ensembling-guide/
-* http://fastml.com/toy-store/
+* http://mlwave.com/kaggle-ensembling-guide
+* http://fastml.com/toy-store
 * BIDMach ... supposed to be fast
 * http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.81233&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification
 
@@ -70,7 +70,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 ## GP
 
-* http://dan.iel.fm/george/current/
+* http://dan.iel.fm/george/current
 * http://arxiv.org/abs/1403.6015
 
 ## CV exploratory approaches
@@ -80,7 +80,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 ## sum product
 
 * https://github.com/arranger1044/spyn # this one seems more used
-* https://github.com/ilyakava/sumproduct/
+* https://github.com/ilyakava/sumproduct
 * http://libra.cs.uoregon.edu/ (OCaml)
 * http://turing.cs.washington.edu/papers/uai11-poon.pdf
 
@@ -98,7 +98,7 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 * https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
 * https://blog.twitter.com/2014/manhattan-our-real-time-multi-tenant-distributed-database-for-twitter-scale
-* https://aws.amazon.com/datapipeline/
+* https://aws.amazon.com/datapipeline
 * (fb) https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpt1/t39.2365-6/13331599_975087972607457_1796386216_n/Realtime_Data_Processing_at_Facebook.pdf
 * http://techblog.netflix.com/2016/03/caching-for-global-netflix.html
 * https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
@@ -154,9 +154,14 @@ https://pypi.python.org/packages/source/t/traitlets/traitlets-4.0.0.tar.gz
 
 # DB
 
-* https://www.pipelinedb.com/
-* http://gun.js.org/
+* https://www.pipelinedb.com
+* http://gun.js.org
 * http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
-* https://www.arangodb.com/
-* https://grakn.ai/
+* https://www.arangodb.com
+* https://grakn.ai
 
+# messaging
+
+* https://ricochet.im
+* https://github.com/agl/pond
+* https://ricochet.im
