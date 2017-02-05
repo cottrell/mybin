@@ -151,3 +151,4 @@ Until I get a good dotfiles and clean up the chaos.
 * https://ricochet.im
 * https://github.com/agl/pond
 * https://otr.cypherpunks.ca
+* https://whispersystems.org
