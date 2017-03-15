@@ -23,6 +23,16 @@ Until I get a good dotfiles and clean up the chaos.
 * http://www.samim.io deep dream etc
 * nmap examples http://security.stackexchange.com/questions/36198/how-to-find-live-hosts-on-my-network
 
+## interesting data
+
+* TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
+
+## dashboarding
+
+* https://github.com/keen/keen-dataviz.js
+* https://github.com/metabase/metabase
+* https://github.com/Shopify/dashing
+
 ## nearest neighbor
 
 * https://github.com/erikbern/ann-benchmarks
@@ -152,3 +162,7 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/agl/pond
 * https://otr.cypherpunks.ca
 * https://whispersystems.org
+
+# actual data + viz
+
+* http://atlas.media.mit.edu/
