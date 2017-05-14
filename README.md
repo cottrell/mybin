@@ -53,6 +53,10 @@ Until I get a good dotfiles and clean up the chaos.
 * http://blog.otoro.net/2015/06/14/mixture-density-networks
 * http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow
 
+## lstm/rnn examples
+
+* http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
+
 ## various ml
 
 * http://mlwave.com/kaggle-ensembling-guide
