@@ -56,6 +56,7 @@ Until I get a good dotfiles and clean up the chaos.
 ## lstm/rnn examples
 
 * http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
+* http://philipperemy.github.io/keras-stateful-lstm/
 
 ## various ml
 
