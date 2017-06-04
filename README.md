@@ -27,11 +27,16 @@ Until I get a good dotfiles and clean up the chaos.
 
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
 
-## dashboarding
+## dashboarding/charts
 
+* https://nvd3.org
 * https://github.com/keen/keen-dataviz.js
 * https://github.com/metabase/metabase
 * https://github.com/Shopify/dashing
+* https://n3-charts.github.io/line-chart/#/home
+* https://c3js.org
+* good list: http://www.cssauthor.com/javascript-charting-libraries
+* http://dimplejs.org
 
 ## nearest neighbor
 
