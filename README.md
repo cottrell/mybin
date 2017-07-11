@@ -26,6 +26,7 @@ Until I get a good dotfiles and clean up the chaos.
 ## interesting data
 
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
+* https://intrinio.com
 
 ## dashboarding/charts
 
