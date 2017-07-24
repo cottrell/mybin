@@ -27,6 +27,11 @@ Until I get a good dotfiles and clean up the chaos.
 
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
 * https://intrinio.com
+* http://eqsift.com
+
+## language data (dictionaries etc)
+
+* https://www.skishore.me/makemeahanzi/
 
 ## dashboarding/charts
 
