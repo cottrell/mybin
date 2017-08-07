@@ -22,16 +22,25 @@ Until I get a good dotfiles and clean up the chaos.
 * useful hashing tricks in python https://discussions.udacity.com/t/assignment-1-problem-5/45657/59
 * http://www.samim.io deep dream etc
 * nmap examples http://security.stackexchange.com/questions/36198/how-to-find-live-hosts-on-my-network
+* https://git.codemadness.org/stagit/
+* https://blockstack.org
+* https://abikogailmonxlzl.onion.casa/
+* https://hashtags.chat/
+* https://www.freerobotcollective.com/
+* https://www.productchart.co.uk
 
 ## interesting data
 
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
 * https://intrinio.com
 * http://eqsift.com
+* https://www.hackney.gov.uk/budget
 
 ## language data (dictionaries etc)
 
 * https://www.skishore.me/makemeahanzi/
+* https://nlp.stanford.edu/projects/glove/
+* https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md
 
 ## dashboarding/charts
 
