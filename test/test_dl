@@ -1,6 +1,0 @@
-ls -v ~/.Trash
-touch a b 'here there'
-dl a
-dl b
-dl 'here there'
-ls -v ~/.Trash
