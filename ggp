@@ -1,0 +1,3 @@
+#!/bin/bash
+dir=$(pwd)
+cd .. && ( git add "$dir" && git commit -m "update $dir submodule" ) && cd -
