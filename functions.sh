@@ -4,7 +4,7 @@ function dir_menu {
     for i in $(seq $len); do
     	echo $i ${res[$(($i-1))]}
     done
-    read -p 'selection: ' -s i
+    read -p 'selection: ' i
     cd ${res[$(($i-1))]}
 }
 
@@ -17,8 +17,13 @@ function file_menu {
     for i in $(seq $len); do
     	echo $i ${res[$(($i-1))]}
     done
-    read -p 'selection: ' -s i
-    echo ${res[$(($i-1))]}
+    read -p 'selection: ' i
+    filename=${res[$(($i-1))]}
+    dir=$(dirname $filename)
+    filename=$(basename $filename)
+    cd $dir
+    vi $filename
+    cd -
 }
 
 alias no='file_menu ~/projects/notes.hugo/content/post'
