@@ -4,7 +4,11 @@ function dir_menu {
     for i in $(seq $len); do
     	echo $i ${res[$(($i-1))]}
     done
+    echo 'q quit'
     read -p 'selection: ' i
+    if [[ "$i" -eq 'q' ]]; then
+        return
+    fi
     cd ${res[$(($i-1))]}
 }
 
@@ -17,7 +21,11 @@ function file_menu {
     for i in $(seq $len); do
     	echo $i ${res[$(($i-1))]}
     done
+    echo 'q quit'
     read -p 'selection: ' i
+    if [[ "$i" -eq 'q' ]]; then
+        return
+    fi
     filename=${res[$(($i-1))]}
     dir=$(dirname $filename)
     filename=$(basename $filename)
