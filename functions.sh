@@ -2,7 +2,7 @@ function dir_menu {
     res=($(ls -td $1/*/ | head -40))
     len=${#res[@]}
     for i in $(seq $len); do
-    	echo $i ${res[$(($i-1))]}
+    	echo $i ${res[$(($i-1))]} $i
     done
     echo 'q quit'
     read -p 'selection: ' i
@@ -19,7 +19,7 @@ function file_menu {
     res=($(ls -t $1/* | head -40))
     len=${#res[@]}
     for i in $(seq $len); do
-    	echo $i ${res[$(($i-1))]}
+    	echo $i ${res[$(($i-1))]} $i
     done
     echo 'q quit'
     read -p 'selection: ' i

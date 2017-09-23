@@ -80,6 +80,13 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## various ml
 
+* https://github.com/thu-ml/zhusuan
+* http://jaberg.github.io/skdata/
+* https://pair-code.github.io/facets/
+* https://pair-code.github.io/deeplearnjs/
+* https://hioptimus.com/ (https://nbviewer.jupyter.org/github/ironmussa/Optimus/blob/master/examples/Optimus_Example.ipynb)
+* https://www.linkedin.com/pulse/data-cleansing-exploration-new-era-optimus-favio-v%C3%A1zquez
+* (vectorflow) https://medium.com/@NetflixTechBlog/introducing-vectorflow-fe10d7f126b8
 * http://mlwave.com/kaggle-ensembling-guide
 * http://fastml.com/toy-store
 * BIDMach ... supposed to be fast
