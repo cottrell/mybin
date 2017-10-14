@@ -13,6 +13,7 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## misc
 
+* http://www.ml4aad.org/ meta-algorithmics
 * nice ml blog :https://haohanwang.tumblr.com/post/166276833528/prototyping-6-8pm-bitcoin-prices-predictions
 * http://selection.datavisualization.ch
 * http://irods.org
