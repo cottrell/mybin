@@ -11,6 +11,10 @@ Until I get a good dotfiles and clean up the chaos.
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
 
+## hardware
+
+* https://apple.stackexchange.com/questions/277356/machine-learning-on-external-gpu-with-cuda-and-late-mbp-2016
+
 ## misc
 
 * http://www.ml4aad.org/ meta-algorithmics
