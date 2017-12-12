@@ -205,4 +205,5 @@ Until I get a good dotfiles and clean up the chaos.
 
 # actual data + viz
 
+# http://visualizationuniverse.com/
 * http://atlas.media.mit.edu/
