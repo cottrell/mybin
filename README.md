@@ -33,7 +33,8 @@ Until I get a good dotfiles and clean up the chaos.
 * https://abikogailmonxlzl.onion.casa/
 * https://hashtags.chat/
 * https://www.freerobotcollective.com/
-* https://www.productchart.co.uk
+* https://www.productchart.co.uk # shopping
+* http://next.openspending.org/
 
 ## interesting data
 
@@ -124,6 +125,7 @@ Until I get a good dotfiles and clean up the chaos.
 
 * https://github.com/fchollet/keras/blob/master/keras/objectives.py
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
+* https://github.com/Microsoft/LightGBM/blob/master/examples/python-guide/advanced_example.py
 
 ## hardware
 
