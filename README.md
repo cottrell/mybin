@@ -37,19 +37,6 @@ Until I get a good dotfiles and clean up the chaos.
 * http://next.openspending.org/
 * https://okfn.org/
 
-## interesting data
-
-* TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
-* https://intrinio.com
-* http://eqsift.com
-* https://www.hackney.gov.uk/budget
-
-## language data (dictionaries etc)
-
-* https://www.skishore.me/makemeahanzi/
-* https://nlp.stanford.edu/projects/glove/
-* https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md
-
 ## dashboarding/charts
 
 * https://nvd3.org
@@ -201,6 +188,7 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## DB
 
+* https://github.com/mitdbg
 * https://www.pipelinedb.com
 * http://gun.js.org
 * http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
@@ -214,8 +202,32 @@ Until I get a good dotfiles and clean up the chaos.
 * https://otr.cypherpunks.ca
 * https://whispersystems.org
 
+# data discovery and meta data etc
+
+* https://github.com/linkedin/WhereHows/wiki
+* https://github.com/mitdbg/aurum-datadiscovery
+* https://github.com/redglue/redsense # sensitive data handler? probably awful
+
 # actual data + viz
 
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
 * http://visualizationuniverse.com/
 * http://atlas.media.mit.edu/
+* TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
+* https://intrinio.com
+* http://eqsift.com
+* https://www.hackney.gov.uk/budget
+
+## language data (dictionaries etc)
+
+* https://www.skishore.me/makemeahanzi/
+* https://nlp.stanford.edu/projects/glove/
+* https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md
+
+## todo
+
+* apache tika
+* apache solr
+* https://github.com/datasets
+* https://github.com/frictionlessdata/datapackage-py
+* https://github.com/frictionlessdata
