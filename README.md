@@ -231,3 +231,4 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/datasets
 * https://github.com/frictionlessdata/datapackage-py
 * https://github.com/frictionlessdata
+* https://github.com/mitdbg/modeldb
