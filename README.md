@@ -128,6 +128,7 @@ Until I get a good dotfiles and clean up the chaos.
 * (fb) https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpt1/t39.2365-6/13331599_975087972607457_1796386216_n/Realtime_Data_Processing_at_Facebook.pdf
 * http://techblog.netflix.com/2016/03/caching-for-global-netflix.html
 * https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+* https://cloud.google.com/blog/big-data/2017/05/after-lambda-exactly-once-processing-in-google-cloud-dataflow-part-1
 
 ## maybe useful libs to watch
 
