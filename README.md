@@ -209,6 +209,12 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/mitdbg/aurum-datadiscovery
 * https://github.com/redglue/redsense # sensitive data handler? probably awful
 
+## semantic web and things I tend to ignore
+
+* https://pypi.python.org/pypi/ontospy
+* https://pypi.python.org/pypi/python-skos
+* http://librdf.org/
+
 # actual data + viz
 
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
