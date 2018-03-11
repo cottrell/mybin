@@ -211,6 +211,8 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## semantic web and things I tend to ignore
 
+	OntoSpy is a lightweight Python library and command line tool for inspecting and visualizing vocabularies encoded using W3C Semantic Web standards, that is, RDF or any of its dialects (RDFS, OWL, SKOS).
+
 * https://pypi.python.org/pypi/ontospy
 * https://pypi.python.org/pypi/python-skos
 * http://librdf.org/
