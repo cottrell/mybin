@@ -213,6 +213,7 @@ Until I get a good dotfiles and clean up the chaos.
 
 	OntoSpy is a lightweight Python library and command line tool for inspecting and visualizing vocabularies encoded using W3C Semantic Web standards, that is, RDF or any of its dialects (RDFS, OWL, SKOS).
 
+* http://wiki.dbpedia.org/
 * https://pypi.python.org/pypi/ontospy
 * https://pypi.python.org/pypi/python-skos
 * http://librdf.org/
@@ -241,3 +242,9 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/frictionlessdata/datapackage-py
 * https://github.com/frictionlessdata
 * https://github.com/mitdbg/modeldb
+
+## GPG etc
+
+	gpg --gen-key
+	gpg --list-secret-keys --keyid-format LONG
+	gpg --armor --export <id>
