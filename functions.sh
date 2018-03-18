@@ -34,4 +34,15 @@ function file_menu {
     cd -
 }
 
+function assert_defined {
+    var=$1
+    if [ -z ${!var+x} ]; then
+        echo "$var is unset"
+    else
+        echo "$var is set to '${!var}'"
+    fi
+
+}
+
+
 alias no='file_menu ~/projects/notes.hugo/content/post'
