@@ -1,6 +1,12 @@
 # mybin
 
-Misc scripts.
+Misc notes, scripts etc.
+
+## TODO
+
+* glusterfs
+* ambari
+* h2o.ai
 
 ## startup notes
 
@@ -10,6 +16,36 @@ Until I get a good dotfiles and clean up the chaos.
 * managing multiple repos https://github.com/joeyh/myrepos
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
+
+## distributed fs
+
+* http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
+* https://www.quantcast.com/about-us/quantcast-file-system/
+* glusterfs
+
+## data pipelines etc
+
+data quality
+
+* https://griffin.incubator.apache.org/
+* https://datacleaner.github.io/
+
+these
+
+* http://apex.apache.org/
+* http://ambari.apache.org/
+* HDFS? https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.6.1
+* TRY THIS: http://predictionio.apache.org/demo/tapster/
+
+maybe not these
+
+* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
+* https://incubator.apache.org/projects/accumulo.html
+* https://research.google.com/pubs/pub36726.html
+* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
+* https://incubator.apache.org/projects/gearpump.html
+* https://projects.apache.org/project.html?vxquery XML query
+
 
 ## hardware
 
@@ -139,24 +175,6 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/jpatokal/openflights
 * https://www.airhob.com/developers
 * http://www.tripsta.co.uk/faqs/Flights
-
-## data pipelines etc
-
-these
-
-* http://apex.apache.org/
-* http://ambari.apache.org/
-* HDFS? https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.6.1
-* TRY THIS: http://predictionio.apache.org/demo/tapster/
-
-maybe not these
-
-* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
-* https://incubator.apache.org/projects/accumulo.html
-* https://research.google.com/pubs/pub36726.html
-* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
-* https://incubator.apache.org/projects/gearpump.html
-* https://projects.apache.org/project.html?vxquery XML query
 
 ## misc eng
 
