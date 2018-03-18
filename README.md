@@ -120,6 +120,44 @@ Until I get a good dotfiles and clean up the chaos.
 * https://puri.sm/store
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
 
+## tax, spending, fiscal, gov etc
+
+* https://openspending.org/
+* https://github.com/openspending/gobble
+* https://github.com/hmrc/paye-estimator
+* https://www.aesinternational.com/education-centre/taxes-for-expats/canada
+
+## APIs
+
+* https://newsapi.org/
+
+## travel
+
+* https://travel.stackexchange.com/questions/73709/flight-search-from-anywhere-to-a-specific-destination?newreg=44cfd17228e6460b9b5b62e76dac2459
+* natural language queries on http://adioso.com ... but does not work
+* https://www.quora.com/Are-there-any-free-APIs-for-flight-fare-search
+* https://github.com/jpatokal/openflights
+* https://www.airhob.com/developers
+* http://www.tripsta.co.uk/faqs/Flights
+
+## data pipelines etc
+
+these
+
+* http://apex.apache.org/
+* http://ambari.apache.org/
+* HDFS? https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.6.1
+* TRY THIS: http://predictionio.apache.org/demo/tapster/
+
+maybe not these
+
+* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
+* https://incubator.apache.org/projects/accumulo.html
+* https://research.google.com/pubs/pub36726.html
+* https://fluo.apache.org//docs/fluo/1.2/getting-started/design
+* https://incubator.apache.org/projects/gearpump.html
+* https://projects.apache.org/project.html?vxquery XML query
+
 ## misc eng
 
 * https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
