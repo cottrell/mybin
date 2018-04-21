@@ -17,6 +17,8 @@ Until I get a good dotfiles and clean up the chaos.
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
 
+* https://gist.github.com/jboner/2841832
+
 ## distributed fs
 
 * http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
