@@ -25,6 +25,8 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## data pipelines etc
 
+* https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
+
 data quality
 
 * https://griffin.incubator.apache.org/
