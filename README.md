@@ -288,6 +288,10 @@ maybe not these
 * http://eqsift.com
 * https://www.hackney.gov.uk/budget
 
+## articles and data
+
+* https://www.bankofengland.co.uk/working-paper/2017/eight-centuries-of-the-risk-free-rate-bond-market-reversals-from-the-venetians-to-the-var-shock
+
 ## language data (dictionaries etc)
 
 * https://www.skishore.me/makemeahanzi/
