@@ -30,7 +30,7 @@ Until I get a good dotfiles and clean up the chaos.
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
 * https://code.facebook.com/posts/1072626246134461/introducing-fblearner-flow-facebook-s-ai-backbone/
 
-data quality
+## data quality
 
 * https://griffin.incubator.apache.org/
 * https://datacleaner.github.io/
@@ -288,6 +288,7 @@ maybe not these
 * https://intrinio.com
 * http://eqsift.com
 * https://www.hackney.gov.uk/budget
+* https://opendata.camden.gov.uk/browse
 
 ## articles and data
 
