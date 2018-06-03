@@ -12,11 +12,16 @@ Misc notes, scripts etc.
 * http://eqsift.com
 * https://www.hackney.gov.uk/budget
 * https://opendata.camden.gov.uk/browse
+* https://dev.socrata.com/foundry/opendata.camden.gov.uk/ry6e-hbqy
 * https://github.com/xmunoz/sodapy
+* https://www.openbanking.org.uk/open-data-apis/
+* https://www.doogal.co.uk/
 
 ## TODO
 
-* glusterfs
+* https://dev.socrata.com/foundry/opendata.camden.gov.uk/ry6e-hbqy
+* https://github.com/xmunoz/sodapy
+* https://www.openbanking.org.uk/open-data-apis/
 * ambari
 * h2o.ai
 
