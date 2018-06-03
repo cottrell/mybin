@@ -2,6 +2,18 @@
 
 Misc notes, scripts etc.
 
+## actual data + viz
+
+* http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
+* http://visualizationuniverse.com/
+* http://atlas.media.mit.edu/
+* TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
+* https://intrinio.com
+* http://eqsift.com
+* https://www.hackney.gov.uk/budget
+* https://opendata.camden.gov.uk/browse
+* https://github.com/xmunoz/sodapy
+
 ## TODO
 
 * glusterfs
@@ -278,17 +290,6 @@ maybe not these
 * https://pypi.python.org/pypi/ontospy
 * https://pypi.python.org/pypi/python-skos
 * http://librdf.org/
-
-# actual data + viz
-
-* http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
-* http://visualizationuniverse.com/
-* http://atlas.media.mit.edu/
-* TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
-* https://intrinio.com
-* http://eqsift.com
-* https://www.hackney.gov.uk/budget
-* https://opendata.camden.gov.uk/browse
 
 ## articles and data
 
