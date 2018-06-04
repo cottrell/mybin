@@ -16,6 +16,7 @@ Misc notes, scripts etc.
 * https://github.com/xmunoz/sodapy
 * https://www.openbanking.org.uk/open-data-apis/
 * https://www.doogal.co.uk/
+* https://ons.maps.arcgis.com/home/search.html?t=content&q=tags%3AONS%20Postcode%20Directory&start=1&sortOrder=desc&sortField=relevance
 
 ## TODO
 
