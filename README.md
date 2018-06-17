@@ -321,3 +321,12 @@ maybe not these
 	gpg --gen-key
 	gpg --list-secret-keys --keyid-format LONG
 	gpg --armor --export <id>
+
+## Misc drone
+
+* http://www.starlino.com/power2thrust.html
+
+## Concurrency
+
+* http://masnun.rocks/2016/10/06/async-python-the-different-forms-of-concurrency/
+* https://www.reddit.com/r/learnpython/comments/72a8ek/why_bother_using_asyncio_when/
