@@ -2,6 +2,11 @@
 
 Misc notes, scripts etc.
 
+## plotting
+
+* altair uses vega to export to js.
+* holoviews uses bokeh.
+
 ## actual data + viz
 
 * https://propertydata.co.uk/price-per-square-foot
