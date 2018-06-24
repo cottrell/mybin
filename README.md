@@ -88,6 +88,10 @@ maybe not these
 
 * https://apple.stackexchange.com/questions/277356/machine-learning-on-external-gpu-with-cuda-and-late-mbp-2016
 
+## privacy, security etc
+
+* https://github.com/sobolevn/git-secret
+
 ## misc
 
 * http://www.ml4aad.org/ meta-algorithmics
