@@ -6,6 +6,9 @@ Misc notes, scripts etc.
 
 * altair uses vega to export to js.
 * holoviews uses bokeh.
+* trying to understand vega backend options.
+  * mapd is doing everything in the backend (spec'd via vega) and shipping png to frontend. This makes sense for maps/viz only reall.
+  * https://github.com/VegaPublish/lyra/graphs/contributors (not sure)
 
 ## actual data + viz
 
