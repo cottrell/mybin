@@ -1,6 +1,10 @@
 # mybin
 
-Misc notes, scripts etc.
+Misc notes, scripts, memories etc.
+
+## clustering
+
+* https://github.com/larisahax/awc
 
 ## plotting
 
