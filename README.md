@@ -2,6 +2,10 @@
 
 Misc notes, scripts, memories etc.
 
+## examples
+
+* https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
+
 ## clustering
 
 * https://github.com/larisahax/awc
