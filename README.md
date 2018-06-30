@@ -9,6 +9,8 @@ Misc notes, scripts, memories etc.
 ## clustering
 
 * https://github.com/larisahax/awc
+* https://github.com/shivam5992/dupandas
+* https://github.com/RobinL/fuzzymatcher
 
 ## plotting
 
