@@ -2,15 +2,22 @@
 
 Misc notes, scripts, memories etc.
 
+## current
+
+* http://rail.eecs.berkeley.edu/deeprlcourse/index.html
+* http://ai.berkeley.edu/home.html
+* https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
+
 ## examples
 
 * https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
 
-## clustering
+## clustering, record linkage etc
 
 * https://github.com/larisahax/awc
 * https://github.com/shivam5992/dupandas
 * https://github.com/RobinL/fuzzymatcher
+* http://recordlinkage.readthedocs.io/en/latest/about.html
 
 ## plotting
 
