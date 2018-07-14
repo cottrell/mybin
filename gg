@@ -1,0 +1,3 @@
+#!/bin/sh
+# git submodule foreach "git grep --exclude *.ipynb $@; true"
+git grep --recurse-submodules $@ -- ':(exclude)*.ipynb'
