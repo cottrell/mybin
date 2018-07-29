@@ -1,4 +1,6 @@
 #!/bin/sh -e
+# https://api.github.com/users/$user/followers
+# https://api.github.com/users/$user/following
 if [[ "$#" -ne 1 ]]; then
     echo prog.sh user
     exit 1
