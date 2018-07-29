@@ -1,0 +1,34 @@
+[alias]
+        ist = rev-parse --short ist
+        a = add
+        ls = ls-files
+        li = ls-files . --ignored --exclude-standard --others
+        lu = ls-files . --exclude-standard --other
+        f = fetch
+        b = branch
+        o = ls-files --others -x *.pyc
+        s = status --untracked-files=no
+        l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        d = diff --color
+        ch = checkout
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        stat = status --untracked-files=no
+        df = diff --color
+        logd = log --decorate
+        sh = show --color
+        s1 = show --color --name-only
+        lgd = log -p --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative
+        lg1 = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        lgout = log --name-status --pretty=format:'%h\t%ci\t%an <%ae>\t%s' --date=local
+        lgs = log --name-status --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	tg = tag -n1 -l
+        dflg = log -p
+	root = !pwd
+[core]
+        autocrlf = false
+[color]
+        ui = auto
+[hub]
+	protocol = https
+[push]
+	default = matching
