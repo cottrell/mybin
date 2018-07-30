@@ -1,4 +1,3 @@
-alias did="vim +'normal Go' +'r!date' ~/did.txt"
 alias bx='bitchx dc_not_dc chat.freenode.net'
 alias d='dir_menu ~/dev'
 alias did='vim +'\''normal Go'\'' +'\''r!date'\'' ~/did.txt'
