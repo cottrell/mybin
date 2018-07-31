@@ -1,6 +1,7 @@
 alias bx='bitchx dc_not_dc chat.freenode.net'
 alias d='dir_menu ~/dev'
-alias did='vim +'\''normal Go'\'' +'\''r!date'\'' ~/did.txt'
+# see mybin
+# alias did='vim +'\''normal Go'\'' +'\''r!date'\'' ~/did.txt'
 alias docker_bash='docker run -t -i ubuntu /bin/bash'
 alias ds='du -s * | sort -g'
 alias egrep='egrep --color=auto'

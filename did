@@ -1,0 +1,5 @@
+#!/bin/bash
+dirname=~/Dropbox/misc/journaling_todo
+vim +'normal Go' +'r!date' $dirname/did.txt
+cd $dirname
+git commit -m 'update' -a
