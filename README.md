@@ -27,7 +27,22 @@ Misc notes, scripts, memories etc.
   * mapd is doing everything in the backend (spec'd via vega) and shipping png to frontend. This makes sense for maps/viz only reall.
   * https://github.com/VegaPublish/lyra/graphs/contributors (not sure)
 
-## actual data + viz
+## backtesting/trading tools
+
+* pyalgotrade
+* zipline
+* pyfolio
+* backtrader
+
+
+## viz
+
+Top candidates:
+    * vega, voyager, altair ... https://vega.github.io/voyager2/
+    * superset
+    * metabase
+
+## actual data & viz
 
 * https://www.getthedata.com/
 * https://propertydata.co.uk/price-per-square-foot
