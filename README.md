@@ -2,6 +2,10 @@
 
 Misc notes, scripts, memories etc.
 
+## people
+
+* https://www.amazon.co.uk/Capital-Without-Borders-Managers-Percent/dp/0674743806 Brooke Harrington
+
 ## current
 
 * http://rail.eecs.berkeley.edu/deeprlcourse/index.html
@@ -181,8 +185,12 @@ maybe not these
 * http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
 * http://philipperemy.github.io/keras-stateful-lstm/
 
-## various ml
+## various ml, machine learning, rl, reinforcement learning
 
+simulators
+* https://dartsim.github.io/
+* https://github.com/openai/roboschool
+* pybullet
 * https://github.com/thu-ml/zhusuan
 * http://jaberg.github.io/skdata/
 * https://pair-code.github.io/facets/
