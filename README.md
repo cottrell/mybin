@@ -42,8 +42,11 @@ Top candidates:
     * superset
     * metabase
 
+* https://d3plus.org/
+
 ## actual data & viz
 
+* https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
 * https://www.getthedata.com/
 * https://propertydata.co.uk/price-per-square-foot
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
