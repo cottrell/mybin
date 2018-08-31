@@ -17,7 +17,7 @@ NOTE on D-separation:
 * https://github.com/Microsoft/dowhy
 * https://www.ccd.pitt.edu/tools/
 
-* (Comparison of strategies for scalable causal discovery of latent variable models from mixed data)[https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf]
+* [Comparison of strategies for scalable causal discovery of latent variable models from mixed data](https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf)
 
 others:
 
