@@ -2,9 +2,40 @@
 
 Misc notes, scripts, memories etc.
 
+## causal inference, causal graphs etc
+
+NOTE on D-separation:
+    X is d-separated from Y given Z (in G) iff all undirected paths between X and Y are inactive relative to Z.
+    An undirected path is inactive relative to Z iff ANY (at least one) node on the path is inactive relative to Z.
+    A node is inactive relative to Z iff
+        a) it is a non-collider in Z
+        OR
+        b) is a collider not in Z and has no descendents in Z
+
+* https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox (has some graph search capabilities)
+* https://github.com/akelleh/causality (has some graph search capabilities)
+* https://github.com/Microsoft/dowhy
+* https://www.ccd.pitt.edu/tools/
+
+* (Comparison of strategies for scalable causal discovery of latent variable models from mixed data)[https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf]
+
+others:
+
+* https://github.com/ijmbarr/causalgraphicalmodels (no learning of graphs though so useless)
+* http://www.phil.cmu.edu/projects/tetrad/ (painful and limited to categorical or linear I think)
+* https://github.com/AMLab-Amsterdam/CEVAE
+* "Counting and Uniform Sampling from Markov Equivalent DAGs"
+* https://arxiv.org/abs/1806.00811v1 Causal infernece with noisy and missing covariates via matrix fact
+* merging joing distributions via causal models: https://arxiv.org/abs/1804.03206
+* https://medium.com/@akelleh/causal-inference-with-pandas-dataframes-fc3e64fce5d
+* http://dagitty.net/
+* https://www.youtube.com/channel/UCBWDYSwPbUMmRWZHuGJcJ5g
+
 ## people
 
+* (blog uk house data) https://www.philiposbornedata.com/2018/03/07/uk-house-price-analysis-part-2/
 * https://www.amazon.co.uk/Capital-Without-Borders-Managers-Percent/dp/0674743806 Brooke Harrington
+* jason sharman https://www.economist.com/finance-and-economics/2009/03/26/haven-hypocrisy
 
 ## current
 
@@ -50,6 +81,11 @@ Top candidates:
 
 ## actual data & viz
 
+* https://lobsterdata.com/
+* https://github.com/datasets
+* datahub.io
+* https://www.openml.org/
+* https://www.sec.gov/edgar.shtml
 * https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
 * https://www.getthedata.com/
 * https://propertydata.co.uk/price-per-square-foot
@@ -185,6 +221,15 @@ maybe not these
 * http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
 * http://philipperemy.github.io/keras-stateful-lstm/
 
+## bayes opt
+
+* https://github.com/topics/bayesian-optimization
+* https://scikit-optimize.github.io/
+* https://github.com/SheffieldML/GPyOpt
+* https://github.com/hyperopt/hyperopt
+* https://github.com/fmfn/BayesianOptimization
+* https://github.com/hawk31/pyGPGO
+
 ## various ml, machine learning, rl, reinforcement learning
 
 simulators
@@ -238,6 +283,7 @@ simulators
 
 ## tax, spending, fiscal, gov etc
 
+* https://www.step.org/conferences/1 estate tax etc
 * https://openspending.org/
 * https://github.com/openspending/gobble
 * https://github.com/hmrc/paye-estimator
