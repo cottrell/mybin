@@ -12,6 +12,7 @@ NOTE on D-separation:
         OR
         b) is a collider not in Z and has no descendents in Z
 
+* https://github.com/bd2kccd/py-causal
 * https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox (has some graph search capabilities)
 * https://github.com/akelleh/causality (has some graph search capabilities)
 * https://github.com/Microsoft/dowhy
