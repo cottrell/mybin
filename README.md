@@ -305,6 +305,7 @@ simulators
 
 ## misc eng
 
+* [Google Cloud ML setup 2018](https://blog.kovalevskyi.com/deep-learning-images-for-google-cloud-engine-the-definitive-guide-bc74f5fb02bc)
 * https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
 * https://blog.twitter.com/2014/manhattan-our-real-time-multi-tenant-distributed-database-for-twitter-scale
 * https://aws.amazon.com/datapipeline
