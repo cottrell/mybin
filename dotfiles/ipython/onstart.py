@@ -5,9 +5,11 @@ try:
     import pandas
     from imp import reload
     # pandas.set_option('display.width', 200)
-    pd.options.display.width = 300
+    line_width = 300
+    np.set_printoptions(linewidth=line_width)
+    pd.options.display.width = line_width
     pd.options.display.max_columns = 20
-    pandas.set_option('max.rows', 300)
+    pandas.set_option('max.rows', 1000)
     import jedi
     jedi.settings.case_insensitive_completion = False
 except Exception as e:

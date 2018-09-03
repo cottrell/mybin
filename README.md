@@ -2,6 +2,10 @@
 
 Misc notes, scripts, memories etc.
 
+## finance/markets/trading
+
+* entropy trading volumes futures https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf
+
 ## causal inference, causal graphs etc
 
 NOTE on D-separation:
