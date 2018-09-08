@@ -1,12 +1,13 @@
 # mybin
 
-Misc notes, scripts, memories etc.
+Notes, links, scripts, memories, recommendations, ghosts etc.
 
 ## finance/markets/trading
 
-* entropy trading volumes futures https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf
+* [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
+* [securitization process](http://www.accountingnotes.net/financial-management/debt-securitization/debt-securitization-meaning-and-process-financial-management/10920)
 
-## causal inference, causal graphs etc
+## causal inference, causal graphs
 
 NOTE on D-separation:
     X is d-separated from Y given Z (in G) iff all undirected paths between X and Y are inactive relative to Z.
@@ -48,9 +49,6 @@ others:
 * http://ai.berkeley.edu/home.html
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
 
-## examples
-
-* https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
 
 ## clustering, record linkage etc
 
@@ -59,14 +57,6 @@ others:
 * https://github.com/RobinL/fuzzymatcher
 * http://recordlinkage.readthedocs.io/en/latest/about.html
 
-## plotting
-
-* altair uses vega to export to js.
-* holoviews uses bokeh.
-* trying to understand vega backend options.
-  * mapd is doing everything in the backend (spec'd via vega) and shipping png to frontend. This makes sense for maps/viz only reall.
-  * https://github.com/VegaPublish/lyra/graphs/contributors (not sure)
-
 ## backtesting/trading tools
 
 * pyalgotrade
@@ -74,14 +64,24 @@ others:
 * pyfolio
 * backtrader
 
+## viz/dashboarding/charts
 
-## viz
-
-Top candidates:
-    * vega, voyager, altair ... https://vega.github.io/voyager2/
+Top candidates 2018:
+    * vega (visualization grammar and associated tools)
+        * vega/voyager (chart recommender system) https://vega.github.io/voyager2/
+        * altair also built on vega and vega-lite
+    * holoviews based on bokeh. maybe easier within notebooks not sure
     * superset
     * metabase
 
+* https://nvd3.org
+* https://github.com/keen/keen-dataviz.js
+* https://github.com/metabase/metabase
+* https://github.com/Shopify/dashing
+* https://n3-charts.github.io/line-chart/#/home
+* https://c3js.org
+* good list: http://www.cssauthor.com/javascript-charting-libraries
+* http://dimplejs.org
 * https://d3plus.org/
 
 ## actual data & viz
@@ -168,7 +168,7 @@ maybe not these
 
 * https://github.com/sobolevn/git-secret
 
-## misc
+## links uncategorized
 
 * http://www.ml4aad.org/ meta-algorithmics
 * nice ml blog :https://haohanwang.tumblr.com/post/166276833528/prototyping-6-8pm-bitcoin-prices-predictions
@@ -190,57 +190,10 @@ maybe not these
 * http://next.openspending.org/
 * https://okfn.org/
 
-## dashboarding/charts
 
-* https://nvd3.org
-* https://github.com/keen/keen-dataviz.js
-* https://github.com/metabase/metabase
-* https://github.com/Shopify/dashing
-* https://n3-charts.github.io/line-chart/#/home
-* https://c3js.org
-* good list: http://www.cssauthor.com/javascript-charting-libraries
-* http://dimplejs.org
+## ml, machine learning, rl, reinforcement learning
 
-## nearest neighbor
-
-* https://github.com/erikbern/ann-benchmarks
-* https://github.com/spotify/annoy
-* http://www.cs.ubc.ca/research/flann
-* https://github.com/FALCONN-LIB/FALCONN
-
-## density estimation
-* autoencoder
-	* http://arxiv.org/pdf/1502.03509v2.pdf
-	* https://github.com/mgermain/MADE (distrubtion estimation http://arxiv.org/pdf/1502.03509v2.pdf)
-
-## mixture density network links
-
-* http://gitxiv.com/posts/KPQqJzafhQ5uyZcMP/mixture-density-networks
-* https://github.com/fchollet/keras/issues/1061
-* https://github.com/karpathy/randomfun/blob/master/MixtureDensityNets.ipynb
-* http://blog.otoro.net/2015/06/14/mixture-density-networks
-* http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow
-
-## lstm/rnn examples
-
-* http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
-* http://philipperemy.github.io/keras-stateful-lstm/
-
-## bayes opt
-
-* https://github.com/topics/bayesian-optimization
-* https://scikit-optimize.github.io/
-* https://github.com/SheffieldML/GPyOpt
-* https://github.com/hyperopt/hyperopt
-* https://github.com/fmfn/BayesianOptimization
-* https://github.com/hawk31/pyGPGO
-
-## various ml, machine learning, rl, reinforcement learning
-
-simulators
-* https://dartsim.github.io/
-* https://github.com/openai/roboschool
-* pybullet
+* https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
 * https://github.com/thu-ml/zhusuan
 * http://jaberg.github.io/skdata/
 * https://pair-code.github.io/facets/
@@ -253,29 +206,69 @@ simulators
 * BIDMach ... supposed to be fast
 * http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.81233&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification
 
-## ml/rl env
+### simulators
+* https://dartsim.github.io/
+* https://github.com/openai/roboschool
+* pybullet
+
+### nearest neighbor
+
+* https://github.com/erikbern/ann-benchmarks
+* https://github.com/spotify/annoy
+* http://www.cs.ubc.ca/research/flann
+* https://github.com/FALCONN-LIB/FALCONN
+
+### density estimation
+
+* autoencoder
+	* http://arxiv.org/pdf/1502.03509v2.pdf
+	* https://github.com/mgermain/MADE (distrubtion estimation http://arxiv.org/pdf/1502.03509v2.pdf)
+
+### mixture density network links
+
+* http://gitxiv.com/posts/KPQqJzafhQ5uyZcMP/mixture-density-networks
+* https://github.com/fchollet/keras/issues/1061
+* https://github.com/karpathy/randomfun/blob/master/MixtureDensityNets.ipynb
+* http://blog.otoro.net/2015/06/14/mixture-density-networks
+* http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow
+
+### lstm/rnn examples
+
+* http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
+* http://philipperemy.github.io/keras-stateful-lstm/
+
+### bayes opt
+
+* https://github.com/topics/bayesian-optimization
+* https://scikit-optimize.github.io/
+* https://github.com/SheffieldML/GPyOpt
+* https://github.com/hyperopt/hyperopt
+* https://github.com/fmfn/BayesianOptimization
+* https://github.com/hawk31/pyGPGO
+
+### ml/rl environments
 
 * https://gym.openai.com/envs#parameter_tuning
 * https://github.com/facebookresearch/CommAI-env
 * https://github.com/Evolving-AI-Lab
 
-## GP
+### GP
 
 * http://dan.iel.fm/george/current
 * http://arxiv.org/abs/1403.6015
 
-## CV exploratory approaches
+i### CV exploratory approaches
 
 * https://www.kaggle.com/selfishgene/santander-customer-satisfaction/advanced-feature-exploration
 
-## sum product
+### sum product
 
 * https://github.com/arranger1044/spyn # this one seems more used
 * https://github.com/ilyakava/sumproduct
 * http://libra.cs.uoregon.edu/ (OCaml)
 * http://turing.cs.washington.edu/papers/uai11-poon.pdf
 
-## custom objectives
+### custom objectives
 
 * https://github.com/fchollet/keras/blob/master/keras/objectives.py
 * https://github.com/tqchen/xgboost/blob/master/demo/guide-python/custom_objective.py
@@ -307,7 +300,7 @@ simulators
 * https://www.airhob.com/developers
 * http://www.tripsta.co.uk/faqs/Flights
 
-## misc eng
+## engineering
 
 * [Google Cloud ML setup 2018](https://blog.kovalevskyi.com/deep-learning-images-for-google-cloud-engine-the-definitive-guide-bc74f5fb02bc)
 * https://blog.twitter.com/2015/building-distributedlog-twitter-s-high-performance-replicated-log-service
@@ -322,7 +315,7 @@ simulators
 
 * https://github.com/wiseio/paratext
 
-## misc historical
+## historical
 
 * http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726
 
@@ -339,7 +332,7 @@ simulators
 * http://stackoverflow.com/questions/21198977/difference-between-grunt-npm-and-bower-package-json-vs-bower-json
 * https://github.com/valor-software/angular2-quickstart.git
 
-## coursera misc
+## coursera
 
 * https://www.coursera.org/specializations/jhu-data-science
 * https://www.coursera.org/specializations/computer-fundamentals
@@ -431,7 +424,7 @@ simulators
 	gpg --list-secret-keys --keyid-format LONG
 	gpg --armor --export <id>
 
-## Misc drone
+## drone
 
 * http://www.starlino.com/power2thrust.html
 
