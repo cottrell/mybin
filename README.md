@@ -2,6 +2,57 @@
 
 Notes, links, scripts, memories, recommendations, ghosts etc.
 
+<!--ts-->
+* [mybin](#mybin)
+    * [finance/markets/trading](#financemarketstrading)
+    * [causal inference, causal graphs](#causal-inference-causal-graphs)
+    * [people](#people)
+    * [clustering, record linkage etc](#clustering-record-linkage-etc)
+    * [backtesting/trading tools](#backtestingtrading-tools)
+    * [viz/dashboarding/charts](#vizdashboardingcharts)
+    * [actual data & viz](#actual-data--viz)
+    * [TODO](#todo)
+    * [startup notes](#startup-notes)
+    * [distributed fs](#distributed-fs)
+    * [data pipelines etc](#data-pipelines-etc)
+    * [data quality](#data-quality)
+    * [hardware](#hardware)
+    * [privacy, security etc](#privacy-security-etc)
+    * [links uncategorized](#links-uncategorized)
+    * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * [simulators](#simulators)
+        * [nearest neighbor](#nearest-neighbor)
+        * [density estimation](#density-estimation)
+        * [mixture density network links](#mixture-density-network-links)
+        * [lstm/rnn examples](#lstmrnn-examples)
+        * [bayes opt](#bayes-opt)
+        * [ml/rl environments](#mlrl-environments)
+        * [GP](#gp)
+        * [CV exploratory approaches](#cv-exploratory-approaches)
+        * [sum product](#sum-product)
+        * [custom objectives](#custom-objectives)
+    * [hardware](#hardware)
+    * [tax, spending, fiscal, gov etc](#tax-spending-fiscal-gov-etc)
+    * [APIs](#apis)
+    * [travel](#travel)
+    * [engineering](#engineering)
+    * [maybe useful libs to watch](#maybe-useful-libs-to-watch)
+    * [historical](#historical)
+    * [browser](#browser)
+    * [web](#web)
+    * [coursera](#coursera)
+    * [DB](#db)
+    * [messaging](#messaging)
+* [data discovery and meta data etc](#data-discovery-and-meta-data-etc)
+    * [semantic web and things I tend to ignore](#semantic-web-and-things-i-tend-to-ignore)
+    * [articles and data](#articles-and-data)
+    * [language data (dictionaries etc)](#language-data-dictionaries-etc)
+    * [todo](#todo)
+    * [GPG etc](#gpg-etc)
+    * [drone](#drone)
+    * [Concurrency](#concurrency)
+<!--te-->
+
 ## finance/markets/trading
 
 * [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
@@ -43,13 +94,6 @@ others:
 * (blog uk house data) https://www.philiposbornedata.com/2018/03/07/uk-house-price-analysis-part-2/
 * https://www.amazon.co.uk/Capital-Without-Borders-Managers-Percent/dp/0674743806 Brooke Harrington
 * jason sharman https://www.economist.com/finance-and-economics/2009/03/26/haven-hypocrisy
-
-## current
-
-* http://rail.eecs.berkeley.edu/deeprlcourse/index.html
-* http://ai.berkeley.edu/home.html
-* https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
-
 
 ## clustering, record linkage etc
 
@@ -211,6 +255,11 @@ maybe not these
 * http://fastml.com/toy-store
 * BIDMach ... supposed to be fast
 * http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8&seed=0.81233&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification
+* http://rail.eecs.berkeley.edu/deeprlcourse/index.html
+* http://ai.berkeley.edu/home.html
+* https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
+
+
 
 ### simulators
 * https://dartsim.github.io/
@@ -263,7 +312,7 @@ maybe not these
 * http://dan.iel.fm/george/current
 * http://arxiv.org/abs/1403.6015
 
-i### CV exploratory approaches
+### CV exploratory approaches
 
 * https://www.kaggle.com/selfishgene/santander-customer-satisfaction/advanced-feature-exploration
 
