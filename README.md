@@ -6,6 +6,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 * [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
 * [securitization process](http://www.accountingnotes.net/financial-management/debt-securitization/debt-securitization-meaning-and-process-financial-management/10920)
+* [KG loans and shipping](https://www.tankershipping.com/news/view,german-tanker-operators-and-the-new-normal-of-mergers-and-acquisitions_53443.htm)
 
 ## causal inference, causal graphs
 
@@ -86,13 +87,16 @@ Top candidates 2018:
 
 ## actual data & viz
 
-* https://lobsterdata.com/
+Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
+
+* https://www.ukdataservice.ac.uk/
 * https://github.com/datasets
+* https://www.getthedata.com/
+* https://lobsterdata.com/
 * datahub.io
 * https://www.openml.org/
 * https://www.sec.gov/edgar.shtml
 * https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
-* https://www.getthedata.com/
 * https://propertydata.co.uk/price-per-square-foot
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
 * http://visualizationuniverse.com/
@@ -193,6 +197,8 @@ maybe not these
 
 ## ml, machine learning, rl, reinforcement learning
 
+* Powell (Approximate Dynamic Programming)
+* ADP w Gaussian Proc http://mlg.eng.cam.ac.uk/pub/pdf/DeiPetRas08.pdf and on a budget: https://papers.nips.cc/paper/6188-bayesian-optimization-with-a-finite-budget-an-approximate-dynamic-programming-approach.pdf
 * https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
 * https://github.com/thu-ml/zhusuan
 * http://jaberg.github.io/skdata/
