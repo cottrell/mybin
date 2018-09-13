@@ -20,6 +20,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
         * [nearest neighbor](#nearest-neighbor)
         * [density estimation](#density-estimation)
@@ -74,16 +75,18 @@ NOTE on D-separation:
         OR
         b) is a collider not in Z and has no descendents in Z
 
+Possibly good toolkits
+
 * https://github.com/bd2kccd/py-causal
 * https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox (has some graph search capabilities)
 * https://github.com/akelleh/causality (has some graph search capabilities)
 * https://github.com/Microsoft/dowhy
 * https://www.ccd.pitt.edu/tools/
 
+Other tools and articles
+
 * [Comparison of strategies for scalable causal discovery of latent variable models from mixed data](https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf)
-
-others:
-
+* [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf)
 * https://github.com/ijmbarr/causalgraphicalmodels (no learning of graphs though so useless)
 * http://www.phil.cmu.edu/projects/tetrad/ (painful and limited to categorical or linear I think)
 * https://github.com/AMLab-Amsterdam/CEVAE
@@ -264,6 +267,12 @@ maybe not these
 * http://ai.berkeley.edu/home.html
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
 
+
+### sequence learning related
+
+* [Pervasive Attention: 2D Convolutional Neural Networks
+for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
+* [The fall of RNN / LSTM](https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0)
 
 
 ### simulators
