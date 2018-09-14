@@ -286,6 +286,7 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 ### factorization machines
 
 * This is a good example with tf: https://getstream.io/blog/factorization-recommendation-systems/
+* Spark based implementation: https://github.com/Intel-bigdata/imllib-spark
 
 ### nearest neighbor
 
