@@ -75,6 +75,9 @@ NOTE on D-separation:
         OR
         b) is a collider not in Z and has no descendents in Z
 
+Strong ignorability says that, conditional on the confounders, the assigned causes are independent
+of the potential outcomes,
+
 Possibly good toolkits
 
 * https://github.com/bd2kccd/py-causal
@@ -85,6 +88,7 @@ Possibly good toolkits
 
 Other tools and articles
 
+* [Causal Inference & Deep Learning, MIT IAP 2018](https://github.com/maxwshen/iap-cidl)
 * [Comparison of strategies for scalable causal discovery of latent variable models from mixed data](https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf)
 * [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf)
 * https://github.com/ijmbarr/causalgraphicalmodels (no learning of graphs though so useless)
@@ -267,18 +271,20 @@ maybe not these
 * http://ai.berkeley.edu/home.html
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
 
-
 ### sequence learning related
 
 * [Pervasive Attention: 2D Convolutional Neural Networks
 for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * [The fall of RNN / LSTM](https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0)
 
-
 ### simulators
 * https://dartsim.github.io/
 * https://github.com/openai/roboschool
 * pybullet
+
+### factorization machines
+
+* This is a good example with tf: https://getstream.io/blog/factorization-recommendation-systems/
 
 ### nearest neighbor
 
