@@ -22,6 +22,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
+        * [factorization machines](#factorization-machines)
         * [nearest neighbor](#nearest-neighbor)
         * [density estimation](#density-estimation)
         * [mixture density network links](#mixture-density-network-links)
