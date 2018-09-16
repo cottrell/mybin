@@ -66,7 +66,7 @@ Regs for payment systems and retail bank-like entities (revolute):
 * [The Electronic Money Regulations 2011](http://www.legislation.gov.uk/uksi/2011/99/contents/made)
 * [The Payment Services Regulations 2009](http://www.legislation.gov.uk/uksi/2009/209/contents/made)
 
-## causal inference, causal graphs
+## causal inference, causal graphs, probabilistic programming
 
 NOTE on D-separation:
     X is d-separated from Y given Z (in G) iff all undirected paths between X and Y are inactive relative to Z.
@@ -81,6 +81,7 @@ of the potential outcomes,
 
 Possibly good toolkits
 
+* [Deep Probabilistic Programming](https://arxiv.org/pdf/1701.03757.pdf)
 * https://github.com/bd2kccd/py-causal
 * https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox (has some graph search capabilities)
 * https://github.com/akelleh/causality (has some graph search capabilities)
@@ -287,6 +288,12 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 * This is a good example with tf: https://getstream.io/blog/factorization-recommendation-systems/
 * Spark based implementation: https://github.com/Intel-bigdata/imllib-spark
+* [Robust Factorization Machines for User Response Prediction](http://delivery.acm.org/10.1145/3190000/3186148/p669-punjabi.pdf?ip=146.199.120.140&id=3186148&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1536927968_beae87bad8012b6415eb183e813fc0b7)
+    * iterative parameter mixing for distributed SGD (for factorization machines "averaging" the model probably really means just averaging params?)
+    * use hashing trick on the high-dim feature space
+
+### distributed algos
+
 
 ### nearest neighbor
 
@@ -297,6 +304,8 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ### density estimation
 
+* normalizing flows: http://akosiorek.github.io/ml/2018/04/03/norm_flows.html
+* autoregressors: https://arxiv.org/pdf/1705.07057.pdf
 * autoencoder
 	* http://arxiv.org/pdf/1502.03509v2.pdf
 	* https://github.com/mgermain/MADE (distrubtion estimation http://arxiv.org/pdf/1502.03509v2.pdf)
