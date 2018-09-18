@@ -81,6 +81,7 @@ of the potential outcomes,
 
 Possibly good toolkits
 
+* tensorflow.probability and pyro
 * [Deep Probabilistic Programming](https://arxiv.org/pdf/1701.03757.pdf)
 * https://github.com/bd2kccd/py-causal
 * https://github.com/Diviyan-Kalainathan/CausalDiscoveryToolbox (has some graph search capabilities)
@@ -157,6 +158,7 @@ Looking for things as data packages. Datahub is a centralized layer on top. Star
 * https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
 * https://propertydata.co.uk/price-per-square-foot
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
+* https://developer.companieshouse.gov.uk/api/docs/
 * http://visualizationuniverse.com/
 * http://atlas.media.mit.edu/
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401

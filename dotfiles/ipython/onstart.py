@@ -8,7 +8,7 @@ try:
     line_width = 300
     np.set_printoptions(linewidth=line_width)
     pd.options.display.width = line_width
-    pd.options.display.max_columns = 20
+    pd.options.display.max_columns = 100
     pandas.set_option('max.rows', 1000)
     import jedi
     jedi.settings.case_insensitive_completion = False
