@@ -5,14 +5,14 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 <!--ts-->
 * [mybin](#mybin)
     * [finance/markets/trading](#financemarketstrading)
-    * [causal inference, causal graphs](#causal-inference-causal-graphs)
+    * [causal inference, causal graphs, probabilistic programming](#causal-inference-causal-graphs-probabilistic-programming)
     * [people](#people)
     * [clustering, record linkage etc](#clustering-record-linkage-etc)
     * [backtesting/trading tools](#backtestingtrading-tools)
     * [viz/dashboarding/charts](#vizdashboardingcharts)
     * [actual data & viz](#actual-data--viz)
     * [TODO](#todo)
-    * [startup notes](#startup-notes)
+    * [tech env notes](#tech-env-notes)
     * [distributed fs](#distributed-fs)
     * [data pipelines etc](#data-pipelines-etc)
     * [data quality](#data-quality)
@@ -23,6 +23,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
         * [factorization machines](#factorization-machines)
+        * [distributed algos](#distributed-algos)
         * [nearest neighbor](#nearest-neighbor)
         * [density estimation](#density-estimation)
         * [mixture density network links](#mixture-density-network-links)
@@ -180,7 +181,7 @@ Looking for things as data packages. Datahub is a centralized layer on top. Star
 * ambari
 * h2o.ai
 
-## startup notes
+## tech env notes
 
 Until I get a good dotfiles and clean up the chaos.
 
