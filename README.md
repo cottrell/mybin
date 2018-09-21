@@ -506,6 +506,7 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * https://github.com/frictionlessdata/datapackage-py
 * https://github.com/frictionlessdata
 * https://github.com/mitdbg/modeldb
+* does IPE still exist (that drawing tool?) what is alternative now
 
 ## GPG etc
 
