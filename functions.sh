@@ -12,8 +12,9 @@ function dir_menu {
     cd ${res[$(($i-1))]}
 }
 
-alias d='dir_menu ~/dev'
-alias n='dir_menu ~/projects/notebooks'
+# examples
+# alias d='dir_menu ~/dev'
+# alias n='dir_menu ~/projects/notebooks'
 
 function file_menu {
     res=($(ls -t $1/* | head -40))
@@ -44,5 +45,5 @@ function assert_defined {
 
 }
 
-
-alias no='file_menu ~/projects/notes.hugo/content/post'
+# examples
+# alias no='file_menu ~/projects/notes.hugo/content/post'
