@@ -145,6 +145,10 @@ Top candidates 2018:
 * http://dimplejs.org
 * https://d3plus.org/
 
+Data exploration
+* [openrefine](http://openrefine.org/) is still alive!?
+* http://explorer.okfnlabs.org/#start 
+
 ## actual data & viz
 
 Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
@@ -154,6 +158,7 @@ Looking for things as data packages. Datahub is a centralized layer on top. Star
 * https://www.getthedata.com/
 * https://lobsterdata.com/
 * datahub.io
+* https://ckan.org/
 * https://www.openml.org/
 * https://www.sec.gov/edgar.shtml
 * https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
