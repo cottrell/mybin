@@ -4,6 +4,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 <!--ts-->
 * [mybin](#mybin)
+    * [Services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
     * [finance/markets/trading](#financemarketstrading)
     * [causal inference, causal graphs, probabilistic programming](#causal-inference-causal-graphs-probabilistic-programming)
     * [people](#people)
@@ -55,6 +56,10 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [drone](#drone)
     * [Concurrency](#concurrency)
 <!--te-->
+
+## Services and tools for business and productivity
+
+* https://github.com/cjbarber/ToolsOfTheTrade
 
 ## finance/markets/trading
 
