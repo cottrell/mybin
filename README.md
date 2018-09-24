@@ -61,6 +61,11 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 * https://github.com/cjbarber/ToolsOfTheTrade
 
+Time tracking:
+* https://www.toggl.com/
+* https://demo.kimai.org/
+* https://clockify.me/tracker
+
 ## finance/markets/trading
 
 * [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
@@ -158,6 +163,7 @@ Data exploration
 
 Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
 
+* https://www.cityfalcon.com/financial-news-api (real time financial news aggregator)
 * https://www.ukdataservice.ac.uk/
 * https://github.com/datasets
 * https://www.getthedata.com/
