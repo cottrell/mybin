@@ -1,0 +1,6 @@
+#!/bin/bash
+dirname=~/Dropbox/misc/nogithub
+# vim +'normal Go' +'r!date; echo - \\#TODO,' +'normal G$A' -- $dirname/did.txt
+vim +'normal Go' +'r!date; echo - TODO,' +'normal G$A' -- $dirname/did.txt
+cd $dirname
+git commit -m 'update' -a

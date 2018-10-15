@@ -297,6 +297,10 @@ maybe not these
 * [Pervasive Attention: 2D Convolutional Neural Networks
 for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * [The fall of RNN / LSTM](https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0)
+* https://medium.com/datathings/the-magic-of-lstm-neural-networks-6775e8b540cd
+* https://devblogs.nvidia.com/introduction-neural-machine-translation-with-gpus/
+* https://devblogs.nvidia.com/introduction-neural-machine-translation-gpus-part-2/
+* https://devblogs.nvidia.com/introduction-neural-machine-translation-gpus-part-3/
 
 ### simulators
 * https://dartsim.github.io/
