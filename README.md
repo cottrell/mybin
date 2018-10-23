@@ -487,6 +487,12 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * https://www.arangodb.com
 * https://grakn.ai
 
+### object stores
+
+* Minio
+* GlusterFS
+* Cephs
+
 ## messaging
 
 * https://ricochet.im
