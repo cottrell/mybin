@@ -292,6 +292,7 @@ maybe not these
 * http://rail.eecs.berkeley.edu/deeprlcourse/index.html
 * http://ai.berkeley.edu/home.html
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
+* https://www.featuretools.com/
 
 ### sequence learning related
 
