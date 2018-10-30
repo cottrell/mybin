@@ -163,6 +163,7 @@ Data exploration
 
 Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
 
+* https://case.law/
 * https://www.statista.com/
 * https://www.cityfalcon.com/financial-news-api (real time financial news aggregator)
 * https://www.ukdataservice.ac.uk/
