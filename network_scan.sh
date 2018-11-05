@@ -1,2 +1,3 @@
 #!/bin/sh
-airport -s
+arp -a
+# airport -s

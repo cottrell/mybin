@@ -163,6 +163,7 @@ Data exploration
 
 Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
 
+* https://www.bankofengland.co.uk/research
 * https://angel.co/salaries/london nice simple ui and design
 * https://case.law/
 * https://www.statista.com/
