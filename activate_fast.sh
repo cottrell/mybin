@@ -13,6 +13,8 @@ export _CONDA_EXE=$ANACONDA_BASE_DIR/bin/conda
 export _CONDA_ROOT=$ANACONDA_BASE_DIR
 export _CONDA_SHELL_FLAVOR=bash
 
+export NODE_PATH=$CONDA_PREFIX/lib/node_modules
+
 if [[ $# -lt 1 ]]; then
     echo usage: source activate_fast.sh pyenv
     return 1
