@@ -20,7 +20,7 @@ alias preview='open -a Preview.app'
 alias py27='source activate py27'
 alias pyspark_ipython='~/projects/notebooks/env.sh pyspark_ipython'
 alias python2='~/anaconda3/envs/py27_electrum/bin/python'
-alias vi='/usr/bin/vim'
+alias vi='/usr/local/bin/vim'
 
 alias d='dir_menu ~/dev'
 alias n='dir_menu ~/projects/notebooks'
