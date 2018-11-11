@@ -12,6 +12,11 @@ try:
     pandas.set_option('max.rows', 1000)
     import jedi
     jedi.settings.case_insensitive_completion = False
+    # crashes on osx from plotting?
+    from sys import platform as sys_pf
+    if sys_pf == 'darwin':
+        import matplotlib
+        matplotlib.use("TkAgg")
 except Exception as e:
     print('skipping startup/a.py due to exceptions')
     print(e)

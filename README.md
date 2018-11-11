@@ -59,7 +59,11 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 ## Services and tools for business and productivity
 
-* https://github.com/cjbarber/ToolsOfTheTrade
+Start with this list: https://github.com/cjbarber/ToolsOfTheTrade
+
+* blackrock is involved in this: https://argoproj.github.io/argo
+* https://gogs.io/ git service self hosted
+* https://www.turaku.com/why
 
 Time tracking:
 * https://www.toggl.com/
