@@ -1,5 +1,1 @@
-#!/bin/bash
-dirname=~/Dropbox/misc/nogithub
-vim +'normal Go' +'r!date +\%a\ \%d\ \%b\ \%Y\ \%H:\%M:\%S\ \%z; echo -' -- $dirname/did.txt
-cd $dirname
-git commit -m 'update' -a
+_did_post.sh

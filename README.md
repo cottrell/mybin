@@ -61,11 +61,18 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 Start with this list: https://github.com/cjbarber/ToolsOfTheTrade
 
+Key value store:
+
+* https://blog.dgraph.io/post/badger/
+
+Misc
+
 * blackrock is involved in this: https://argoproj.github.io/argo
 * https://gogs.io/ git service self hosted
 * https://www.turaku.com/why
 
 Time tracking:
+
 * https://www.toggl.com/
 * https://demo.kimai.org/
 * https://clockify.me/tracker
