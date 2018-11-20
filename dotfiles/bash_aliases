@@ -29,6 +29,7 @@ alias notes='vi ~/projects/notebooks/hugo/hugoblog/content/notes'
 
 alias dap='cd ~/projects && ls'
 alias dapd='cd ~/dev && ls'
+alias dapda='cd ~/projects/notebooks/data && ls'
 alias dapm='cd ~/mybin && ls'
 alias dapn='cd ~/projects/notebooks && ls'
 alias dapnog='cd ~/Dropbox/misc/nogithub && ls'
