@@ -3,6 +3,7 @@
 # safer than rm. create date-based folder in trash and move things there.
 
 TRASH=$HOME/.Trash/
+[[ -e "$TRASH" ]] || mkdir -p $TRASH
 
 until [ "$#" = "0" ];do
     dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S)
