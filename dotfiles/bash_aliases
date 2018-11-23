@@ -1,32 +1,32 @@
-alias bx='bitchx dc_not_dc chat.freenode.net'
-alias docker_bash='docker run -t -i ubuntu /bin/bash'
-alias ds='du -s * | sort -g'
+if [[ $(uname) = "Darwin" ]]; then
+    alias docker_bash='docker run -t -i ubuntu /bin/bash'
+    alias ds='du -s * | sort -g'
+    
+    alias grep='grep --color=auto'
+    alias egrep='egrep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    
+    alias g='git'
+    alias gcu="git commit -m 'update' -a"
+    alias h='history'
+    alias l='ls -CF'
+    alias la='ls -a'
+    alias ll='ls -lG'
+    alias ls='ls -G'
+    alias preview='open -a Preview.app'
+    alias py27='source activate py27'
+    alias pyspark_ipython='~/projects/notebooks/env.sh pyspark_ipython'
+    alias python2='~/anaconda3/envs/py27_electrum/bin/python'
+    alias vi='/usr/local/bin/vim'
+    
+    alias d='dir_menu ~/dev'
+    alias n='dir_menu ~/projects/notebooks'
+    # alias notes='file_menu ~/projects/notebooks/hugo/hugoblog/content/notes'
+    alias notes='vi ~/projects/notebooks/hugo/hugoblog/content/notes'
+fi
 
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-
-alias g='git'
-alias gcu="git commit -m 'update' -a"
-alias h='history'
-alias l='ls -CF'
-alias la='ls -A'
-alias la='ls -a'
-alias ll='ls -alF'
-alias ll='ls -lG'
+# both
 alias lr='ls -lrt'
-alias ls='ls -G'
-alias preview='open -a Preview.app'
-alias py27='source activate py27'
-alias pyspark_ipython='~/projects/notebooks/env.sh pyspark_ipython'
-alias python2='~/anaconda3/envs/py27_electrum/bin/python'
-alias vi='/usr/local/bin/vim'
-
-alias d='dir_menu ~/dev'
-alias n='dir_menu ~/projects/notebooks'
-# alias notes='file_menu ~/projects/notebooks/hugo/hugoblog/content/notes'
-alias notes='vi ~/projects/notebooks/hugo/hugoblog/content/notes'
-
 alias dap='cd ~/projects && ls'
 alias dapd='cd ~/dev && ls'
 alias dapda='cd ~/projects/notebooks/data && ls'
