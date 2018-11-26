@@ -1504,7 +1504,10 @@ def reroll_autostart(should_autostart):
             if os.path.exists(DESKTOP_FILE):
                 if not os.path.exists(autostart_dir):
                     os.makedirs(autostart_dir)
+                print('copying ', DESKTOP_FILE, autostart_link)
                 shutil.copyfile(DESKTOP_FILE, autostart_link)
+            else:
+                print('WARNING: {} does not exist.'.format(DESKTOP_FILE))
         elif os.path.exists(autostart_link):
             os.remove(autostart_link)
 
