@@ -1,6 +1,6 @@
 " .vimrc
 
-source /Users/davidcottrell/.vimrc_python
+source ~/.vimrc_python
 
 colorscheme desert
 " set foldmethod=indent
@@ -10,7 +10,7 @@ set autoindent
 au BufRead,BufNewFile *.c,*.h,*.C,*.H,*.html,*.js set softtabstop=4
 au BufRead,BufNewFile *.c,*.h,*.C,*.H.*.html,*.js set tabstop=4
 au BufRead,BufNewFile *.c,*.h,*.C,*.H,*.cpp,*.CPP,*.hpp,*.HPP,*.html,*.js set foldmethod=syntax
-au BufRead,BufNewFile *.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set textwidth=79
+" au BufRead,BufNewFile *.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set textwidth=79
 au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set softtabstop=4
 au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set expandtab
 au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set shiftwidth=4

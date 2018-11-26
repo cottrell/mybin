@@ -17,7 +17,6 @@ if [[ $(uname) = "Darwin" ]]; then
     alias py27='source activate py27'
     alias pyspark_ipython='~/projects/notebooks/env.sh pyspark_ipython'
     alias python2='~/anaconda3/envs/py27_electrum/bin/python'
-    alias vi='/usr/local/bin/vim'
     
     alias d='dir_menu ~/dev'
     alias n='dir_menu ~/projects/notebooks'
@@ -40,3 +39,4 @@ alias post='~/projects/notebooks/hugo/hugoblog/post.sh'
 alias tdlist='~/Dropbox/misc/nogithub/didlist.py todo'
 alias daph='cd ~/projects/notebooks/hugo/hugoblog'
 alias daps='cd ~/projects/scrap'
+type vim >/dev/null && alias vi=$(type -P vim)
