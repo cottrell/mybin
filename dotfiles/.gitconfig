@@ -35,3 +35,5 @@
 	protocol = https
 [push]
 	default = matching
+[credential]
+	helper = cache
