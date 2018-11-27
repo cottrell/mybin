@@ -7,13 +7,13 @@ colorscheme desert
 syntax on
 " set tabstop=4	" seems to do bad things
 set autoindent
-au BufRead,BufNewFile *.c,*.h,*.C,*.H,*.html,*.js set softtabstop=4
-au BufRead,BufNewFile *.c,*.h,*.C,*.H.*.html,*.js set tabstop=4
-au BufRead,BufNewFile *.c,*.h,*.C,*.H,*.cpp,*.CPP,*.hpp,*.HPP,*.html,*.js set foldmethod=syntax
-" au BufRead,BufNewFile *.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set textwidth=79
-au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set softtabstop=4
-au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set expandtab
-au BufRead,BufNewFile *.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set shiftwidth=4
+au BufRead,BufNewFile *.vue,*.c,*.h,*.C,*.H,*.html,*.js,*.txt.nogit,*.md set softtabstop=4
+au BufRead,BufNewFile *.vue,*.c,*.h,*.C,*.H.*.html,*.js,*.txt.nogit,*.md set tabstop=4
+au BufRead,BufNewFile *.vue,*.c,*.h,*.C,*.H,*.cpp,*.CPP,*.hpp,*.HPP,*.html,*.js set foldmethod=syntax
+au BufRead,BufNewFile *.vue,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js set textwidth=200
+au BufRead,BufNewFile *.vue,*.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js,*.txt.nogit,*.md set softtabstop=4
+au BufRead,BufNewFile *.vue,*.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js,*.txt.nogit,*.md set expandtab
+au BufRead,BufNewFile *.vue,*.tex,*.sh,*.ksh,*.bash,*.m,*.pl,*.html,*.js,*.txt.nogit,*.md set shiftwidth=4
 set hlsearch
 highlight BadWhitespace ctermbg=red guibg=red
 
@@ -38,3 +38,4 @@ set laststatus=2
 execute pathogen#infect()
 
 let g:pymode_rope = 0
+let g:pymode_folding = 0
