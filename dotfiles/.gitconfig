@@ -29,6 +29,7 @@
 	root = !pwd
 [core]
         autocrlf = false
+	editor = vim
 [color]
         ui = auto
 [hub]
@@ -36,4 +37,4 @@
 [push]
 	default = matching
 [credential]
-	helper = cache
+	helper = cache --timeout=259200

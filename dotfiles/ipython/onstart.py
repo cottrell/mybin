@@ -15,6 +15,7 @@ try:
     # crashes on osx from plotting?
     from sys import platform as sys_pf
     if sys_pf == 'darwin':
+        print('using darwing tkagg')
         import matplotlib
         matplotlib.use("TkAgg")
 except Exception as e:
