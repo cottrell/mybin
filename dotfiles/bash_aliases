@@ -20,6 +20,8 @@ if [[ $(uname) = "Darwin" ]]; then
     alias n='dir_menu ~/projects/notebooks'
     # alias notes='file_menu ~/projects/notebooks/hugo/hugoblog/content/notes'
     alias notes='vi ~/projects/notebooks/hugo/hugoblog/content/notes'
+elif [[ $(uname) = "Linux" ]]; then
+    alias xopen='xdg-open'
 fi
 
 # both
