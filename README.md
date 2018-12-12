@@ -174,6 +174,8 @@ Data exploration
 
 Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
 
+* https://stats.oecd.org/Index.aspx?DataSetCode=REVCAN
+* https://cps.ipums.org/cps-action/variables/INCTOT#comparability_section
 * https://www.bankofengland.co.uk/research
 * https://angel.co/salaries/london nice simple ui and design
 * https://case.law/
@@ -203,6 +205,7 @@ Looking for things as data packages. Datahub is a centralized layer on top. Star
 * https://www.openbanking.org.uk/open-data-apis/
 * https://www.doogal.co.uk/
 * https://ons.maps.arcgis.com/home/search.html?t=content&q=tags%3AONS%20Postcode%20Directory&start=1&sortOrder=desc&sortField=relevance
+* https://public.enigma.com/
 
 ## TODO
 

@@ -47,3 +47,4 @@ type vim >/dev/null && alias vi=$(type -P vim)
 alias gcu="git commit -m 'update' -a"
 
 alias pyspark_ipython='PYSPARK_DRIVER_PYTHON=ipython pyspark'
+alias ENIGMA_API_KEY=$(sed -e 's/.*"APIKEY"[ :"]*\(.*\)".*$/\1/' ~/.cred/enigma/cred.json)
