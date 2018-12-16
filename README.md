@@ -172,8 +172,8 @@ Data exploration
 
 ## actual data & viz
 
-Looking for things as data packages. Datahub is a centralized layer on top. Start with github.com/datasets
-
+* github.com/datasets
+* https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1010014701
 * https://stats.oecd.org/Index.aspx?DataSetCode=REVCAN
 * https://cps.ipums.org/cps-action/variables/INCTOT#comparability_section
 * https://www.bankofengland.co.uk/research
@@ -309,6 +309,7 @@ maybe not these
 * http://rail.eecs.berkeley.edu/deeprlcourse/index.html
 * http://ai.berkeley.edu/home.html
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
+* https://github.com/lmcinnes/umap
 * https://www.featuretools.com/
 
 ### sequence learning related
