@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# DO NOT LINK THIS! JUST FOR NOTES
+
 export EDITOR=/usr/bin/vim
 
 # MacPorts Installer addition on 2009-01-26_at_10:45:43: adding an appropriate PATH variable for use with MacPorts.
@@ -103,29 +105,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # ALIASES
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias la='ls -a'
-alias ll='ls -lG'
-alias ls='ls -G'
-alias lr='ls -lrt'
-alias g='git'
-alias gcu="git commit -m 'update' -a"
 alias preview='open -a Preview.app'
 alias ipe='open -a Ipe.app'
-alias ds='du -s * | sort -g'
-alias h='history'
 alias docker_bash='docker run -t -i ubuntu /bin/bash'
-alias dapn='cd ~/projects/notebooks && ls'
-alias dapno='cd ~/projects/notes.hugo && ls'
-alias dap='cd ~/projects && ls'
-alias dapd='cd ~/dev && ls'
-alias pyspark_ipython='PYSPARK_DRIVER_PYTHON=ipython pyspark'
 alias python2='~/anaconda3/envs/py27_electrum/bin/python'
-alias py27='source activate py27'
-alias vi='/usr/bin/vim'
-alias bx='bitchx dc_not_dc chat.freenode.net'
 
 # MacPorts Installer addition on 2009-01-26_at_10:45:43: adding an appropriate MANPATH variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
@@ -139,8 +122,6 @@ export PATH="/usr/local/quandl/bin:$PATH"
 export PATH="~/anaconda3/envs/363/bin:$PATH"
 export CONDA_PREFIX=$HOME/anaconda3/envs/363
 export CONDA_DEFAULT_ENV=363
-
-export QUANDL_AUTH='GMs5ZwtAzsTP6MAHoyCH'
 
 export PATH=~/torch/install/bin:$PATH  # Added automatically by torch-dist
 export LD_LIBRARY_PATH=~/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist

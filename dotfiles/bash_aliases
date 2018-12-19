@@ -33,6 +33,7 @@ alias dapd='cd ~/dev && ls'
 alias dapda='cd ~/projects/notebooks/data && ls'
 alias dapm='cd ~/mybin && ls'
 alias dapn='cd ~/projects/notebooks && ls'
+alias dapno='cd ~/projects/notes.hugo && ls'
 alias dapnog='cd ~/Dropbox/misc/nogithub && ls'
 alias dh='cd ~/projects/notebooks/data/datahub'
 # alias rl='cd ~/projects/notebooks/rl/book && conda activate rl'
@@ -42,6 +43,7 @@ alias post='~/projects/notebooks/hugo/hugoblog/post.sh'
 alias tdlist='~/Dropbox/misc/nogithub/didlist.py todo'
 alias daph='cd ~/projects/notebooks/hugo/hugoblog'
 alias daps='cd ~/projects/scrap'
+alias pyspark_ipython='PYSPARK_DRIVER_PYTHON=ipython pyspark'
 type vim >/dev/null && alias vi=$(type -P vim)
 
 alias gcu="git commit -m 'update' -a"
