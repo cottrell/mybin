@@ -161,7 +161,7 @@ Other tools and articles
     * superset
     * metabase
 
-### Viz for larger datasets
+### Viz for larger datasets and graphs
 
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
 * [glumpy](https://glumpy.github.io/)
@@ -172,6 +172,8 @@ Other tools and articles
 * [this example](https://medium.com/neo4j/visualizing-graphs-in-3d-with-webgl-9adaaff6fe43) with 3d-force-render and neo4j looks interesting
 * [paragraphl](https://nblintao.github.io/ParaGraphL/)
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
+
+### Other
 
 * [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
 * https://nvd3.org
