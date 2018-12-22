@@ -11,6 +11,9 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [clustering, record linkage etc](#clustering-record-linkage-etc)
     * [backtesting/trading tools](#backtestingtrading-tools)
     * [viz/dashboarding/charts](#vizdashboardingcharts)
+        * [Top candidates for generic analytics 2018:](#top-candidates-for-generic-analytics-2018)
+        * [Viz for larger datasets](#viz-for-larger-datasets)
+        * [Data exploration](#data-exploration)
     * [actual data & viz](#actual-data--viz)
     * [TODO](#todo)
     * [tech env notes](#tech-env-notes)
@@ -46,6 +49,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [web](#web)
     * [coursera](#coursera)
     * [DB](#db)
+        * [object stores](#object-stores)
     * [messaging](#messaging)
 * [data discovery and meta data etc](#data-discovery-and-meta-data-etc)
     * [semantic web and things I tend to ignore](#semantic-web-and-things-i-tend-to-ignore)
@@ -148,7 +152,8 @@ Other tools and articles
 
 ## viz/dashboarding/charts
 
-Top candidates 2018:
+### Top candidates for generic analytics 2018:
+
     * vega (visualization grammar and associated tools)
         * vega/voyager (chart recommender system) https://vega.github.io/voyager2/
         * altair also built on vega and vega-lite
@@ -156,6 +161,19 @@ Top candidates 2018:
     * superset
     * metabase
 
+### Viz for larger datasets
+
+* [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
+* [glumpy](https://glumpy.github.io/)
+* [vispy](http://vispy.org/) (high-level, depends on glumpy)
+* [pyvis](https://pyvis.readthedocs.io/en/latest/)
+* [mayavi](http://docs.enthought.com/mayavi/mayavi/) is still around but not sure how much it is used. Mostly for 3d.
+* [gephi](https://gephi.org/) desktop app I think
+* [this example](https://medium.com/neo4j/visualizing-graphs-in-3d-with-webgl-9adaaff6fe43) with 3d-force-render and neo4j looks interesting
+* [paragraphl](https://nblintao.github.io/ParaGraphL/)
+* [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
+
+* [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
 * https://nvd3.org
 * https://github.com/keen/keen-dataviz.js
 * https://github.com/metabase/metabase
@@ -166,7 +184,8 @@ Top candidates 2018:
 * http://dimplejs.org
 * https://d3plus.org/
 
-Data exploration
+### Data exploration
+
 * [openrefine](http://openrefine.org/) is still alive!?
 * http://explorer.okfnlabs.org/#start 
 
