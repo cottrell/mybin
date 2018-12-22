@@ -154,12 +154,12 @@ Other tools and articles
 
 ### Top candidates for generic analytics 2018:
 
-    * vega (visualization grammar and associated tools)
-        * vega/voyager (chart recommender system) https://vega.github.io/voyager2/
-        * altair also built on vega and vega-lite
-    * holoviews based on bokeh. maybe easier within notebooks not sure
-    * superset
-    * metabase
+* vega (visualization grammar and associated tools)
+    * vega/voyager (chart recommender system) https://vega.github.io/voyager2/
+    * altair also built on vega and vega-lite
+* holoviews based on bokeh. maybe easier within notebooks not sure
+* superset
+* metabase
 
 ### Viz for larger datasets and graphs
 
