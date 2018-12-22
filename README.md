@@ -172,6 +172,7 @@ Other tools and articles
 * [this example](https://medium.com/neo4j/visualizing-graphs-in-3d-with-webgl-9adaaff6fe43) with 3d-force-render and neo4j looks interesting
 * [paragraphl](https://nblintao.github.io/ParaGraphL/)
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
+* [remember umap](https://github.com/lmcinnes/umap) as a newer alternative to t-sne and probably a good place to start looking for any new viz tools
 
 ### Other
 
