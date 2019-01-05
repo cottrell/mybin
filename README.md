@@ -194,6 +194,7 @@ Other tools and articles
 
 ## actual data & viz
 
+* http://www.worldgovernmentbonds.com/country/argentina/
 * https://sentinel.esa.int/web/sentinel/sentinel-data-access
 * http://datahelp.imf.org/knowledgebase/articles/536209-where-do-i-find-data-on-sovereign-debt
 * github.com/datasets
