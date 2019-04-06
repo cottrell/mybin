@@ -1,3 +1,5 @@
+# use "ascii -o" to see octal codes
+# use showkey on linux to print things
 # tabbing like terminal
 bindkey -d \0331 select 0
 bindkey -d \0332 select 1
