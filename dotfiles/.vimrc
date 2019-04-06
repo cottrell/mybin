@@ -30,7 +30,7 @@ autocmd FileType make setlocal noexpandtab
 inoremap <Silent> <Tab> <C-R>=(col('.') > (matchend(getline('.'), '^\s*') + 1))?'<C-V><C-V><Tab>':'<Tab>'<CR>
 
 " shift tab for real tabs
-inoremap <S-Tab> <C-V><Tab> 
+inoremap <S-Tab> <C-V><Tab>
 
 set statusline=%F\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
