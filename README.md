@@ -187,6 +187,12 @@ Other tools and articles
 * http://dimplejs.org
 * https://d3plus.org/
 
+### RPC/caching/dataframe Frameworks like dask and spark
+
+* https://github.com/modin-project/modin
+* ray-project
+* ...
+
 ### Data exploration
 
 * [openrefine](http://openrefine.org/) is still alive!?
