@@ -120,6 +120,7 @@ Other tools and articles
 * [Causal Inference & Deep Learning, MIT IAP 2018](https://github.com/maxwshen/iap-cidl)
 * [Comparison of strategies for scalable causal discovery of latent variable models from mixed data](https://link.springer.com/content/pdf/10.1007%2Fs41060-018-0104-3.pdf)
 * [The Blessings of Multiple Causes](https://arxiv.org/pdf/1805.06826.pdf)
+* HERE FOR DISCUSSION: http://www.alexdamour.com/blog/public/2018/05/18/non-identification-in-latent-confounder-models/
 * https://github.com/ijmbarr/causalgraphicalmodels (no learning of graphs though so useless)
 * http://www.phil.cmu.edu/projects/tetrad/ (painful and limited to categorical or linear I think)
 * https://github.com/AMLab-Amsterdam/CEVAE
