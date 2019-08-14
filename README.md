@@ -371,9 +371,10 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * http://www.cs.ubc.ca/research/flann
 * https://github.com/FALCONN-LIB/FALCONN
 
-### density estimation
+### Normalizing Flows and Density Estimation
 
-* normalizing flows: http://akosiorek.github.io/ml/2018/04/03/norm_flows.html
+* https://blog.evjang.com/2018/01/nf1.html
+* http://akosiorek.github.io/ml/2018/04/03/norm_flows.html
 * autoregressors (masked autoregressive flows): https://arxiv.org/pdf/1705.07057.pdf and https://github.com/gpapamak/maf
 * autoencoder
 	* http://arxiv.org/pdf/1502.03509v2.pdf
