@@ -17,7 +17,7 @@
 
 " Number of spaces that a pre-existing tab is equal to.
 " For the amount of space used for a new tab use shiftwidth.
-au BufRead,BufNewFile *.pyx,*py,*pyw,*.c,*.h set tabstop=8
+au BufRead,BufNewFile *.pyx,*py,*pyw,*.c,*.h set tabstop=4
 
 " What to use for an indent.
 " This will affect Ctrl-T and 'autoindent'.
@@ -30,7 +30,7 @@ fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=4
         set noexpandtab
-    el 
+    el
         set shiftwidth=4
         set expandtab
     en
@@ -47,8 +47,8 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
-" Python: 79 
-" C: 79
+" Python: 120
+" C: 120
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=200
 
 " Turn off settings in 'formatoptions' relating to comment formatting.
@@ -82,10 +82,10 @@ au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 au BufNewFile *.py,*.pyw let python_highlight_all=1
 syntax on
 
-" Automatically indent based on file type: 
+" Automatically indent based on file type:
 au BufNewFile *.py,*.pyw filetype indent on
-" Keep indentation level from previous line: 
+" Keep indentation level from previous line:
 set autoindent
 
-" Folding based on indentation: 
+" Folding based on indentation:
 au BufNewFile *.py,*.pyw set foldmethod=indent
