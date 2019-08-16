@@ -533,6 +533,12 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ## DB
 
+Time-series 2019
+
+* TimescaleDB
+* Marketstore
+* probably not influxdb
+
 * https://github.com/mitdbg
 * https://www.pipelinedb.com
 * http://gun.js.org
