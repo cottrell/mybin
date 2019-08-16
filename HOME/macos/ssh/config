@@ -1,0 +1,6 @@
+Host mb
+    HostName 192.168.1.5
+Host bb
+    HostName 192.168.1.9
+Host *
+    User cottrell
