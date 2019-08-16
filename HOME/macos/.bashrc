@@ -53,7 +53,10 @@ if [[ -e ~/.bash_aliases ]]; then
     . ~/.bash_aliases
 fi
 
-alias bb='ssh -t cottrell@192.168.1.9 tmux -CC attach'
+function bb() {
+	echo use arg attach to attach
+	ssh -t cottrell@192.168.1.9 tmux -CC $*
+}
 alias bbe='ssh -t cottrell@146.199.108.39 -p 2142 tmux -CC attach'
 alias bx='bitchx dc_not_dc chat.freenode.net'
 
