@@ -19,7 +19,7 @@ for x in $files; do
 done
 cd -
 
-x=~/.ssh/config
+x=~/ssh/config
 if [[ -e $x ]] || [[ -L $x ]]; then
     mv -v $x $x.$(date +%Y%m%d%H%M%S)
 fi
