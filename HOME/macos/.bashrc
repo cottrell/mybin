@@ -1,17 +1,61 @@
-#!/bin/bash
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/davidcottrell/google-cloud-sdk/path.bash.inc' ]; then source '/Users/davidcottrell/google-cloud-sdk/path.bash.inc'; fi
 
-export EDITOR=/usr/bin/vim
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/davidcottrell/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/davidcottrell/google-cloud-sdk/completion.bash.inc'; fi
 
-# export CONDA_PREFIX=$HOME/anaconda3/envs/363
-# export CONDA_DEFAULT_ENV=363
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
+
+export PATH=/Users/davidcottrell/torch/install/bin:$PATH  # Added automatically by torch-dist
+export LD_LIBRARY_PATH=/Users/davidcottrell/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
+export DYLD_LIBRARY_PATH=/Users/davidcottrell/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+
+PATH=/usr/local/bin:/bin:/usr/bin:$PATH
+# :/usr/local/mysqlc/bin:/usr/local/mysql/bin:/usr/local/mysql-5.6.10-osx10.7-x86_64:$PATH
+# PATH=/usr/texbin:$PATH
+PATH=/Library/TeX/texbin:$PATH
+PATH=/usr/local/go/bin:$PATH
+PATH=$HOME/mybin:$PATH
+PATH=~/.local/bin:$PATH
+PATH=$PATH:/usr/local/scala/bin
+PATH=$PATH:$HOME/go/bin
+SPARK_HOME=~/dev/spark-2.4.0-bin-hadoop2.7
+PATH=$PATH:$SPARK_HOME/bin
+PYTHONPATH=$PYTHONPATH:$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.6-src.zip
+export PYTHONPATH
+### Added by the Quandl Toolbelt
+PATH="/usr/local/quandl/bin:$PATH"
+PATH=$HOME/torch/install/bin:$PATH  # Added automatically by torch-dist
+PATH=/usr/local/Cellar/kubernetes-cli/1.11.2/bin:$PATH
+# PATH=~/anaconda3/bin:$PATH
+
+# dunno, conda node seems to be broken
+PATH=/usr/local/Cellar/node/11.1.0/bin:$PATH
+
+
+# PS1 before activate
+export PS1="\[\033[38;5;14m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\] "
+# export PATH
+
+. ~/.bash_aliases
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
 
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
-# don't put duplicate lines in the history. See bash(1) for more options ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
 # append to the history file, don't overwrite it
 shopt -s histappend
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
@@ -20,17 +64,21 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -49,46 +97,101 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [[ -e ~/.bash_aliases ]]; then
-    . ~/.bash_aliases
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
-function bb() {
-	echo use arg attach to attach
-	ssh -t cottrell@192.168.1.9 tmux -CC $*
-}
-alias bbe='ssh -t cottrell@146.199.108.39 -p 2142 tmux -CC attach'
-alias bx='bitchx dc_not_dc chat.freenode.net'
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+  fi
 fi
 
-# MacPorts Installer addition on 2009-01-26_at_10:45:43: adding an appropriate MANPATH variable for use with MacPorts.
-export MANPATH=/opt/local/share/man:$MANPATH
+# not sure need these unless doing cuda dev
+# # set PATH for cuda installation
+if [ -d "/usr/local/cuda/bin/" ]; then
+    export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+fi
 
-export QUANDL_AUTH='GMs5ZwtAzsTP6MAHoyCH'
+export SPARK_HOME=~/dev/spark-2.4.0-bin-hadoop2.7
+export PATH=$PATH:$SPARK_HOME/bin
+export PYTHONPATH=$PYTHOPATH:$SPARK_HOME/python/lib/py4j-0.10.7-src.zip:$SPARK_HOME/python/lib/pyspark.zip
 
-export LD_LIBRARY_PATH=$HOME/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
-export DYLD_LIBRARY_PATH=$HOME/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+PATH=$PATH:/usr/lib/postgresql/10/bin
 
-export export LIBFM_PATH=$HOME/dev/libfm/bin
+PATH=$HOME/mybin:$PATH
 
-# export PARQUET_HOME=$HOME/anaconda
-export ARROW_HOME=$HOME/local
+EDITOR=vim
 
-# NOTES:
-# openssl des3 -in file.txt -out encrypted.txt
-# openssl des3 -d -in encrypted.txt -out normal.txt
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-. $HOME/.bash_profile
-# go here if unhappy http://bashrcgenerator.com/
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
-. ~/mybin/functions.sh
-
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-. ~/anaconda3/etc/profile.d/conda.sh
+conda activate 37

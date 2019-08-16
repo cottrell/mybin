@@ -1,8 +1,28 @@
-bash
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
 
-export PATH=/Users/davidcottrell/torch/install/bin:$PATH  # Added automatically by torch-dist
-export LD_LIBRARY_PATH=/Users/davidcottrell/torch/install/lib:$LD_LIBRARY_PATH  # Added automatically by torch-dist
-export DYLD_LIBRARY_PATH=/Users/davidcottrell/torch/install/lib:$DYLD_LIBRARY_PATH  # Added automatically by torch-dist
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
