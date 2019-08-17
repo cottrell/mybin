@@ -92,6 +92,11 @@ Regs for payment systems and retail bank-like entities (revolute):
 * [The Electronic Money Regulations 2011](http://www.legislation.gov.uk/uksi/2011/99/contents/made)
 * [The Payment Services Regulations 2009](http://www.legislation.gov.uk/uksi/2009/209/contents/made)
 
+
+Elicitability, Quantiles, Expectiles etc
+
+* https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
+
 ## causal inference, causal graphs, probabilistic programming
 
 NOTE on D-separation:
