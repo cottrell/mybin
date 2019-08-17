@@ -1,3 +1,6 @@
+[user]
+        name = David Cottrell
+	email = cottrell@users.noreply.github.com
 [alias]
         ist = rev-parse --short ist
         a = add
@@ -20,15 +23,18 @@
         lgd = log -p --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative
         lg1 = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
         lgout = log --name-status --pretty=format:'%h\t%ci\t%an <%ae>\t%s' --date=local
-        lgs = log --name-status --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgs = log --name-status --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	tg = tag -n1 -l
         dflg = log -p
 	root = !pwd
 [core]
         autocrlf = false
+	editor = vim
 [color]
         ui = auto
 [hub]
 	protocol = https
 [push]
 	default = matching
+[credential]
+	helper = cache --timeout=2592000

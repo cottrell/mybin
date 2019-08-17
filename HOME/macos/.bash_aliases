@@ -18,7 +18,6 @@ if [[ $(uname) = "Darwin" ]]; then
 
     alias d='dir_menu ~/dev'
     alias n='dir_menu ~/projects/notebooks'
-    # alias notes='file_menu ~/projects/notebooks/hugo/hugoblog/content/notes'
     alias notes='vi ~/projects/notebooks/hugo/hugoblog/content/notes'
 elif [[ $(uname) = "Linux" ]]; then
     alias xopen='xdg-open'
@@ -40,7 +39,6 @@ alias daps='cd ~/projects/scrap'
 alias dape='cd ~/projects/notebooks/extractors/extractors'
 alias dapg='cd ~/projects/notebooks/my-gym/my/gym/ && ls'
 alias dh='cd ~/projects/notebooks/data/datahub'
-# alias rl='cd ~/projects/notebooks/rl/book && conda activate rl'
 alias rl='cd ~/projects/notebooks/rl && conda activate rl'
 alias jup='~/projects/notebooks/notebook.sh'
 alias post='~/projects/notebooks/hugo/hugoblog/post.sh'
@@ -53,3 +51,6 @@ alias gcu="git commit -m 'update' -a"
 alias pyspark_ipython='PYSPARK_DRIVER_PYTHON=ipython pyspark'
 alias ENIGMA_API_KEY=$(sed -e 's/.*"APIKEY"[ :"]*\(.*\)".*$/\1/' ~/.cred/enigma/cred.json)
 alias s='screen'
+
+alias bb='connect.sh bb'
+alias mb='connect.sh mb'
