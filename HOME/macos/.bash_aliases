@@ -52,3 +52,5 @@ alias pyspark_ipython='PYSPARK_DRIVER_PYTHON=ipython pyspark'
 alias ENIGMA_API_KEY=$(sed -e 's/.*"APIKEY"[ :"]*\(.*\)".*$/\1/' ~/.cred/enigma/cred.json)
 alias s='screen'
 
+alias bb='connect.sh bb'
+alias mb='connect.sh mb'
