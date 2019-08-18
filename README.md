@@ -328,8 +328,21 @@ maybe not these
 * https://okfn.org/
 
 
+## maths, probability, stochastic etc
+
+Stochastic Duality
+
+* https://arxiv.org/pdf/1805.01318.pdf
+
+Interacting Particle Systems (and duality)
+
+* ligget http://users.ictp.it/~pub_off/lectures/lns017/Liggett/Liggett.pdf
+* swart https://arxiv.org/pdf/1703.10007.pdf
+
+
 ## ml, machine learning, rl, reinforcement learning
 
+* quantile regression https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
 * Powell (Approximate Dynamic Programming)
 * ADP w Gaussian Proc http://mlg.eng.cam.ac.uk/pub/pdf/DeiPetRas08.pdf and on a budget: https://papers.nips.cc/paper/6188-bayesian-optimization-with-a-finite-budget-an-approximate-dynamic-programming-approach.pdf
 * https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
