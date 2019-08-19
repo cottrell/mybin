@@ -330,6 +330,13 @@ maybe not these
 
 ## maths, probability, stochastic etc
 
+SGD, Langevin, batch-size etc
+
+* https://arxiv.org/pdf/1707.06618.pdf
+* https://arxiv.org/pdf/1806.09597.pdf
+* https://openreview.net/pdf?id=B1Yy1BxCZ
+* https://arxiv.org/pdf/1711.04623.pdf
+
 Stochastic Duality
 
 * https://arxiv.org/pdf/1805.01318.pdf
