@@ -24,6 +24,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * https://github.com/Orcuslc/OrthNet
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
         * [factorization machines](#factorization-machines)
