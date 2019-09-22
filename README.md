@@ -84,6 +84,7 @@ Time tracking:
 
 ## finance/markets/trading
 
+* http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
 * [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
 * [securitization process](http://www.accountingnotes.net/financial-management/debt-securitization/debt-securitization-meaning-and-process-financial-management/10920)
 * [KG loans and shipping](https://www.tankershipping.com/news/view,german-tanker-operators-and-the-new-normal-of-mergers-and-acquisitions_53443.htm)
