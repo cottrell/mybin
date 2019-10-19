@@ -24,6 +24,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * https://github.com/Orcuslc/OrthNet
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
         * [factorization machines](#factorization-machines)
@@ -83,6 +84,16 @@ Time tracking:
 
 ## finance/markets/trading
 
+Stochastic, math fin etc
+
+* https://www.math.nyu.edu/faculty/goodman/teaching/StochCalc2012/notes/Week4.pdf
+* https://wwwf.imperial.ac.uk/~ajacquie/index_files/GHJ%20-%20SABRGeometry.pdf
+* https://www.stat.berkeley.edu/~aldous/205B/pitman_yor_guide_bm.pdf
+* file:///home/cottrell/Downloads/risks-05-00061-v2%20(1).pdf
+* http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
+
+Trading, securities etc
+
 * [entropy trading volumes futures](https://quantitativebrokers.com/wp-content/uploads/2017/05/entropy.pdf)
 * [securitization process](http://www.accountingnotes.net/financial-management/debt-securitization/debt-securitization-meaning-and-process-financial-management/10920)
 * [KG loans and shipping](https://www.tankershipping.com/news/view,german-tanker-operators-and-the-new-normal-of-mergers-and-acquisitions_53443.htm)
@@ -91,6 +102,11 @@ Regs for payment systems and retail bank-like entities (revolute):
 
 * [The Electronic Money Regulations 2011](http://www.legislation.gov.uk/uksi/2011/99/contents/made)
 * [The Payment Services Regulations 2009](http://www.legislation.gov.uk/uksi/2009/209/contents/made)
+
+
+Elicitability, Quantiles, Expectiles etc
+
+* https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
 
 ## causal inference, causal graphs, probabilistic programming
 
@@ -201,6 +217,7 @@ Other tools and articles
 
 ## actual data & viz
 
+* https://www.federalreserve.gov/monetarypolicy/bst_liquidityswaps.htm
 * https://9fin.com/
 * http://www.worldgovernmentbonds.com/country/argentina/
 * https://sentinel.esa.int/web/sentinel/sentinel-data-access
@@ -323,8 +340,28 @@ maybe not these
 * https://okfn.org/
 
 
+## maths, probability, stochastic etc
+
+SGD, Langevin, batch-size etc
+
+* https://arxiv.org/pdf/1707.06618.pdf
+* https://arxiv.org/pdf/1806.09597.pdf
+* https://openreview.net/pdf?id=B1Yy1BxCZ
+* https://arxiv.org/pdf/1711.04623.pdf
+
+Stochastic Duality
+
+* https://arxiv.org/pdf/1805.01318.pdf
+
+Interacting Particle Systems (and duality)
+
+* ligget http://users.ictp.it/~pub_off/lectures/lns017/Liggett/Liggett.pdf
+* swart https://arxiv.org/pdf/1703.10007.pdf
+
+
 ## ml, machine learning, rl, reinforcement learning
 
+* quantile regression https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
 * Powell (Approximate Dynamic Programming)
 * ADP w Gaussian Proc http://mlg.eng.cam.ac.uk/pub/pdf/DeiPetRas08.pdf and on a budget: https://papers.nips.cc/paper/6188-bayesian-optimization-with-a-finite-budget-an-approximate-dynamic-programming-approach.pdf
 * https://quid.com/feed/how-quid-uses-deep-learning-with-small-data
