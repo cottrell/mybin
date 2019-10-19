@@ -2,6 +2,5 @@ Host mb
     HostName 192.168.1.5
 Host bb
     HostName 192.168.1.9
-    ForwardX11 yes
 Host *
     User cottrell
