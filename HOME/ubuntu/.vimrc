@@ -25,8 +25,3 @@ inoremap <S-Tab> <C-V><Tab>
 
 set statusline=%F\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
-
-execute pathogen#infect()
-
-let g:pymode_rope = 0
-let g:pymode_folding = 0
