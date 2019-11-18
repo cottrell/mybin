@@ -24,6 +24,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * https://github.com/StatMixedML/XGBoostLSS
         * https://github.com/Orcuslc/OrthNet
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
@@ -91,6 +92,7 @@ Stochastic, math fin etc
 * https://www.stat.berkeley.edu/~aldous/205B/pitman_yor_guide_bm.pdf
 * file:///home/cottrell/Downloads/risks-05-00061-v2%20(1).pdf
 * http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
+* https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr677.pdf
 
 Trading, securities etc
 
