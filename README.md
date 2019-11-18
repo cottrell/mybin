@@ -93,6 +93,7 @@ Stochastic, math fin etc
 * file:///home/cottrell/Downloads/risks-05-00061-v2%20(1).pdf
 * http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
 * https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr677.pdf
+* realized vol options etc https://pdfs.semanticscholar.org/c092/c65551a77339c952becf8ccc93a13c98ece0.pdf
 
 Trading, securities etc
 
