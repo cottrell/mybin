@@ -1,2 +1,5 @@
 #!/bin/bash
-autopep8 --max-line-length=300 -i $*
+n=300
+isort $*
+black -l $n $*
+autopep8 --max-line-length=$n -i $*

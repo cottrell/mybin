@@ -1,4 +1,37 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "/home/cottrell/anaconda3/envs/37nightly/bin/python"
+    "python.pythonPath": "/home/cottrell/anaconda3/envs/37nightly/bin/python",
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ]
 }
