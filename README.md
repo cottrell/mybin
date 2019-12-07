@@ -194,6 +194,8 @@ Other tools and articles
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
 * [remember umap](https://github.com/lmcinnes/umap) as a newer alternative to t-sne and probably a good place to start looking for any new viz tools
 
+* visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
+
 ### Other
 
 * [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
