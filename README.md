@@ -284,6 +284,7 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## distributed fs, syncing, data versioning etc
 
+* https://osf.io/
 * http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
 * https://www.quantcast.com/about-us/quantcast-file-system/
 * glusterfs
