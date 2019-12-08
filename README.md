@@ -278,6 +278,7 @@ Until I get a good dotfiles and clean up the chaos.
 * managing multiple repos https://github.com/joeyh/myrepos
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
+* syncing etc https://livingthing.danmackinlay.name/synchronising_files.html
 
 * https://gist.github.com/jboner/2841832
 
