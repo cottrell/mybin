@@ -282,11 +282,16 @@ Until I get a good dotfiles and clean up the chaos.
 
 * https://gist.github.com/jboner/2841832
 
-## distributed fs
+## distributed fs, syncing, data versioning etc
 
 * http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
 * https://www.quantcast.com/about-us/quantcast-file-system/
 * glusterfs
+* https://github.com/orbitdb/orbit-db
+* dat project
+* ipfs
+* https://github.com/iterative/dvc/blob/e63bc01e53befe1a666b42c10330524c71d03af5/README.rst
+* https://github.com/joshcc3/versioned-data-stores
 
 ## data pipelines etc
 
