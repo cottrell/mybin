@@ -292,6 +292,8 @@ Until I get a good dotfiles and clean up the chaos.
 * ipfs
 * https://github.com/iterative/dvc/blob/e63bc01e53befe1a666b42c10330524c71d03af5/README.rst
 * https://github.com/joshcc3/versioned-data-stores
+* https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
+* https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 
 ## data pipelines etc
 
