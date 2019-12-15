@@ -24,6 +24,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+        * https://github.com/StatMixedML/XGBoostLSS
         * https://github.com/Orcuslc/OrthNet
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
@@ -91,6 +92,7 @@ Stochastic, math fin etc
 * https://www.stat.berkeley.edu/~aldous/205B/pitman_yor_guide_bm.pdf
 * file:///home/cottrell/Downloads/risks-05-00061-v2%20(1).pdf
 * http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
+* https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr677.pdf
 * realized vol options etc https://pdfs.semanticscholar.org/c092/c65551a77339c952becf8ccc93a13c98ece0.pdf
 
 Trading, securities etc
@@ -192,6 +194,8 @@ Other tools and articles
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
 * [remember umap](https://github.com/lmcinnes/umap) as a newer alternative to t-sne and probably a good place to start looking for any new viz tools
 
+* visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
+
 ### Other
 
 * [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
@@ -218,6 +222,7 @@ Other tools and articles
 
 ## actual data & viz
 
+* https://simfin.com/
 * https://www.federalreserve.gov/monetarypolicy/bst_liquidityswaps.htm
 * https://9fin.com/
 * http://www.worldgovernmentbonds.com/country/argentina/
@@ -274,14 +279,23 @@ Until I get a good dotfiles and clean up the chaos.
 * managing multiple repos https://github.com/joeyh/myrepos
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
+* syncing etc https://livingthing.danmackinlay.name/synchronising_files.html
 
 * https://gist.github.com/jboner/2841832
 
-## distributed fs
+## distributed fs, syncing, data versioning etc
 
+* https://osf.io/
 * http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
 * https://www.quantcast.com/about-us/quantcast-file-system/
 * glusterfs
+* https://github.com/orbitdb/orbit-db
+* dat project
+* ipfs
+* https://github.com/iterative/dvc/blob/e63bc01e53befe1a666b42c10330524c71d03af5/README.rst
+* https://github.com/joshcc3/versioned-data-stores
+* https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
+* https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 
 ## data pipelines etc
 
