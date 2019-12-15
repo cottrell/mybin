@@ -53,4 +53,5 @@ alias ENIGMA_API_KEY=$(sed -e 's/.*"APIKEY"[ :"]*\(.*\)".*$/\1/' ~/.cred/enigma/
 alias s='screen'
 
 alias bb='connect.sh bb'
+sh -t cottrell@146.199.108.39 -p 2142 tmux -CC attach
 alias mb='connect.sh mb'
