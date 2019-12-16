@@ -73,6 +73,7 @@ Key value store:
 
 Misc
 
+* https://github.com/PyO3/rust-numpy
 * blackrock is involved in this: https://argoproj.github.io/argo
 * https://gogs.io/ git service self hosted
 * https://www.turaku.com/why
