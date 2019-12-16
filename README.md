@@ -180,6 +180,7 @@ Other tools and articles
 * holoviews based on bokeh. maybe easier within notebooks not sure
 * superset
 * metabase
+* https://github.com/tiangolo/fastapi
 
 ### Viz for larger datasets and graphs
 
@@ -376,6 +377,8 @@ Interacting Particle Systems (and duality)
 
 ## ml, machine learning, rl, reinforcement learning
 
+* https://www.libspn.org/
+* https://github.com/SPFlow/SPFlow
 * quantile regression https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
 * Powell (Approximate Dynamic Programming)
 * ADP w Gaussian Proc http://mlg.eng.cam.ac.uk/pub/pdf/DeiPetRas08.pdf and on a budget: https://papers.nips.cc/paper/6188-bayesian-optimization-with-a-finite-budget-an-approximate-dynamic-programming-approach.pdf
