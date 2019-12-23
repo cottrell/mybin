@@ -67,6 +67,13 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 Start with this list: https://github.com/cjbarber/ToolsOfTheTrade
 
+Tech
+
+    * https://www.infoq.com/presentations/lmax-trading-architecture/
+    * lstopo
+    * https://code.tools/man/1/cset-set/
+    * https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
+
 Key value store:
 
 * https://blog.dgraph.io/post/badger/
