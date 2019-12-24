@@ -2,6 +2,8 @@
 
 Notes, links, scripts, memories, recommendations, ghosts etc.
 
+https://github.com/Chris3606/TOC-Generator.git
+
 <!--ts-->
 * [mybin](#mybin)
     * [Services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
@@ -280,6 +282,7 @@ Other tools and articles
 * ambari
 * h2o.ai
 
+
 ## tech env notes
 
 Until I get a good dotfiles and clean up the chaos.
@@ -305,6 +308,9 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/joshcc3/versioned-data-stores
 * https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
+* https://blog.oceanprotocol.com/blockchains-for-big-data-from-data-audit-trails-to-a-universal-data-exchange-cf9956ec58ea
+* IPDB
+* Interledger
 
 ## data pipelines etc
 
