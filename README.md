@@ -188,6 +188,7 @@ Other tools and articles
 * superset
 * metabase
 * https://github.com/tiangolo/fastapi
+* streamlit
 
 ### Viz for larger datasets and graphs
 
