@@ -82,6 +82,7 @@ Key value store:
 
 Misc
 
+* proxy: https://askubuntu.com/questions/112177/how-do-i-tunnel-and-browse-the-server-webpage-on-my-laptop
 * blackrock is involved in this: https://argoproj.github.io/argo
 * https://gogs.io/ git service self hosted
 * https://www.turaku.com/why
@@ -310,6 +311,7 @@ Until I get a good dotfiles and clean up the chaos.
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 * https://blog.oceanprotocol.com/blockchains-for-big-data-from-data-audit-trails-to-a-universal-data-exchange-cf9956ec58ea
 * IPDB
+* Bigchaindb
 * Interledger
 
 ## data pipelines etc
