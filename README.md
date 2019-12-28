@@ -192,6 +192,9 @@ Other tools and articles
 * metabase
 * https://github.com/tiangolo/fastapi
 * streamlit
+* https://github.com/uwdata/falcon
+* https://github.com/finos/perspective
+* https://robinhood.engineering/faust-stream-processing-for-python-a66d3a51212d
 
 ### Viz for larger datasets and graphs
 
@@ -313,6 +316,7 @@ Until I get a good dotfiles and clean up the chaos.
 * IPDB
 * Bigchaindb
 * Interledger
+* http://btrdb.io/about.html time series tree database uses capnproto
 
 ## data pipelines etc
 
