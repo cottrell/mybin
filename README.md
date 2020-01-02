@@ -2,6 +2,8 @@
 
 Notes, links, scripts, memories, recommendations, ghosts etc.
 
+https://github.com/Chris3606/TOC-Generator.git
+
 <!--ts-->
 * [mybin](#mybin)
     * [Services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
@@ -67,6 +69,13 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 Start with this list: https://github.com/cjbarber/ToolsOfTheTrade
 
+Tech
+
+    * https://www.infoq.com/presentations/lmax-trading-architecture/
+    * lstopo
+    * https://code.tools/man/1/cset-set/
+    * https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
+
 Key value store:
 
 * https://blog.dgraph.io/post/badger/
@@ -74,6 +83,7 @@ Key value store:
 Misc
 
 * https://github.com/PyO3/rust-numpy
+* proxy: https://askubuntu.com/questions/112177/how-do-i-tunnel-and-browse-the-server-webpage-on-my-laptop
 * blackrock is involved in this: https://argoproj.github.io/argo
 * https://gogs.io/ git service self hosted
 * https://www.turaku.com/why
@@ -182,6 +192,10 @@ Other tools and articles
 * superset
 * metabase
 * https://github.com/tiangolo/fastapi
+* streamlit
+* https://github.com/uwdata/falcon
+* https://github.com/finos/perspective
+* https://robinhood.engineering/faust-stream-processing-for-python-a66d3a51212d
 
 ### Viz for larger datasets and graphs
 
@@ -273,6 +287,7 @@ Other tools and articles
 * ambari
 * h2o.ai
 
+
 ## tech env notes
 
 Until I get a good dotfiles and clean up the chaos.
@@ -282,8 +297,11 @@ Until I get a good dotfiles and clean up the chaos.
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
 * syncing etc https://livingthing.danmackinlay.name/synchronising_files.html
-
 * https://gist.github.com/jboner/2841832
+* https://medium.com/@philipfeng/modern-open-source-messaging-apache-kafka-rabbitmq-nats-pulsar-and-nsq-ca3bf7422db5
+* https://github.com/psy0rz/Synapse
+* faust
+* NATS
 
 ## distributed fs, syncing, data versioning etc
 
@@ -298,6 +316,11 @@ Until I get a good dotfiles and clean up the chaos.
 * https://github.com/joshcc3/versioned-data-stores
 * https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
+* https://blog.oceanprotocol.com/blockchains-for-big-data-from-data-audit-trails-to-a-universal-data-exchange-cf9956ec58ea
+* IPDB
+* Bigchaindb
+* Interledger
+* http://btrdb.io/about.html time series tree database uses capnproto
 
 ## bitemporal stuff
 

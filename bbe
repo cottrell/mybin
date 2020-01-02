@@ -1,4 +1,4 @@
 #!/bin/sh -e
 ip=$(cat ~/syncthing_main/external_ip.txt)
-echo ssh -t cottrell@$ip -p 2142 tmux -CC
-ssh -t cottrell@$ip -p 2142 tmux -CC
+echo ssh -t cottrell@$ip -p 2142 tmux -CC $*
+ssh -t cottrell@$ip -p 2142 tmux -CC $*
