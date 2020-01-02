@@ -299,6 +299,19 @@ Until I get a good dotfiles and clean up the chaos.
 * https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 
+## bitemporal stuff
+
+Search for bitemporal streaming or some such thing.
+
+* https://opencrux.com/docs
+* https://juxt.pro/blog/posts/case-study-bitemporal-store.html
+* https://about.sourcegraph.com/strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures
+* https://www.youtube.com/watch?v=YjAVsvYGbuU
+* https://www.youtube.com/watch?v=ykbYNBE-V3k
+
+Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
+
+
 ## data pipelines etc
 
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
