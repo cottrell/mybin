@@ -298,6 +298,9 @@ Until I get a good dotfiles and clean up the chaos.
 * syncing etc https://livingthing.danmackinlay.name/synchronising_files.html
 * https://gist.github.com/jboner/2841832
 * https://medium.com/@philipfeng/modern-open-source-messaging-apache-kafka-rabbitmq-nats-pulsar-and-nsq-ca3bf7422db5
+* https://github.com/psy0rz/Synapse
+* faust
+* NATS
 
 ## distributed fs, syncing, data versioning etc
 
