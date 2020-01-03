@@ -170,6 +170,8 @@ EDITOR=vim
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
