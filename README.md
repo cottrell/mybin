@@ -322,6 +322,10 @@ Until I get a good dotfiles and clean up the chaos.
 * Interledger
 * http://btrdb.io/about.html time series tree database uses capnproto
 
+Deterministic DB
+
+* http://www.cs.umd.edu/~abadi/papers/abadi-cacm2018.pdf
+
 ## bitemporal stuff
 
 Search for bitemporal streaming or some such thing.
@@ -345,7 +349,7 @@ Sort of related: "A Broadcast-Only Communication Model Based on Replicated Appen
 
 want kafka but hate kafka
 
-* https://news.ycombinator.com/item?id=20921572
+* https://news.ycombinator.com/item?id=20921572 (seems redis might be enough)
 * https://github.com/xorlev/slogd
 
 
