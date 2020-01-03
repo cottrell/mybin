@@ -298,10 +298,18 @@ Until I get a good dotfiles and clean up the chaos.
 * https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 
-## data pipelines etc
+## data pipelines, streaming etc
 
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
 * https://code.facebook.com/posts/1072626246134461/introducing-fblearner-flow-facebook-s-ai-backbone/
+* faust
+* https://github.com/pipelinedb/pipelinedb
+
+want kafka but hate kafka
+
+* https://news.ycombinator.com/item?id=20921572
+* https://github.com/xorlev/slogd
+
 
 ## data quality
 
