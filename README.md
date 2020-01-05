@@ -76,6 +76,10 @@ Tech
     * https://code.tools/man/1/cset-set/
     * https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
 
+HFT, markets
+
+    * http://orion.towson.edu/~karne/teaching/projdb2/stockdata.pdf
+
 Key value store:
 
 * https://blog.dgraph.io/post/badger/
