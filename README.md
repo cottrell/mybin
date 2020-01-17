@@ -76,6 +76,10 @@ Tech
     * https://code.tools/man/1/cset-set/
     * https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
 
+HFT, markets
+
+    * http://orion.towson.edu/~karne/teaching/projdb2/stockdata.pdf
+
 Key value store:
 
 * https://blog.dgraph.io/post/badger/
@@ -322,6 +326,10 @@ Until I get a good dotfiles and clean up the chaos.
 * Interledger
 * http://btrdb.io/about.html time series tree database uses capnproto
 
+Deterministic DB
+
+* http://www.cs.umd.edu/~abadi/papers/abadi-cacm2018.pdf
+
 ## bitemporal stuff
 
 Search for bitemporal streaming or some such thing.
@@ -336,10 +344,18 @@ Search for bitemporal streaming or some such thing.
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
 
 
-## data pipelines etc
+## data pipelines, streaming etc
 
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
 * https://code.facebook.com/posts/1072626246134461/introducing-fblearner-flow-facebook-s-ai-backbone/
+* faust
+* https://github.com/pipelinedb/pipelinedb
+
+want kafka but hate kafka
+
+* https://news.ycombinator.com/item?id=20921572 (seems redis might be enough)
+* https://github.com/xorlev/slogd
+
 
 ## data quality
 
