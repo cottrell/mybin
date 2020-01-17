@@ -37,7 +37,7 @@ alias dapnog='cd ~/Dropbox/misc/nogithub && ls'
 alias daph='cd ~/projects/notebooks/hugo/hugoblog'
 alias daps='cd ~/projects/scrap'
 alias dape='cd ~/projects/notebooks/extractors/extractors'
-alias dapg='cd ~/projects/notebooks/my-gym/my/gym/ && ls'
+alias dapg='cd ~/projects/notebooks/my-gym && ls'
 alias dh='cd ~/projects/notebooks/data/datahub'
 alias rl='cd ~/projects/notebooks/rl && conda activate rl'
 alias jup='~/projects/notebooks/notebook.sh'
@@ -53,5 +53,4 @@ alias ENIGMA_API_KEY=$(sed -e 's/.*"APIKEY"[ :"]*\(.*\)".*$/\1/' ~/.cred/enigma/
 alias s='screen'
 
 alias bb='connect.sh bb'
-sh -t cottrell@146.199.108.39 -p 2142 tmux -CC attach
 alias mb='connect.sh mb'
