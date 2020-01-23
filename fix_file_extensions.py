@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # probably python 3 osx only very hack
-import sys
-import os
 import glob
-import subprocess
+import os
 import shutil
+import subprocess
+import sys
+
 
 def check_and_maybe_fix_files(directory):
     directory = os.path.abspath(directory)
@@ -13,11 +14,11 @@ def check_and_maybe_fix_files(directory):
     output = subprocess.check_output(cmd)
     output = output.decode().split('\n')
     filetype_to_extension_mapping = dict(
-            postscript='ps',
-            jpeg='jpg',
-            ascii='txt',
-            pjl='ps'
-            )
+        postscript='ps',
+        jpeg='jpg',
+        ascii='txt',
+        pjl='ps'
+    )
     good_filetypes = list()
     ignored_filetypes = ['empty', 'hp']
     auto_accept_filetypes = list()
@@ -40,7 +41,7 @@ def check_and_maybe_fix_files(directory):
         if '.' in filename[-5:]:
             filename_no_ext, extension = filename.rsplit('.', 1)
             extension = extension.lower()
-        if extension in {'enc', 'xlsx', 'pdf', 'csv', 'tex', 'gz', 'bib', 'rtf', 'odt', 'xls', 'md', 'json', 'h5', 'txt', 'py', 'sh', 'bash', 'pyc', 'tax', 'doc', 'docx', 'css', 'html', 'bin'}: # HARD CODE THIS, PROBABLY FILES OK
+        if extension in {'enc', 'xlsx', 'pdf', 'csv', 'tex', 'gz', 'bib', 'rtf', 'odt', 'xls', 'md', 'json', 'h5', 'txt', 'py', 'sh', 'bash', 'pyc', 'tax', 'doc', 'docx', 'css', 'html', 'bin'}:  # HARD CODE THIS, PROBABLY FILES OK
             continue
         if extension is None:
             filename_no_ext = filename
@@ -70,12 +71,13 @@ def check_and_maybe_fix_files(directory):
     print('good file types: {}'.format(good_filetypes))
     print('ignored file types: {}'.format(ignored_filetypes))
 
+
 def main(*directories):
-    assert len(directories)>0
+    assert len(directories) > 0
     for directory in directories:
         check_and_maybe_fix_files(directory)
+
 
 if __name__ == '__main__':
     directories = sys.argv[1:]
     main(*directories)
-

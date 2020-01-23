@@ -14,4 +14,3 @@ for x in sys.stdin:
     except Exception as e:
         pass
 print(s)
-
