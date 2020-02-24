@@ -339,7 +339,7 @@ Search for bitemporal streaming or some such thing.
 * https://juxt.pro/blog/posts/case-study-bitemporal-store.html
 * https://about.sourcegraph.com/strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures
 * https://www.youtube.com/watch?v=YjAVsvYGbuU
-* https://www.youtube.com/watch?v=ykbYNBE-V3k
+* https://www.youtube.com/watch?v=ykbYNBE-V3k see 25:00 ish for https://en.wikipedia.org/wiki/Z-order_curve
 * https://www.marklogic.com/blog/bitemporal/
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
