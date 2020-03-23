@@ -335,6 +335,10 @@ Until I get a good dotfiles and clean up the chaos.
 * Bigchaindb
 * Interledger
 * http://btrdb.io/about.html time series tree database uses capnproto
+* https://github.com/RTradeLtd/Temporal
+* https://discuss.ipfs.io/t/large-files-long-term-storage/4447
+* https://slides.com/cosminp/storage-opts#/
+
 
 Deterministic DB
 
