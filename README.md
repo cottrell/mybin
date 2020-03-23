@@ -243,10 +243,24 @@ Other tools and articles
 
 ## actual data & viz
 
+Markets
+
 * https://simfin.com/
 * https://www.federalreserve.gov/monetarypolicy/bst_liquidityswaps.htm
 * https://9fin.com/
+* https://intrinio.com
+* http://eqsift.com
+* https://www.cityfalcon.com/financial-news-api (real time financial news aggregator)
+* https://quotes.wsj.com/CA/S/financials/annual/balance-sheet
+* https://www.kaggle.com/usfundamentals/us-stocks-fundamentals
+* https://quickfs.net/company/AAPL
+* https://www.screener.in/
+* https://www.sec.gov/edgar.shtml
+* https://lobsterdata.com/
 * http://www.worldgovernmentbonds.com/country/argentina/
+
+Non-Markets
+
 * https://sentinel.esa.int/web/sentinel/sentinel-data-access
 * http://datahelp.imf.org/knowledgebase/articles/536209-where-do-i-find-data-on-sovereign-debt
 * github.com/datasets
@@ -257,15 +271,12 @@ Other tools and articles
 * https://angel.co/salaries/london nice simple ui and design
 * https://case.law/
 * https://www.statista.com/
-* https://www.cityfalcon.com/financial-news-api (real time financial news aggregator)
 * https://www.ukdataservice.ac.uk/
 * https://github.com/datasets
 * https://www.getthedata.com/
-* https://lobsterdata.com/
 * datahub.io
 * https://ckan.org/
 * https://www.openml.org/
-* https://www.sec.gov/edgar.shtml
 * https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/prt/all/show/2016/
 * https://propertydata.co.uk/price-per-square-foot
 * http://visualizationuniverse.com/tools/?sortByPro=delta&sortDirPro=desc&sortByGen=volume&sortDirGen=desc
@@ -273,8 +284,6 @@ Other tools and articles
 * http://visualizationuniverse.com/
 * http://atlas.media.mit.edu/
 * TrumpWorld data https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit#gid=634968401
-* https://intrinio.com
-* http://eqsift.com
 * https://www.hackney.gov.uk/budget
 * https://opendata.camden.gov.uk/browse
 * https://dev.socrata.com/foundry/opendata.camden.gov.uk/ry6e-hbqy
