@@ -523,8 +523,10 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * http://machinelearningmastery.com/memory-in-a-long-short-term-memory-network/
 * http://philipperemy.github.io/keras-stateful-lstm/
 
-### bayes opt
+### hyper param opt
 
+* https://ray.readthedocs.io/en/latest/tune-usage.html
+* https://ray.readthedocs.io/en/latest/walkthrough.html
 * https://github.com/topics/bayesian-optimization
 * https://scikit-optimize.github.io/
 * https://github.com/SheffieldML/GPyOpt
