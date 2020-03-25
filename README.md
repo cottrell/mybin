@@ -536,6 +536,7 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ### ml/rl environments
 
+* https://stanfordnlp.github.io/stanza/ (NLP)
 * https://gym.openai.com/envs#parameter_tuning
 * https://github.com/facebookresearch/CommAI-env
 * https://github.com/Evolving-AI-Lab
