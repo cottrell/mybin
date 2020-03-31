@@ -119,9 +119,12 @@ fi
 # not sure need these unless doing cuda dev
 # # set PATH for cuda installation
 if [ -d "/usr/local/cuda/bin/" ]; then
-    export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-    export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-    export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+    # export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+    # export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    # export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+	export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+	export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+	export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 fi
 
 export SPARK_HOME=~/dev/spark-2.4.0-bin-hadoop2.7
