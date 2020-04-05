@@ -317,7 +317,7 @@ Until I get a good dotfiles and clean up the chaos.
 * faust
 * NATS
 
-## distributed fs, syncing, data versioning etc
+## decentralized data, research, distributed fs, syncing, data versioning etc
 
 Current top of the list
 
@@ -328,6 +328,7 @@ Current top of the list
 * orbitdb
 * bigchaindb
 * https://osf.io/
+* http://axon.science/
 
 Other notes
 
