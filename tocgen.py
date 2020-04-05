@@ -1,1 +1,1 @@
-/Users/cottrell/code/TOC-Generator/tocgen.py
+TOC-Generator/tocgen.py
