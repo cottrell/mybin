@@ -137,7 +137,7 @@ PATH=$HOME/mybin:$PATH
 
 EDITOR=vim
 
-export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 

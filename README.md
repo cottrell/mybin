@@ -319,20 +319,29 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## distributed fs, syncing, data versioning etc
 
+Current top of the list
+
+* https://dvid.io/
+* https://qri.io
+* ipfs ipdb ipdl
+* dat project
+* orbitdb
+* bigchaindb
 * https://osf.io/
+
+Other notes
+
+* dvc
+* pachyderm
 * http://iopscience.iop.org/article/10.1088/1742-6596/513/4/042014/pdf
 * https://www.quantcast.com/about-us/quantcast-file-system/
 * glusterfs
 * https://github.com/orbitdb/orbit-db
-* dat project
-* ipfs
 * https://github.com/iterative/dvc/blob/e63bc01e53befe1a666b42c10330524c71d03af5/README.rst
 * https://github.com/joshcc3/versioned-data-stores
 * https://discuss.software-carpentry.narkive.com/txH4Lart/version-control-and-collaboration-with-large-datasets
 * https://guix-devel.gnu.narkive.com/vs659vCf/use-guix-to-distribute-data-reproducible-data-science
 * https://blog.oceanprotocol.com/blockchains-for-big-data-from-data-audit-trails-to-a-universal-data-exchange-cf9956ec58ea
-* IPDB
-* Bigchaindb
 * Interledger
 * http://btrdb.io/about.html time series tree database uses capnproto
 * https://github.com/RTradeLtd/Temporal
