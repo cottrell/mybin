@@ -135,11 +135,15 @@ PATH=$PATH:/usr/lib/postgresql/10/bin
 
 PATH=$HOME/mybin:$PATH
 
+PATH="$PATH:~/.dat/releases/dat-14.0.2-linux-x64"
+
+
 EDITOR=vim
 
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
