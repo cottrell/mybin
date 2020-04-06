@@ -24,10 +24,11 @@ try:
     pd.options.display.min_rows = 40
     pd.options.display.width = 1000 # never wrap
 
+    # see ipython_config.py for where I now turn off jedi completely.
     # import jedi
     # jedi.settings.case_insensitive_completion = False
 
-    # crashes on osx from plotting? is this still needed
+    # crashes on MacOS from plotting. Is this still needed?
     from sys import platform as sys_pf
     if sys_pf == 'darwin':
         print('using darwing tkagg')
