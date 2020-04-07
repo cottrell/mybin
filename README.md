@@ -188,23 +188,30 @@ Other tools and articles
 * pyfolio
 * backtrader
 
-## viz/dashboarding/charts
+## Top candidates for generic analytics and viz 2018:
 
-### Top candidates for generic analytics 2018:
+Research:
 
-* vega (visualization grammar and associated tools)
-    * vega/voyager (chart recommender system) https://vega.github.io/voyager2/
-    * altair also built on vega and vega-lite
+* https://github.com/iodide-project/pyodide/ (notebook in the browser! I mean it is *in* the browser)
+* https://github.com/microsoft/tensorwatch (for training in notebooks)
+
+Analytics/Viz:
+
+* https://github.com/tiangolo/fastapi (for backend)
+* https://www.streamlit.io/
+* https://vega.github.io/
+* https://pair-code.github.io/facets/
+* https://github.com/uwdata/falcon brushing and linking
+* https://github.com/finos/perspective
+* https://robinhood.engineering/faust-stream-processing-for-python-a66d3a51212d (featuers)
+* https://altair-viz.github.io/ (also built on vega and vega-lite)
+* https://idl.cs.washington.edu/projects/lyra/
 * holoviews based on bokeh. maybe easier within notebooks not sure
+* https://dash.plot.ly
 * superset
 * metabase
-* https://github.com/tiangolo/fastapi
-* streamlit
-* https://github.com/uwdata/falcon
-* https://github.com/finos/perspective
-* https://robinhood.engineering/faust-stream-processing-for-python-a66d3a51212d
 
-### Viz for larger datasets and graphs
+## Viz for larger datasets and graphs
 
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
 * [glumpy](https://glumpy.github.io/)
