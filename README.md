@@ -213,6 +213,8 @@ Analytics/Viz:
 
 ## Viz for larger datasets and graphs
 
+Tire kicking only.
+
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
 * [glumpy](https://glumpy.github.io/)
 * [vispy](http://vispy.org/) (high-level, depends on glumpy)
