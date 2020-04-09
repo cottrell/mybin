@@ -380,6 +380,7 @@ Deterministic DB
 
 * https://github.com/modin-project/modin
 * ray-project
+* https://github.com/ranaroussi/pystore
 
 ## bitemporal stuff
 
