@@ -340,6 +340,7 @@ Current top of the list
 * bigchaindb
 * https://osf.io/
 * http://axon.science/
+* https://oceanprotocol.com/
 
 CALM and logical monotonicity:
 
