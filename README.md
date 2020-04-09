@@ -344,6 +344,11 @@ Current top of the list
 * https://osf.io/
 * http://axon.science/
 
+From Alaric:
+
+* [clustered analytic db](http://www.snell-pym.org.uk/archives/2016/12/11/cool-things-i-have-worked-on-clustered-analytic-database/)
+* [low latency nosql datasore](http://www.snell-pym.org.uk/archives/2016/11/22/cool-things-i-have-worked-on-low-latency-highly-available-nosql-data-store/)
+
 Other notes
 
 * dvc
