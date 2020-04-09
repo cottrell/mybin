@@ -344,6 +344,13 @@ Current top of the list
 * https://osf.io/
 * http://axon.science/
 
+CALM and logical monotonicity:
+
+* http://bloom-lang.net/calm/
+* https://rise.cs.berkeley.edu/blog/an-overview-of-the-calm-theorem/
+* https://arxiv.org/abs/1901.01930
+
+
 From Alaric:
 
 * [clustered analytic db](http://www.snell-pym.org.uk/archives/2016/12/11/cool-things-i-have-worked-on-clustered-analytic-database/)
@@ -385,7 +392,6 @@ Search for bitemporal streaming or some such thing.
 * https://www.marklogic.com/blog/bitemporal/
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
-
 
 ## data pipelines, streaming etc
 
