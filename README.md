@@ -105,6 +105,7 @@ Time tracking:
 
 Stochastic, math fin etc
 
+* websim by worldquant https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119571278.ch31
 * https://www.math.nyu.edu/faculty/goodman/teaching/StochCalc2012/notes/Week4.pdf
 * https://wwwf.imperial.ac.uk/~ajacquie/index_files/GHJ%20-%20SABRGeometry.pdf
 * https://www.stat.berkeley.edu/~aldous/205B/pitman_yor_guide_bm.pdf
@@ -267,6 +268,11 @@ Markets
 * https://www.sec.gov/edgar.shtml
 * https://lobsterdata.com/
 * http://www.worldgovernmentbonds.com/country/argentina/
+* ftp://ftp.cmegroup.com/
+* https://rtdata.dtcc.com/gtr/dashboard.do
+* https://www.statista.com/
+* https://www.macrotrends.net
+* https://canalyst.com/ (fundamentals)
 
 Non-Markets
 
