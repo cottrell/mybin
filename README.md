@@ -2,7 +2,7 @@
 
 Notes, links, scripts, memories, recommendations, ghosts etc.
 
-https://github.com/Chris3606/TOC-Generator.git
+[See here to regenerate the TOC](https://github.com/Chris3606/TOC-Generator.git)
 
 <!--ts-->
 * [mybin](#mybin)
