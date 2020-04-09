@@ -412,14 +412,14 @@ want kafka but hate kafka
 * https://griffin.incubator.apache.org/
 * https://datacleaner.github.io/
 
-these
+Maybe these:
 
 * http://apex.apache.org/
 * http://ambari.apache.org/
 * HDFS? https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.6.1
 * TRY THIS: http://predictionio.apache.org/demo/tapster/
 
-maybe not these
+Maybe not these:
 
 * https://fluo.apache.org//docs/fluo/1.2/getting-started/design
 * https://incubator.apache.org/projects/accumulo.html
@@ -427,7 +427,6 @@ maybe not these
 * https://fluo.apache.org//docs/fluo/1.2/getting-started/design
 * https://incubator.apache.org/projects/gearpump.html
 * https://projects.apache.org/project.html?vxquery XML query
-
 
 ## hardware
 
@@ -458,7 +457,6 @@ maybe not these
 * https://www.productchart.co.uk # shopping
 * http://next.openspending.org/
 * https://okfn.org/
-
 
 ## maths, probability, stochastic etc
 
