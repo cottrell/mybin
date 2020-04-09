@@ -188,14 +188,14 @@ Other tools and articles
 * pyfolio
 * backtrader
 
-## Top candidates for generic analytics and viz 2018:
+## Top candidates for generic analytics and viz
 
-Research:
+### Research:
 
 * https://github.com/iodide-project/pyodide/ (notebook in the browser! I mean it is *in* the browser)
 * https://github.com/microsoft/tensorwatch (for training in notebooks)
 
-Analytics/Viz:
+### Analytics/Viz:
 
 * https://github.com/tiangolo/fastapi (for backend)
 * https://www.streamlit.io/
@@ -239,12 +239,6 @@ Tire kicking only.
 * good list: http://www.cssauthor.com/javascript-charting-libraries
 * http://dimplejs.org
 * https://d3plus.org/
-
-### RPC/caching/dataframe Frameworks like dask and spark
-
-* https://github.com/modin-project/modin
-* ray-project
-* ...
 
 ### Data exploration
 
@@ -351,7 +345,6 @@ CALM and logical monotonicity:
 * https://rise.cs.berkeley.edu/blog/an-overview-of-the-calm-theorem/
 * https://arxiv.org/abs/1901.01930
 
-
 From Alaric:
 
 * [clustered analytic db](http://www.snell-pym.org.uk/archives/2016/12/11/cool-things-i-have-worked-on-clustered-analytic-database/)
@@ -380,6 +373,11 @@ Other notes
 Deterministic DB
 
 * http://www.cs.umd.edu/~abadi/papers/abadi-cacm2018.pdf
+
+### RPC/caching/dataframe Frameworks like dask and spark
+
+* https://github.com/modin-project/modin
+* ray-project
 
 ## bitemporal stuff
 
