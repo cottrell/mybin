@@ -214,7 +214,7 @@ Analytics/Viz:
 ## Viz for larger datasets and graphs
 
 Tire kicking only.
-
+* visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
 * [glumpy](https://glumpy.github.io/)
 * [vispy](http://vispy.org/) (high-level, depends on glumpy)
@@ -226,7 +226,6 @@ Tire kicking only.
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
 * [remember umap](https://github.com/lmcinnes/umap) as a newer alternative to t-sne and probably a good place to start looking for any new viz tools
 
-* visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
 
 ### Other
 
