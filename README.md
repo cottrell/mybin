@@ -6,7 +6,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
 
 <!--ts-->
 * [mybin](#mybin)
-    * [Services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
+    * [services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
     * [finance/markets/trading](#financemarketstrading)
     * [causal inference, causal graphs, probabilistic programming](#causal-inference-causal-graphs-probabilistic-programming)
     * [people](#people)
@@ -66,21 +66,21 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [Concurrency](#concurrency)
 <!--te-->
 
-## Services and tools for business and productivity
+## services and tools for business and productivity
 
 Start with this list: https://github.com/cjbarber/ToolsOfTheTrade
 
 Tech
 
-    * https://www.infoq.com/presentations/lmax-trading-architecture/
-    * lstopo
-    * https://code.tools/man/1/cset-set/
-    * https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
+* https://www.infoq.com/presentations/lmax-trading-architecture/
+* lstopo
+* https://code.tools/man/1/cset-set/
+* https://medium.com/mvp-workshop/a-closer-look-to-the-inter-planetary-file-system-b3f3af31a3c7
 
 hft, markets
 
-    * http://orion.towson.edu/~karne/teaching/projdb2/stockdata.pdf
-    * https://github.com/OpenHFT/Chronicle-Queue#design Micro second messaging that stores everything to disk
+* http://orion.towson.edu/~karne/teaching/projdb2/stockdata.pdf
+* https://github.com/OpenHFT/Chronicle-Queue#design Micro second messaging that stores everything to disk
 
 Key value store:
 
