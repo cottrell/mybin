@@ -131,7 +131,23 @@ Elicitability, Quantiles, Expectiles etc
 
 * https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
 
-Read everything here, copy paste into "Copy All URLs for Google Chrome" app:
+### Bregman etc
+
+* http://reports-archive.adm.cs.cmu.edu/anon/2001/CMU-CS-01-109R.pdf
+* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1357&rep=rep1&type=pdf
+* https://github.com/RagibZaman/mathematical-optimisation/blob/master/bregman_optimisation/bregman_optimisation.pdf
+* https://arxiv.org/abs/1004.3814
+* https://github.com/RagibZaman/mathematical-optimisation/tree/master/bregman_optimisation/BregmanLR_demo
+* https://people.ok.ubc.ca/bauschke/Research/07.pdf
+* http://www.cs.jhu.edu/~ayuille/courses/Stat238-Winter12/Pietra.pdf
+* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.33.1529&rep=rep1&type=pdf
+* https://www.aclweb.org/anthology/J96-1002.pdf
+* https://arxiv.org/abs/1905.11545
+* https://arxiv.org/pdf/1808.08271.pdf
+* https://www.inference.vc/grosses-challenge/
+* https://github.com/fhuszar/thesis/tree/master/submitted
+
+Same thing but copy pastable into "Copy All URLs for Google Chrome" app:
 
     http://reports-archive.adm.cs.cmu.edu/anon/2001/CMU-CS-01-109R.pdf
     http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1357&rep=rep1&type=pdf
