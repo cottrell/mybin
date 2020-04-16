@@ -428,6 +428,11 @@ Search for bitemporal streaming or some such thing.
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
 
+## workflow, dag stuff etc
+
+* https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems
+* airflow luigi dask etc
+
 ## data pipelines, streaming etc
 
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
