@@ -135,6 +135,7 @@ Elicitability, Quantiles, Expectiles etc
 
 ### Bregman etc
 
+* http://gcoe-mi.jp/temp/publish/3d079baa66570bfabd11590a3c20ff34.pdf
 * http://reports-archive.adm.cs.cmu.edu/anon/2001/CMU-CS-01-109R.pdf
 * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1357&rep=rep1&type=pdf
 * https://github.com/RagibZaman/mathematical-optimisation/blob/master/bregman_optimisation/bregman_optimisation.pdf
@@ -151,6 +152,7 @@ Elicitability, Quantiles, Expectiles etc
 
 Same thing but copy pastable into "Copy All URLs for Google Chrome" app:
 
+    http://gcoe-mi.jp/temp/publish/3d079baa66570bfabd11590a3c20ff34.pdf
     http://reports-archive.adm.cs.cmu.edu/anon/2001/CMU-CS-01-109R.pdf
     http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1357&rep=rep1&type=pdf
     https://github.com/RagibZaman/mathematical-optimisation/blob/master/bregman_optimisation/bregman_optimisation.pdf
