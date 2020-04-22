@@ -106,6 +106,13 @@ Time tracking:
 
 ## finance/markets/trading
 
+Misc quant projects
+
+* https://github.com/jindaxiang/akshare/tree/master/akshare
+* https://github.com/wilsonfreitas/awesome-quant#python
+* https://github.com/cuemacro/findatapy
+* https://github.com/foolcage/fooltrader
+
 Stochastic, math fin etc
 
 * websim by worldquant https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119571278.ch31
