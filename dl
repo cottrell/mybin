@@ -2,13 +2,13 @@
 
 # safer than rm. create date-based folder in trash and move things there.
 
-TRASH=$HOME/.Trash/
+TRASH=$HOME/.Trash
 [[ -e "$TRASH" ]] || mkdir -p $TRASH
 
+dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S)
+[[ -e "$dest" ]] || mkdir -v $dest
 until [ "$#" = "0" ];do
-    dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S)
-    [[ -e "$dest" ]] || mkdir $dest
-    echo mv -v "$@" "$dest"
-    mv -v "$@" "$dest"
+    # echo mv -v "$1" "$dest"
+    mv -v "$1" "$dest"
     shift
 done
