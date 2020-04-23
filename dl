@@ -8,6 +8,7 @@ TRASH=$HOME/.Trash/
 until [ "$#" = "0" ];do
     dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S)
     [[ -e "$dest" ]] || mkdir $dest
+    echo mv -v "$@" "$dest"
     mv -v "$@" "$dest"
     shift
 done
