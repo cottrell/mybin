@@ -527,9 +527,9 @@ Interacting Particle Systems (and duality)
 * ligget http://users.ictp.it/~pub_off/lectures/lns017/Liggett/Liggett.pdf
 * swart https://arxiv.org/pdf/1703.10007.pdf
 
-
 ## ml, machine learning, rl, reinforcement learning
 
+* 30 years http://www-isl.stanford.edu/~widrow/papers/j199030years.pdf
 * https://www.libspn.org/
 * https://github.com/SPFlow/SPFlow
 * quantile regression https://freakonometrics.hypotheses.org/files/2017/05/erasmus-1.pdf
@@ -552,6 +552,15 @@ Interacting Particle Systems (and duality)
 * https://www.biorxiv.org/content/biorxiv/early/2017/08/25/180471.full.pdf?%3Fcollection= (https://medium.com/@jaiyamsharma/efficient-nearest-neighbors-inspired-by-the-fruit-fly-brain-6ef8fed416ee)
 * https://github.com/lmcinnes/umap
 * https://www.featuretools.com/
+
+## dimensional analysis
+
+* https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.8b02837
+* https://advances.sciencemag.org/content/6/16/eaay2631
+* https://www.researchgate.net/profile/Stephan_Rudolph5/publication/2625410_On_the_Context_of_Dimensional_Analysis_in_Artificial_Intelligence/links/54f0a5870cf2b36214aac529/On-the-Context-of-Dimensional-Analysis-in-Artificial-Intelligence.pdf
+* http://web.mit.edu/2.25/www/pdf/DA_unified.pdf
+* https://arxiv.org/abs/1708.04303
+
 
 ### sequence learning related
 
