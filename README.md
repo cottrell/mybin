@@ -22,6 +22,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [actual data & viz](#actual-data--viz)
     * [TODO](#todo)
     * [tech env notes](#tech-env-notes)
+    * [task queues](#task-queues)
     * [decentralized data, research, distributed fs, syncing, data versioning etc](#decentralized-data-research-distributed-fs-syncing-data-versioning-etc)
         * [RPC/caching/dataframe Frameworks like dask and spark](#rpccachingdataframe-frameworks-like-dask-and-spark)
     * [bitemporal stuff](#bitemporal-stuff)
@@ -33,6 +34,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [links uncategorized](#links-uncategorized)
     * [maths, probability, stochastic etc](#maths-probability-stochastic-etc)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
+    * [dimensional analysis](#dimensional-analysis)
         * [sequence learning related](#sequence-learning-related)
         * [simulators](#simulators)
         * [factorization machines](#factorization-machines)
@@ -68,6 +70,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [GPG etc](#gpg-etc)
     * [drone](#drone)
     * [Concurrency](#concurrency)
+* [Monoclonal Antibodies](#monoclonal-antibodies)
 <!--te-->
 
 ## services and tools for business and productivity
