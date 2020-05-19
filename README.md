@@ -843,6 +843,13 @@ Time-series 2019
 
 # Monoclonal Antibodies
 
+A very quick read and summary through some links.
+
+Quick view from Forbes: https://www.forbes.com/sites/williamhaseltine/2020/04/23/promising-new-drugs-to-treat-and-prevent-covid-19/#44c1d0b145bf
+> How soon will drugs be available? My guess, within three to four months for the first approvals.
+>
+> It may take several weeks to demonstrate effectiveness in animals.  Human safety studies can be done with no more than 30 people in about a month. These drugs are generally known to be safe though more testing for safety will be required.  Tests of the drugs’ effect in reducing the viral load in infected patients should take no longer than a month.  Most time consuming will be large scale manufacturing of the drugs, once approved.
+
 Mostly focused on details of production. Figure 3 for production/approval pipeline ... https://jbiomedsci.biomedcentral.com/articles/10.1186/s12929-019-0592-z
 Two methods:
   * phage display, wherein diverse exogenous genes are incorporated into filamentous bacteriophages to compose a library. The library proteins are then presented on the phage surface as fusions with a phage coat protein, allowing the selection of specific binders and affinity characteristics.
@@ -862,10 +869,6 @@ This one has some timelineshttps://www.researchgate.net/publication/23656557_Mon
 This one is just a snippet but apparently short half life is an issue?
 > 10.3 Drawbacks of Monoclonal Antibodies Monoclonal antibodies (mAbs) are extensively used in the areas of diagnostics and healthcare. Despite their extensive use, mAbs present several disadvantages, namely, they are very expensive and difficult to produce. Additionally, their large molecular size (150 kDa) limits their tissue and tumor penetration, thus limiting their biodistribution and efficacy. Moreover, they can also induce immune reactions, which further limits their long-term application. Lastly, mAbs have a half-life of several days, which leads to high background signals when used for molecular imaging.
 
-I read this one last: https://www.forbes.com/sites/williamhaseltine/2020/04/23/promising-new-drugs-to-treat-and-prevent-covid-19/#44c1d0b145bf
-> How soon will drugs be available? My guess, within three to four months for the first approvals.
->
-> It may take several weeks to demonstrate effectiveness in animals.  Human safety studies can be done with no more than 30 people in about a month. These drugs are generally known to be safe though more testing for safety will be required.  Tests of the drugs’ effect in reducing the viral load in infected patients should take no longer than a month.  Most time consuming will be large scale manufacturing of the drugs, once approved.
 
 Other links:
 
