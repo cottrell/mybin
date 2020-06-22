@@ -297,6 +297,7 @@ Tire kicking only.
 
 Markets
 
+* https://www.hkma.gov.hk/eng/data-publications-and-research/data-and-statistics/monthly-statistical-bulletin/table/
 * https://simfin.com/
 * https://www.federalreserve.gov/monetarypolicy/bst_liquidityswaps.htm
 * https://9fin.com/
