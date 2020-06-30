@@ -888,14 +888,6 @@ Other links:
 * https://mrc.ukri.org/news/blog/from-tool-to-therapy-a-timeline-of-monoclonal-antibody-technology/
 
 
-# Recommendations or at least books to be aware of
-
-* Probability And Random Processes by Geoffrey R. Grimmett
-* A Graduate Introduction to Numerical Methods From the Viewpoint of Backward Error Analysis Authors: Corless, Robert, Fillion, Nicolas
-* Foundations of Machine Learning, Mehryar Mohri
-* Statistical Learning Theory, Vladimir Vapnik (various books)
-* Machine Learning: a Probabilistic Perspective by Kevin Patrick Murphy
-
 # Alternatives to medium
 
 * https://joinplu.me/
