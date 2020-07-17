@@ -297,6 +297,7 @@ Tire kicking only.
 
 Markets
 
+* https://www.trismegistos.org/ldab/about.php
 * https://www.hkma.gov.hk/eng/data-publications-and-research/data-and-statistics/monthly-statistical-bulletin/table/
 * https://simfin.com/
 * https://www.federalreserve.gov/monetarypolicy/bst_liquidityswaps.htm
@@ -319,6 +320,7 @@ Markets
 
 Non-Markets
 
+* https://ourworldindata.org/books
 * https://sentinel.esa.int/web/sentinel/sentinel-data-access
 * http://datahelp.imf.org/knowledgebase/articles/536209-where-do-i-find-data-on-sovereign-debt
 * github.com/datasets
@@ -897,3 +899,6 @@ Other links:
 * https://ghost.org/
 * https://anchorcms.com/
 
+# Automated Theorem Proving
+
+* https://leanprover.github.io/
