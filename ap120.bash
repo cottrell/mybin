@@ -1,5 +1,5 @@
 #!/bin/bash -e
-n=300
+n=120
 isort $*
 black --skip-string-normalization -l $n $*
 autopep8 --max-line-length=$n -i $*
