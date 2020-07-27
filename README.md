@@ -441,6 +441,7 @@ Deterministic DB
 * https://github.com/modin-project/modin
 * ray-project
 * https://github.com/ranaroussi/pystore
+* https://github.com/cylondata/cylon
 
 ## bitemporal stuff
 
@@ -773,6 +774,8 @@ Time-series 2019
 * TimescaleDB
 * Marketstore
 * probably not influxdb
+* https://github.com/OpenHFT/Chronicle-Queue#design Micro second messaging that stores everything to disk
+* https://dbdb.io/db/lmdb lightning memory map database, local simple
 
 * https://github.com/mitdbg
 * https://www.pipelinedb.com
