@@ -905,3 +905,7 @@ Other links:
 # Automated Theorem Proving
 
 * https://leanprover.github.io/
+
+# stack 2020
+
+* replace argh with typer?
