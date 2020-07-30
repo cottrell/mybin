@@ -2,4 +2,4 @@
 dirname=~/Dropbox/misc/nogithub
 # uses the name of the (link) script in UPEPR CASE as the TAG.
 # for example: ln -s _did_post.sh todo
-grep $@ $dirname/did.txt
+$dirname/to_flat_format_csv.py | grep $@
