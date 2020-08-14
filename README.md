@@ -385,6 +385,10 @@ Until I get a good dotfiles and clean up the chaos.
 * https://huey.readthedocs.io/en/latest/
 * https://python-rq.org/
 
+## decentralized finance whatever that means
+
+* https://aave.com/
+
 ## decentralized data, research, distributed fs, syncing, data versioning etc
 
 Current top of the list
