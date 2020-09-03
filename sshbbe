@@ -1,0 +1,3 @@
+#!/bin/sh -e
+ip=$(cat ~/syncthing_main/external_ip_Linux_bleepblop.txt)
+ssh cottrell@$ip -p 2142
