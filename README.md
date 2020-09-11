@@ -58,8 +58,6 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
   - [historical](#historical)
   - [browser](#browser)
   - [web](#web)
-  - [coursera](#coursera)
-  - [DB](#db)
     - [object stores](#object-stores)
   - [messaging](#messaging)
 - [data discovery and meta data etc](#data-discovery-and-meta-data-etc)
@@ -398,6 +396,8 @@ Current top of the list
 * ipfs ipdb ipdl
 * https://blog.textile.io/announcing-the-textile-protocol-hub/
 * datproject
+* https://streamr.network/
+* https://livepeer.org/
 * https://siasky.net/ skynet
 * orbitdb
 * bigchaindb
@@ -439,6 +439,10 @@ Other notes
 Deterministic DB
 
 * http://www.cs.umd.edu/~abadi/papers/abadi-cacm2018.pdf
+
+Betting, smart contracts etc
+
+* https://forecastfoundation.org/
 
 ### RPC/caching/dataframe Frameworks like dask and spark
 
@@ -899,12 +903,16 @@ Other links:
 
 # Alternatives to medium
 
+See [here](https://ethical.net/ethical/ethical-alternatives-to-medium/#:~:text=Other%20ethical%20alternatives%20to%20Medium,of%20a%20built%2Din%20community.)
+
 * https://joinplu.me/
 * https://writefreely.org/
 * https://www.squarespace.com/
 * https://wordpress.com/
 * https://ghost.org/
 * https://anchorcms.com/
+* https://www.sigle.io/
+* https://imprint.to/
 
 # Automated Theorem Proving
 
