@@ -1,4 +1,5 @@
 #!/bin/bash
-dirname=~/projects/notebooks/mybin/myhome/notes
-filename=did.txt
-vim +'normal G' $dirname/$filename
+dirname=~/Dropbox/misc/nogithub
+vim +'normal G' $dirname/did.txt
+cd $dirname
+git commit -m 'update' -a
