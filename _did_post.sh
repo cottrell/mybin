@@ -7,5 +7,6 @@ filename=did.txt
 name=$(basename $0 | tr '[:lower:]' '[:upper:]')
 vim +'normal Go'  +'r!date +\%a\ \%d\ \%b\ \%Y\ \%H:\%M:\%S\ \%z; echo - '$name',' +'normal G$A' -- $dirname/$filename
 cd $dirname
+git pull
 git add $dirname/$filename
 git commit -m 'update'
