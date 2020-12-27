@@ -1,4 +1,5 @@
 #!/bin/sh
+# TAG: keep running
 trap "kill -- -$$" EXIT
 echo "run_with_restart_on_error.sh $@ ... " >&2
 until eval "$@"; do 
