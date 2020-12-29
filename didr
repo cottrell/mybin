@@ -1,6 +1,14 @@
 #!/bin/bash
 dirname=~/projects/notebooks/mybin/myhome/notes
+checkfile=$(tempfile)
+cat $dirname/did.txt > $checkfile
 vim +'normal G' $dirname/did.txt
 cd $dirname
-git pull
-git commit -m 'update' -a
+if cmp -s $checkfile $dirname/did.txt; then
+	echo no change
+else
+	echo change detected between $checkfile and $dirname/did.txt
+	git pull
+	git commit -m 'didr update' -a
+	rm $checkfile
+fi
