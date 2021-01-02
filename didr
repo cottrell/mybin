@@ -1,6 +1,6 @@
 #!/bin/bash
 dirname=~/projects/notebooks/mybin/myhome/notes
-checkfile=$(tempfile)
+checkfile=$(mktemp)
 cat $dirname/did.txt > $checkfile
 vim +'normal G' $dirname/did.txt
 cd $dirname
