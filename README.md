@@ -406,14 +406,12 @@ Current top of the list
 * ipfs ipdb ipdl
 * https://blog.textile.io/announcing-the-textile-protocol-hub/
 * datproject
-* https://streamr.network/
 * https://livepeer.org/
 * https://siasky.net/ skynet
 * orbitdb
 * bigchaindb
 * https://osf.io/
 * http://axon.science/
-* https://oceanprotocol.com/
 
 CALM and logical monotonicity:
 
