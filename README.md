@@ -389,16 +389,6 @@ Until I get a good dotfiles and clean up the chaos.
 
 ## decentralized data, research, distributed fs, syncing, data versioning etc
 
-Interesting protocols
-
-* dat
-* ipfs
-* https://minaprotocol.com/
-* https://spacemesh.io/protocol/
-* https://streamr.network/
-* https://thegraph.com/
-* https://oceanprotocol.com/
-
 Current top of the list
 
 * https://dvid.io/
@@ -406,12 +396,14 @@ Current top of the list
 * ipfs ipdb ipdl
 * https://blog.textile.io/announcing-the-textile-protocol-hub/
 * datproject
+* https://streamr.network/
 * https://livepeer.org/
 * https://siasky.net/ skynet
 * orbitdb
 * bigchaindb
 * https://osf.io/
 * http://axon.science/
+* https://oceanprotocol.com/
 
 CALM and logical monotonicity:
 
