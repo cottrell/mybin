@@ -244,6 +244,7 @@ Other tools and articles
 ### Analytics/Viz:
 
 * https://github.com/tiangolo/fastapi (for backend)
+* dtale (see the charts, I did not see before http://alphatechadmin.pythonanywhere.com/dtale/charts/4?chart_type=3d_scatter&query=&x=date&z=Col0&agg=raw&cpg=false&y=%5B%22security_id%22%5D )
 * https://www.streamlit.io/
 * https://vega.github.io/
 * https://pair-code.github.io/facets/
@@ -270,7 +271,6 @@ Tire kicking only.
 * [this example](https://medium.com/neo4j/visualizing-graphs-in-3d-with-webgl-9adaaff6fe43) with 3d-force-render and neo4j looks interesting
 * [paragraphl](https://nblintao.github.io/ParaGraphL/)
 * [an example with three.js](https://github.com/davidpiegza/Graph-Visualization)
-* [remember umap](https://github.com/lmcinnes/umap) as a newer alternative to t-sne and probably a good place to start looking for any new viz tools
 
 
 ### Other
@@ -921,3 +921,13 @@ See [here](https://ethical.net/ethical/ethical-alternatives-to-medium/#:~:text=O
 # stack 2020
 
 * replace argh with typer?
+
+# voting
+
+* https://github.com/mdipierro/evote
+* https://github.com/CitizensFoundation/open-active-voting
+* https://github.com/microsoft/electionguard
+* https://github.com/cryptoballot/cryptoballot
+* https://github.blog/2020-10-22-vote-and-contribute-to-democracy-through-open-source/
+* http://votosocial.github.io/
+
