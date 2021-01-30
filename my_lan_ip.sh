@@ -5,5 +5,7 @@ if [ $(uname) = 'Darwin' ]; then
 else
     # hostname -I | cut -d' ' -f1
     # hostname -I | sed -e 's/\s\+$//' | rev | cut -d' ' -f1 | rev
-    hostname -I | xargs -n 1 | grep 192 | head -1
+    # hostname -I | xargs -n 1 | grep '^192\.|^10\.' head -1
+    # you should be able to use any
+    hostname -I | xargs -n 1
 fi
