@@ -131,6 +131,15 @@ Trading, securities etc
 * [securitization process](http://www.accountingnotes.net/financial-management/debt-securitization/debt-securitization-meaning-and-process-financial-management/10920)
 * [KG loans and shipping](https://www.tankershipping.com/news/view,german-tanker-operators-and-the-new-normal-of-mergers-and-acquisitions_53443.htm)
 
+mulitcharts info
+
+fx is free but other feeds are through your broker or other data provider. See below for supported lists.
+
+* https://www.multicharts.com/features/brokers/
+* https://www.multicharts.com/features/data-feeds/
+* https://www.multicharts.com/trading-software/index.php/Supported_security_types
+
+
 Regs for payment systems and retail bank-like entities (revolute):
 
 * [The Electronic Money Regulations 2011](http://www.legislation.gov.uk/uksi/2011/99/contents/made)
