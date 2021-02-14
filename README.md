@@ -396,6 +396,11 @@ Until I get a good dotfiles and clean up the chaos.
 
 * https://aave.com/
 
+## Interesting protocols
+
+* https://minaprotocol.com/
+* https://spacemesh.io/protocol/
+
 ## decentralized data, research, distributed fs, syncing, data versioning etc
 
 Current top of the list
