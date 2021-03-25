@@ -284,6 +284,7 @@ Tire kicking only.
 
 ### Other
 
+* https://github.com/ml-tooling/best-of-ml-python#data-visualization
 * [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
 * https://nvd3.org
 * https://github.com/keen/keen-dataviz.js
@@ -567,6 +568,7 @@ Interacting Particle Systems (and duality)
 
 ## ml, machine learning, rl, reinforcement learning
 
+* https://github.com/ml-tooling/best-of-ml-python
 * 30 years http://www-isl.stanford.edu/~widrow/papers/j199030years.pdf
 * https://www.libspn.org/
 * https://github.com/SPFlow/SPFlow
@@ -681,6 +683,18 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 ### CV exploratory approaches
 
 * https://www.kaggle.com/selfishgene/santander-customer-satisfaction/advanced-feature-exploration
+
+### evoluationary algorithms, hyperopt etc
+
+Remember for these you basically want a simple, fast "training+inference" algorithm. This might just by hyperband.
+
+* a very simple class sketch to copy for hyperband: https://github.com/thegaussians/hyperband-for-any-model
+* https://github.com/EpistasisLab/tpot
+* https://github.com/hyperopt/hyperopt
+* https://github.com/automl/auto-sklearn
+* https://github.com/AureumChaos/LEAP
+* https://github.com/DEAP/deap
+* https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html
 
 ### sum product
 
