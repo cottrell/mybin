@@ -267,6 +267,9 @@ Other tools and articles
 * superset
 * metabase
 
+Vega
+* https://github.com/vega/vega-tooltip
+
 ## Viz for larger datasets and graphs
 
 Tire kicking only.
@@ -803,7 +806,7 @@ Remember for these you basically want a simple, fast "training+inference" algori
 * https://www.coursera.org/learn/probability-intro
 * https://www.coursera.org/learn/crypto
 
-## DB
+## DB and analytics
 
 Time-series 2019
 
@@ -819,6 +822,14 @@ Time-series 2019
 * http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
 * https://www.arangodb.com
 * https://grakn.ai
+
+Misc 2021
+
+* https://github.com/vaexio/vaex (pandas)
+* https://euclidesdb.readthedocs.io/en/latest/ (ml featurestore)
+* https://hiddentao.github.io/squel/ (js query builder)
+* https://docs.temporal.io/docs/get-started/ (seems more orchestration)
+* https://github.com/adamerose/pandasgui
 
 ### object stores
 
