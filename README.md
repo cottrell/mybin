@@ -482,6 +482,12 @@ Search for bitemporal streaming or some such thing.
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
 
+## merkle db
+
+* https://github.com/hoytech/quadrable (https://ethresear.ch/t/quadrable-sparse-merkle-tree-database-in-c-and-solidity-git-like-command-line-tool/8082)
+* https://cljdoc.org/d/merkle-db/merkle-db/0.2.0/doc/readme (https://github.com/greglook/merkle-db)
+* https://docs.aws.amazon.com/qldb/latest/developerguide/verification.html
+
 ## workflow, dag stuff etc
 
 * https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems
