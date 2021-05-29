@@ -270,7 +270,16 @@ Other tools and articles
 Vega
 * https://github.com/vega/vega-tooltip
 
+Working pandas-like in javascript/front-end
+
+* danfo.js https://blog.tensorflow.org/2020/08/introducing-danfo-js-pandas-like-library-in-javascript.html
+* zebras https://observablehq.com/@cedrickchee/intro-to-zebras-python-pandas-for-javascript
+* arquero https://observablehq.com/@uwdata/arquero-and-apache-arrow
+* see this list: https://stackoverflow.com/questions/30610675/python-pandas-equivalent-in-javascript
+* see this discussion https://github.com/apache/arrow/issues/2189
+
 ## Viz for larger datasets and graphs
+
 
 Tire kicking only.
 * visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
