@@ -270,13 +270,22 @@ Other tools and articles
 Vega
 * https://github.com/vega/vega-tooltip
 
+* observable? Plot? https://observablehq.com/@observablehq/plot-marks some javascript notebook thing
+
 Working pandas-like in javascript/front-end
 
-* danfo.js https://blog.tensorflow.org/2020/08/introducing-danfo-js-pandas-like-library-in-javascript.html
+2021-05: If there is some fast serializing to danfo it looks good. Look for arrow danfo interactions. See arquero.
+
+* danfo.js https://blog.tensorflow.org/2020/08/introducing-danfo-js-pandas-like-library-in-javascripbbt.html
 * zebras https://observablehq.com/@cedrickchee/intro-to-zebras-python-pandas-for-javascript
 * arquero https://observablehq.com/@uwdata/arquero-and-apache-arrow
 * see this list: https://stackoverflow.com/questions/30610675/python-pandas-equivalent-in-javascript
 * see this discussion https://github.com/apache/arrow/issues/2189
+* some portal thing I do not understand https://github.com/datopian/portal.js (frictionless data related?)
+* See these arrow-js posts in observable. Maybe that is where to experiment.
+* http://www.data-forge-js.com/ might be good for js pipelines
+* dataframe-js https://gmousse.gitbooks.io/dataframe-js/content/#dataframe-js seems very df like. Nw
+
 
 ## Viz for larger datasets and graphs
 
@@ -490,6 +499,32 @@ Search for bitemporal streaming or some such thing.
 * https://www.marklogic.com/blog/bitemporal/
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
+
+
+## Immutable db etc
+
+* https://www.bigchaindb.com/
+* https://github.com/codenotary/immudb
+
+## stream processing etc
+
+* https://www.ververica.com/platform (from flink people)
+
+## merkle tree
+
+* https://github.com/mafintosh/merkle-tree-stream https://datprotocol.github.io/book/ch02-02-merkle-tree-stream.html
+* https://www.vldb.org/conf/2007/papers/research/p147-li.pdf whitepaper tumbling merkle
+* container application https://arxiv.org/pdf/2104.02158.pdf
+* go hobby project https://golangrepo.com/repo/cbergoon-merkletree-go-data-structures
+* list https://www.findbestopensource.com/tagged/merkle-tree
+* go https://pkg.go.dev/github.com/musalbas/smt?utm_source=godoc sparse merkle tree key value ...
+* python prototype by vitalin here: https://ethresear.ch/t/data-availability-proof-friendly-state-tree-transitions/1453/5
+* https://github.com/codenotary/immudb
+* https://www.theqrl.org/
+* https://datprotocol.github.io/how-dat-works/
+* https://pypi.org/project/merkle-tree-stream/ https://github.com/hyperpy/merkle-tree-stream
+
+
 
 ## merkle db
 
