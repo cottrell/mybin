@@ -13,12 +13,7 @@ def check_and_maybe_fix_files(directory):
     cmd = ['file'] + files
     output = subprocess.check_output(cmd)
     output = output.decode().split('\n')
-    filetype_to_extension_mapping = dict(
-        postscript='ps',
-        jpeg='jpg',
-        ascii='txt',
-        pjl='ps'
-    )
+    filetype_to_extension_mapping = dict(postscript='ps', jpeg='jpg', ascii='txt', pjl='ps')
     good_filetypes = list()
     ignored_filetypes = ['empty', 'hp']
     auto_accept_filetypes = list()
