@@ -32,7 +32,7 @@ def temp_then_atomic_move(filename, dir=False, tempdir=None, prefix=".tmp_"):
     else:
         temp = tempfile.mktemp(prefix=prefix, dir=tempdir)
     yield temp
-    logging.info("atomic {} -> {}".format(temp, filename))
+    logging.debug("atomic {} -> {}".format(temp, filename))
     os.rename(temp, filename)
 
 
@@ -57,13 +57,17 @@ def handle_line(x, depth, directory):
     """
     if isinstance(directory, str):
         directory = pathlib.Path(directory)
-    replace_txt = '.' * depth
+    # replace_txt = '.' * depth
     if isinstance(x, ast.ImportFrom):
         module = x.module
         if module is not None and module.startswith(directory.name):
-            module = replace_txt + module[len(directory.name):]
-            logging.info(f'\t{x.module} -> {module}')
+            logging.info(f'BRANCH Z {module}')
+            # module = replace_txt + module[len(directory.name):]
+            module = module[len(directory.name) + 1:]
+            orig = ast.unparse(x)
             x.module = module
+            x.level = depth + 1
+            logging.info(f'depth={depth}: {orig} -> {ast.unparse(x)}')
         return [x]
     elif isinstance(x, ast.Import):
         # .names is a list of aliases with .name and .asname
@@ -81,12 +85,20 @@ def handle_line(x, depth, directory):
                 else:
                     # import mod.this.that turns into from ..this import that
                     # which is module=None, level=2, alias(that)
-                    module, name = alias.name.rsplit('.', 1)
-                    new_module = module[len(directory.name):]
-                    new_module = None if new_module == '' else new_module
-                    level = depth + 1
-                    logging.info(f'\t{module} -> {new_module} (level={level})')
-                    import_from = ast.ImportFrom(new_module, [ast.alias(name, alias.asname)], level)
+                    if alias.name == directory.name:
+                        # example "import skfem" ... turn this into from ... import skfem
+                        # which will go *above* the directory level and will break for standalone packages
+                        logging.info('BRANCH A')
+                        import_from = ast.ImportFrom(None, [ast.alias(alias.name, alias.asname)], level=depth + 2)
+                    else:
+                        logging.info('BRANCH B')
+                        module, name = alias.name.rsplit('.', 1)
+                        new_module = module[len(directory.name) + 1:]
+                        new_module = None if new_module == '' else new_module
+                        level = depth + 1
+                        logging.debug(f'\t{module} -> {new_module} (level={level})')
+                        import_from = ast.ImportFrom(new_module, [ast.alias(name, alias.asname)], level)
+                    logging.info(f'depth={depth}: {ast.unparse(x)} -> {ast.unparse(import_from)}')
                     new_importfroms.append(import_from)
             if old_import_aliases_to_keep:
                 unchanged = [ast.Import(old_import_aliases_to_keep)]
@@ -95,23 +107,24 @@ def handle_line(x, depth, directory):
         return [x]
 
 
-def handle_file_inplace(filename, directory):
+def handle_file_inplace(filename, directory, dry_run=False):
     relname = filename.relative_to(directory)
     depth = len(relname.as_posix().split('/')) - 1
-    logging.info(f'filename={filename}, toplevel_module={directory.name}, depth={depth}')
+    logging.info(f'filename={filename}, relname={relname}, toplevel_module={directory.name}, depth={depth}')
     tree = ast.parse(open(filename).read())
     new_body = list()
     for i, x in enumerate(tree.body):
         lines = handle_line(x, depth, directory)
         new_body.extend(lines)
 
-    tree.body = new_body
-    code = ast.unparse(tree)
-    with temp_then_atomic_move(filename) as filename_out:
-        open(filename_out, 'w').write(code)
+    if not dry_run:
+        tree.body = new_body
+        code = ast.unparse(tree)
+        with temp_then_atomic_move(filename) as filename_out:
+            open(filename_out, 'w').write(code)
 
 
-def run(directory):
+def run(directory, dry_run=False, filenames=None):
     """Crawl all python files and parse the ast to change absolute imports into relative ones.
 
     There might be a way of doing this in one go with ast from the top level, not sure.
@@ -120,15 +133,21 @@ def run(directory):
     """
     directory = pathlib.Path(directory)
     base = pathlib.Path(directory)
-    filenames = base.glob('**/*.py')
-    filenames = list(filenames)
+    if not filenames:
+        filenames = base.glob('**/*.py')
+        filenames = list(filenames)
+    else:
+        filenames = [pathlib.Path(f) for f in filenames]
     for f in filenames:
-        handle_file_inplace(f, directory)
+        handle_file_inplace(f, directory, dry_run)
 
 
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Convert absolute to relative imports starting from some directory.')
     parser.add_argument('directory', default='.', type=str, help='Directory to scan')
+    parser.add_argument('files', nargs='*', help='files to scan')
+    parser.add_argument("--dry-run", type=bool, nargs='?', const=True, default=False, help="Dry run.")
     args = parser.parse_args()
-    run(args.directory)
+    # print(args.directory, args.dry_run, args.files)
+    run(args.directory, args.dry_run, filenames=args.files)
