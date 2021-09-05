@@ -3,18 +3,23 @@
 A simple script to find duplicate lines in files and report which entries unique to F1.
 Usage: compare_lists.py file1 file2
 """
-
+import os
 import sys
 
 
-def compare_lists(f1, f2):
+def compare_lists(filename_1, filename_2):
+    name_1 = os.path.basename(filename_1)
+    name_2 = os.path.basename(filename_2)
+    f1 = open(filename_1, "r").readlines()
+    f2 = open(filename_2, "r").readlines()
+
     intersection = list(set(f1).intersection(set(f2)))
     f1_unique = list(set(f1).difference(set(f2)))
     f2_unique = list(set(f2).difference(set(f1)))
 
-    f_int = open("comp.inters", "w")
-    f_1 = open("comp.1unique", "w")
-    f_2 = open("comp.2unique", "w")
+    f_int = open(f"comp_{name_1}_{name_2}_inters.txt", "w")
+    f_1 = open(f"comp_{name_1}_unique.txt", "w")
+    f_2 = open(f"comp_{name_2}_unique.txt", "w")
 
     for l in intersection:
         f_int.write(str(l))
@@ -37,6 +42,6 @@ def compare_lists(f1, f2):
 
 
 if __name__ == '__main__':
-    f1 = open(sys.argv[1], "r").readlines()
-    f2 = open(sys.argv[2], "r").readlines()
+    f1 = sys.argv[1]
+    f2 = sys.argv[2]
     compare_lists(f1, f2)

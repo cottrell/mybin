@@ -44,7 +44,7 @@ def times(x):
 
 
 def percentage(p):
-    return "%.02f%%" % (p*100.0,)
+    return "%.02f%%" % (p * 100.0,)
 
 
 def add(a, b):
@@ -67,7 +67,7 @@ tol = 2 ** -23
 
 def ratio(numerator, denominator):
     try:
-        ratio = float(numerator)/float(denominator)
+        ratio = float(numerator) / float(denominator)
     except ZeroDivisionError:
         # 0/0 is undefined, but 1.0 yields more useful results
         return 1.0
@@ -497,7 +497,7 @@ class Profile(Object):
                 self._call_ratios_cycle(cycle, callee, ranks, call_ratios, set())
                 partial = self._integrate_cycle_function(cycle, callee, call_ratio, partials, ranks, call_ratios, outevent, inevent)
                 assert partial == max(partials.values())
-                assert not total or abs(1.0 - partial/(call_ratio*total)) <= 0.001
+                assert not total or abs(1.0 - partial / (call_ratio * total)) <= 0.001
 
         return cycle[outevent]
 
@@ -523,18 +523,18 @@ class Profile(Object):
 
     def _integrate_cycle_function(self, cycle, function, partial_ratio, partials, ranks, call_ratios, outevent, inevent):
         if function not in partials:
-            partial = partial_ratio*function[inevent]
+            partial = partial_ratio * function[inevent]
             for call in function.calls.values():
                 if call.callee_id != function.id:
                     callee = self.functions[call.callee_id]
                     if callee.cycle is not cycle:
                         assert outevent in call
-                        partial += partial_ratio*call[outevent]
+                        partial += partial_ratio * call[outevent]
                     else:
                         if ranks[callee] > ranks[function]:
                             callee_partial = self._integrate_cycle_function(cycle, callee, partial_ratio, partials, ranks, call_ratios, outevent, inevent)
                             call_ratio = ratio(call.ratio, call_ratios[callee])
-                            call_partial = call_ratio*callee_partial
+                            call_partial = call_ratio * callee_partial
                             try:
                                 call[outevent] += call_partial
                             except UndefinedEvent:
@@ -711,7 +711,6 @@ XML_ELEMENT_START, XML_ELEMENT_END, XML_CHARACTER_DATA, XML_EOF = list(range(4))
 
 
 class XmlToken:
-
     def __init__(self, type, name_or_data, attrs=None, line=None, column=None):
         assert type in (XML_ELEMENT_START, XML_ELEMENT_END, XML_CHARACTER_DATA, XML_EOF)
         self.type = type
@@ -776,7 +775,7 @@ class XmlTokenizer:
             self.character_data = ''
 
     def __next__(self):
-        size = 16*1024
+        size = 16 * 1024
         while self.index >= len(self.tokens) and not self.final:
             self.tokens = []
             self.index = 0
@@ -803,7 +802,6 @@ class XmlTokenizer:
 
 
 class XmlTokenMismatch(Exception):
-
     def __init__(self, expected, found):
         self.expected = expected
         self.found = found
@@ -897,14 +895,15 @@ class GprofParser(Parser):
                 value = int(value)
             elif self._float_re.match(value):
                 value = float(value)
-            attrs[name] = (value)
+            attrs[name] = value
         return Struct(attrs)
 
     _cg_header_re = re.compile(
         # original gprof header
-        r'^\s+called/total\s+parents\s*$|' +
-        r'^index\s+%time\s+self\s+descendents\s+called\+self\s+name\s+index\s*$|' +
-        r'^\s+called/total\s+children\s*$|' +
+        r'^\s+called/total\s+parents\s*$|'
+        + r'^index\s+%time\s+self\s+descendents\s+called\+self\s+name\s+index\s*$|'
+        + r'^\s+called/total\s+children\s*$|'
+        +
         # GNU gprof header
         r'^index\s+%\s+time\s+self\s+children\s+called\s+name\s*$'
     )
@@ -916,46 +915,15 @@ class GprofParser(Parser):
         r'^.*\((\d+)\)$'
     )
 
-    _cg_primary_re = re.compile(
-        r'^\[(?P<index>\d+)\]?' +
-        r'\s+(?P<percentage_time>\d+\.\d+)' +
-        r'\s+(?P<self>\d+\.\d+)' +
-        r'\s+(?P<descendants>\d+\.\d+)' +
-        r'\s+(?:(?P<called>\d+)(?:\+(?P<called_self>\d+))?)?' +
-        r'\s+(?P<name>\S.*?)' +
-        r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' +
-        r'\s\[(\d+)\]$'
-    )
+    _cg_primary_re = re.compile(r'^\[(?P<index>\d+)\]?' + r'\s+(?P<percentage_time>\d+\.\d+)' + r'\s+(?P<self>\d+\.\d+)' + r'\s+(?P<descendants>\d+\.\d+)' + r'\s+(?:(?P<called>\d+)(?:\+(?P<called_self>\d+))?)?' + r'\s+(?P<name>\S.*?)' + r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' + r'\s\[(\d+)\]$')
 
-    _cg_parent_re = re.compile(
-        r'^\s+(?P<self>\d+\.\d+)?' +
-        r'\s+(?P<descendants>\d+\.\d+)?' +
-        r'\s+(?P<called>\d+)(?:/(?P<called_total>\d+))?' +
-        r'\s+(?P<name>\S.*?)' +
-        r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' +
-        r'\s\[(?P<index>\d+)\]$'
-    )
+    _cg_parent_re = re.compile(r'^\s+(?P<self>\d+\.\d+)?' + r'\s+(?P<descendants>\d+\.\d+)?' + r'\s+(?P<called>\d+)(?:/(?P<called_total>\d+))?' + r'\s+(?P<name>\S.*?)' + r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' + r'\s\[(?P<index>\d+)\]$')
 
     _cg_child_re = _cg_parent_re
 
-    _cg_cycle_header_re = re.compile(
-        r'^\[(?P<index>\d+)\]?' +
-        r'\s+(?P<percentage_time>\d+\.\d+)' +
-        r'\s+(?P<self>\d+\.\d+)' +
-        r'\s+(?P<descendants>\d+\.\d+)' +
-        r'\s+(?:(?P<called>\d+)(?:\+(?P<called_self>\d+))?)?' +
-        r'\s+<cycle\s(?P<cycle>\d+)\sas\sa\swhole>' +
-        r'\s\[(\d+)\]$'
-    )
+    _cg_cycle_header_re = re.compile(r'^\[(?P<index>\d+)\]?' + r'\s+(?P<percentage_time>\d+\.\d+)' + r'\s+(?P<self>\d+\.\d+)' + r'\s+(?P<descendants>\d+\.\d+)' + r'\s+(?:(?P<called>\d+)(?:\+(?P<called_self>\d+))?)?' + r'\s+<cycle\s(?P<cycle>\d+)\sas\sa\swhole>' + r'\s\[(\d+)\]$')
 
-    _cg_cycle_member_re = re.compile(
-        r'^\s+(?P<self>\d+\.\d+)?' +
-        r'\s+(?P<descendants>\d+\.\d+)?' +
-        r'\s+(?P<called>\d+)(?:\+(?P<called_self>\d+))?' +
-        r'\s+(?P<name>\S.*?)' +
-        r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' +
-        r'\s\[(?P<index>\d+)\]$'
-    )
+    _cg_cycle_member_re = re.compile(r'^\s+(?P<self>\d+\.\d+)?' + r'\s+(?P<descendants>\d+\.\d+)?' + r'\s+(?P<called>\d+)(?:\+(?P<called_self>\d+))?' + r'\s+(?P<name>\S.*?)' + r'(?:\s+<cycle\s(?P<cycle>\d+)>)?' + r'\s\[(?P<index>\d+)\]$')
 
     _cg_sep_re = re.compile(r'^--+$')
 
@@ -1182,14 +1150,7 @@ class CallgrindParser(LineParser):
         return True
 
     def parse_header_line(self):
-        return \
-            self.parse_empty() or \
-            self.parse_comment() or \
-            self.parse_part_detail() or \
-            self.parse_description() or \
-            self.parse_event_specification() or \
-            self.parse_cost_line_def() or \
-            self.parse_cost_summary()
+        return self.parse_empty() or self.parse_comment() or self.parse_part_detail() or self.parse_description() or self.parse_event_specification() or self.parse_cost_line_def() or self.parse_cost_summary()
 
     _detail_keys = set(('cmd', 'pid', 'thread', 'part'))
 
@@ -1217,7 +1178,7 @@ class CallgrindParser(LineParser):
         if key == 'positions':
             self.num_positions = len(items)
             self.cost_positions = items
-            self.last_positions = [0]*self.num_positions
+            self.last_positions = [0] * self.num_positions
         return True
 
     def parse_cost_summary(self):
@@ -1227,18 +1188,10 @@ class CallgrindParser(LineParser):
         return True
 
     def parse_body_line(self):
-        return \
-            self.parse_empty() or \
-            self.parse_comment() or \
-            self.parse_cost_line() or \
-            self.parse_position_spec() or \
-            self.parse_association_spec()
+        return self.parse_empty() or self.parse_comment() or self.parse_cost_line() or self.parse_position_spec() or self.parse_association_spec()
 
     __subpos_re = r'(0x[0-9a-fA-F]+|\d+|\+\d+|-\d+|\*)'
-    _cost_re = re.compile(r'^' +
-                          __subpos_re + r'( +' + __subpos_re + r')*' +
-                          r'( +\d+)*' +
-                          '$')
+    _cost_re = re.compile(r'^' + __subpos_re + r'( +' + __subpos_re + r')*' + r'( +\d+)*' + '$')
 
     def parse_cost_line(self, calls=None):
         line = self.lookahead().rstrip()
@@ -1260,9 +1213,9 @@ class CallgrindParser(LineParser):
         values = line.split()
         assert len(values) <= self.num_positions + self.num_events
 
-        positions = values[0: self.num_positions]
-        events = values[self.num_positions:]
-        events += ['0']*(self.num_events - len(events))
+        positions = values[0 : self.num_positions]
+        events = values[self.num_positions :]
+        events += ['0'] * (self.num_events - len(events))
 
         for i in range(self.num_positions):
             position = positions[i]
@@ -1416,7 +1369,7 @@ class CallgrindParser(LineParser):
 
     def make_function(self, module, filename, name):
         # FIXME: module and filename are not being tracked reliably
-        #id = '|'.join((module, filename, name))
+        # id = '|'.join((module, filename, name))
         id = name
         try:
             function = self.profile.functions[id]
@@ -1702,7 +1655,7 @@ class OprofileParser(LineParser):
 
     def match_separator(self):
         line = self.lookahead()
-        return line == '-'*len(line)
+        return line == '-' * len(line)
 
     def match_primary(self):
         line = self.lookahead()
@@ -1799,7 +1752,7 @@ class HProfParser(LineParser):
             l = self.consume()
             match = self.trace_re.search(l)
             if not match:
-                #sys.stderr.write('Invalid line: %s\n' % l)
+                # sys.stderr.write('Invalid line: %s\n' % l)
                 break
             else:
                 function_name, file, line = match.groups()
@@ -1818,7 +1771,6 @@ class HProfParser(LineParser):
 
 
 class SysprofParser(XmlParser):
-
     def __init__(self, stream):
         XmlParser.__init__(self, stream)
 
@@ -2030,8 +1982,7 @@ class SharkParser(LineParser):
 
 
 class XPerfParser(Parser):
-    """Parser for CSVs generted by XPerf, from Microsoft Windows Performance Tools.
-    """
+    """Parser for CSVs generted by XPerf, from Microsoft Windows Performance Tools."""
 
     def __init__(self, stream):
         Parser.__init__(self)
@@ -2042,15 +1993,8 @@ class XPerfParser(Parser):
 
     def parse(self):
         import csv
-        reader = csv.reader(
-            self.stream,
-            delimiter=',',
-            quotechar=None,
-            escapechar=None,
-            doublequote=False,
-            skipinitialspace=True,
-            lineterminator='\r\n',
-            quoting=csv.QUOTE_NONE)
+
+        reader = csv.reader(self.stream, delimiter=',', quotechar=None, escapechar=None, doublequote=False, skipinitialspace=True, lineterminator='\r\n', quoting=csv.QUOTE_NONE)
         it = iter(reader)
         row = next(reader)
         self.parse_header(row)
@@ -2153,13 +2097,7 @@ class SleepyParser(Parser):
 
         self.profile = Profile()
 
-    _symbol_re = re.compile(
-        r'^(?P<id>\w+)' +
-        r'\s+"(?P<module>[^"]*)"' +
-        r'\s+"(?P<procname>[^"]*)"' +
-        r'\s+"(?P<sourcefile>[^"]*)"' +
-        r'\s+(?P<sourceline>\d+)$'
-    )
+    _symbol_re = re.compile(r'^(?P<id>\w+)' + r'\s+"(?P<module>[^"]*)"' + r'\s+"(?P<procname>[^"]*)"' + r'\s+"(?P<sourcefile>[^"]*)"' + r'\s+(?P<sourceline>\d+)$')
 
     def parse_symbols(self):
         if self.version_0_7:
@@ -2232,7 +2170,6 @@ class SleepyParser(Parser):
 
 
 class AQtimeTable:
-
     def __init__(self, name, fields):
         self.name = name
 
@@ -2259,7 +2196,6 @@ class AQtimeTable:
 
 
 class AQtimeParser(XmlParser):
-
     def __init__(self, stream):
         XmlParser.__init__(self, stream)
         self.tables = {}
@@ -2316,7 +2252,7 @@ class AQtimeParser(XmlParser):
         return table
 
     def parse_row(self, field_types):
-        row = [None]*len(field_types)
+        row = [None] * len(field_types)
         children = []
         self.element_start('ROW')
         while self.token.type == XML_ELEMENT_START:
@@ -2378,16 +2314,16 @@ class AQtimeParser(XmlParser):
         function = Function(self.build_id(fields), self.build_name(fields))
         function[TIME] = fields['Time']
         function[TOTAL_TIME] = fields['Time with Children']
-        #function[TIME_RATIO] = fields['% Time']/100.0
-        #function[TOTAL_TIME_RATIO] = fields['% with Children']/100.0
+        # function[TIME_RATIO] = fields['% Time']/100.0
+        # function[TOTAL_TIME_RATIO] = fields['% with Children']/100.0
         return function
 
     def build_call(self, fields):
         call = Call(self.build_id(fields))
         call[TIME] = fields['Time']
         call[TOTAL_TIME] = fields['Time with Children']
-        #call[TIME_RATIO] = fields['% Time']/100.0
-        #call[TOTAL_TIME_RATIO] = fields['% with Children']/100.0
+        # call[TIME_RATIO] = fields['% Time']/100.0
+        # call[TOTAL_TIME_RATIO] = fields['% with Children']/100.0
         return call
 
     def build_id(self, fields):
@@ -2403,10 +2339,12 @@ class PstatsParser:
 
     def __init__(self, *filename):
         import pstats
+
         try:
             self.stats = pstats.Stats(*filename)
         except ValueError:
             import hotshot.stats
+
             self.stats = hotshot.stats.load(filename[0])
         self.profile = Profile()
         self.function_ids = {}
@@ -2445,7 +2383,7 @@ class PstatsParser:
                 call = Call(callee.id)
                 if isinstance(value, tuple):
                     for i in range(0, len(value), 4):
-                        nc, cc, tt, ct = value[i:i+4]
+                        nc, cc, tt, ct = value[i : i + 4]
                         if CALLS in call:
                             call[CALLS] += cc
                         else:
@@ -2458,7 +2396,7 @@ class PstatsParser:
 
                 else:
                     call[CALLS] = value
-                    call[TOTAL_TIME] = ratio(value, nc)*ct
+                    call[TOTAL_TIME] = ratio(value, nc) * ct
 
                 caller.add_call(call)
         # self.stats.print_stats()
@@ -2473,18 +2411,7 @@ class PstatsParser:
 
 
 class Theme:
-
-    def __init__(self,
-                 bgcolor=(0.0, 0.0, 1.0),
-                 mincolor=(0.0, 0.0, 0.0),
-                 maxcolor=(0.0, 0.0, 1.0),
-                 fontname="Arial",
-                 minfontsize=10.0,
-                 maxfontsize=10.0,
-                 minpenwidth=0.5,
-                 maxpenwidth=4.0,
-                 gamma=2.2,
-                 skew=1.0):
+    def __init__(self, bgcolor=(0.0, 0.0, 1.0), mincolor=(0.0, 0.0, 0.0), maxcolor=(0.0, 0.0, 1.0), fontname="Arial", minfontsize=10.0, maxfontsize=10.0, minpenwidth=0.5, maxpenwidth=4.0, gamma=2.2, skew=1.0):
         self.bgcolor = bgcolor
         self.mincolor = mincolor
         self.maxcolor = maxcolor
@@ -2521,13 +2448,13 @@ class Theme:
         return self.fontsize(weight)
 
     def edge_penwidth(self, weight):
-        return max(weight*self.maxpenwidth, self.minpenwidth)
+        return max(weight * self.maxpenwidth, self.minpenwidth)
 
     def edge_arrowsize(self, weight):
         return 0.5 * math.sqrt(self.edge_penwidth(weight))
 
     def fontsize(self, weight):
-        return max(weight**2 * self.maxfontsize, self.minfontsize)
+        return max(weight ** 2 * self.maxfontsize, self.minfontsize)
 
     def color(self, weight):
         weight = min(max(weight, 0.0), 1.0)
@@ -2538,14 +2465,14 @@ class Theme:
         if self.skew < 0:
             raise ValueError("Skew must be greater than 0")
         elif self.skew == 1.0:
-            h = hmin + weight*(hmax - hmin)
-            s = smin + weight*(smax - smin)
-            l = lmin + weight*(lmax - lmin)
+            h = hmin + weight * (hmax - hmin)
+            s = smin + weight * (smax - smin)
+            l = lmin + weight * (lmax - lmin)
         else:
             base = self.skew
-            h = hmin + ((hmax-hmin)*(-1.0 + (base ** weight)) / (base - 1.0))
-            s = smin + ((smax-smin)*(-1.0 + (base ** weight)) / (base - 1.0))
-            l = lmin + ((lmax-lmin)*(-1.0 + (base ** weight)) / (base - 1.0))
+            h = hmin + ((hmax - hmin) * (-1.0 + (base ** weight)) / (base - 1.0))
+            s = smin + ((smax - smin) * (-1.0 + (base ** weight)) / (base - 1.0))
+            l = lmin + ((lmax - lmin) * (-1.0 + (base ** weight)) / (base - 1.0))
 
         return self.hsl_to_rgb(h, s, l)
 
@@ -2561,13 +2488,13 @@ class Theme:
         l = min(max(l, 0.0), 1.0)
 
         if l <= 0.5:
-            m2 = l*(s + 1.0)
+            m2 = l * (s + 1.0)
         else:
-            m2 = l + s - l*s
-        m1 = l*2.0 - m2
-        r = self._hue_to_rgb(m1, m2, h + 1.0/3.0)
+            m2 = l + s - l * s
+        m1 = l * 2.0 - m2
+        r = self._hue_to_rgb(m1, m2, h + 1.0 / 3.0)
         g = self._hue_to_rgb(m1, m2, h)
-        b = self._hue_to_rgb(m1, m2, h - 1.0/3.0)
+        b = self._hue_to_rgb(m1, m2, h - 1.0 / 3.0)
 
         # Apply gamma correction
         r **= self.gamma
@@ -2581,21 +2508,17 @@ class Theme:
             h += 1.0
         elif h > 1.0:
             h -= 1.0
-        if h*6 < 1.0:
-            return m1 + (m2 - m1)*h*6.0
-        elif h*2 < 1.0:
+        if h * 6 < 1.0:
+            return m1 + (m2 - m1) * h * 6.0
+        elif h * 2 < 1.0:
             return m2
-        elif h*3 < 2.0:
-            return m1 + (m2 - m1)*(2.0/3.0 - h)*6.0
+        elif h * 3 < 2.0:
+            return m1 + (m2 - m1) * (2.0 / 3.0 - h) * 6.0
         else:
             return m1
 
 
-TEMPERATURE_COLORMAP = Theme(
-    mincolor=(2.0/3.0, 0.80, 0.25),  # dark blue
-    maxcolor=(0.0, 1.0, 0.5),  # satured red
-    gamma=1.0
-)
+TEMPERATURE_COLORMAP = Theme(mincolor=(2.0 / 3.0, 0.80, 0.25), maxcolor=(0.0, 1.0, 0.5), gamma=1.0)  # dark blue  # satured red
 
 PINK_COLORMAP = Theme(
     mincolor=(0.0, 1.0, 0.90),  # pink
@@ -2635,9 +2558,9 @@ class DotWriter:
         """Split the function name on multiple lines."""
 
         if len(name) > 32:
-            ratio = 2.0/3.0
-            height = max(int(len(name)/(1.0 - ratio) + 0.5), 1)
-            width = max(len(name)/height, 32)
+            ratio = 2.0 / 3.0
+            height = max(int(len(name) / (1.0 - ratio) + 0.5), 1)
+            width = max(len(name) / height, 32)
             # TODO: break lines in symbols
             name = textwrap.fill(name, width, break_long_words=False)
 
@@ -2685,12 +2608,13 @@ class DotWriter:
                 weight = 0.0
 
             label = '\n'.join(labels)
-            self.node(function.id,
-                      label=label,
-                      color=self.color(theme.node_bgcolor(weight)),
-                      fontcolor=self.color(theme.node_fgcolor(weight)),
-                      fontsize="%.2f" % theme.node_fontsize(weight),
-                      )
+            self.node(
+                function.id,
+                label=label,
+                color=self.color(theme.node_bgcolor(weight)),
+                fontcolor=self.color(theme.node_fgcolor(weight)),
+                fontsize="%.2f" % theme.node_fontsize(weight),
+            )
 
             for call in function.calls.values():
                 callee = profile.functions[call.callee_id]
@@ -2710,15 +2634,17 @@ class DotWriter:
 
                 label = '\n'.join(labels)
 
-                self.edge(function.id, call.callee_id,
-                          label=label,
-                          color=self.color(theme.edge_color(weight)),
-                          fontcolor=self.color(theme.edge_color(weight)),
-                          fontsize="%.2f" % theme.edge_fontsize(weight),
-                          penwidth="%.2f" % theme.edge_penwidth(weight),
-                          labeldistance="%.2f" % theme.edge_penwidth(weight),
-                          arrowsize="%.2f" % theme.edge_arrowsize(weight),
-                          )
+                self.edge(
+                    function.id,
+                    call.callee_id,
+                    label=label,
+                    color=self.color(theme.edge_color(weight)),
+                    fontcolor=self.color(theme.edge_color(weight)),
+                    fontsize="%.2f" % theme.edge_fontsize(weight),
+                    penwidth="%.2f" % theme.edge_penwidth(weight),
+                    labeldistance="%.2f" % theme.edge_penwidth(weight),
+                    arrowsize="%.2f" % theme.edge_arrowsize(weight),
+                )
 
         self.end_graph()
 
@@ -2784,7 +2710,7 @@ class DotWriter:
                 return 0
             if f >= 1.0:
                 return 255
-            return int(255.0*f + 0.5)
+            return int(255.0 * f + 0.5)
 
         return "#" + "".join(["%02x" % float2int(c) for c in (r, g, b)])
 
@@ -2813,57 +2739,27 @@ class Main:
     def main(self):
         """Main program."""
 
-        parser = optparse.OptionParser(
-            usage="\n\t%prog [options] [file] ...",
-            version="%%prog %s" % __version__)
+        parser = optparse.OptionParser(usage="\n\t%prog [options] [file] ...", version="%%prog %s" % __version__)
+        parser.add_option('-o', '--output', metavar='FILE', type="string", dest="output", help="output filename [stdout]")
+        parser.add_option('-n', '--node-thres', metavar='PERCENTAGE', type="float", dest="node_thres", default=0.5, help="eliminate nodes below this threshold [default: %default]")
+        parser.add_option('-e', '--edge-thres', metavar='PERCENTAGE', type="float", dest="edge_thres", default=0.1, help="eliminate edges below this threshold [default: %default]")
         parser.add_option(
-            '-o', '--output', metavar='FILE',
-            type="string", dest="output",
-            help="output filename [stdout]")
-        parser.add_option(
-            '-n', '--node-thres', metavar='PERCENTAGE',
-            type="float", dest="node_thres", default=0.5,
-            help="eliminate nodes below this threshold [default: %default]")
-        parser.add_option(
-            '-e', '--edge-thres', metavar='PERCENTAGE',
-            type="float", dest="edge_thres", default=0.1,
-            help="eliminate edges below this threshold [default: %default]")
-        parser.add_option(
-            '-f', '--format',
-            type="choice", choices=('prof', 'callgrind', 'perf', 'oprofile', 'hprof', 'sysprof', 'pstats', 'shark', 'sleepy', 'aqtime', 'xperf'),
-            dest="format", default="prof",
-            help="profile format: prof, callgrind, oprofile, hprof, sysprof, shark, sleepy, aqtime, pstats, or xperf [default: %default]")
-        parser.add_option(
-            '-c', '--colormap',
-            type="choice", choices=('color', 'pink', 'gray', 'bw'),
-            dest="theme", default="color",
-            help="color map: color, pink, gray, or bw [default: %default]")
-        parser.add_option(
-            '-s', '--strip',
-            action="store_true",
-            dest="strip", default=False,
-            help="strip function parameters, template parameters, and const modifiers from demangled C++ function names")
-        parser.add_option(
-            '-w', '--wrap',
-            action="store_true",
-            dest="wrap", default=False,
-            help="wrap function names")
+            '-f',
+            '--format',
+            type="choice",
+            choices=('prof', 'callgrind', 'perf', 'oprofile', 'hprof', 'sysprof', 'pstats', 'shark', 'sleepy', 'aqtime', 'xperf'),
+            dest="format",
+            default="prof",
+            help="profile format: prof, callgrind, oprofile, hprof, sysprof, shark, sleepy, aqtime, pstats, or xperf [default: %default]",
+        )
+        parser.add_option('-c', '--colormap', type="choice", choices=('color', 'pink', 'gray', 'bw'), dest="theme", default="color", help="color map: color, pink, gray, or bw [default: %default]")
+        parser.add_option('-s', '--strip', action="store_true", dest="strip", default=False, help="strip function parameters, template parameters, and const modifiers from demangled C++ function names")
+        parser.add_option('-w', '--wrap', action="store_true", dest="wrap", default=False, help="wrap function names")
         # add option to create subtree or show paths
-        parser.add_option(
-            '-z', '--root',
-            type="string",
-            dest="root", default="",
-            help="prun call graph to show only decedents of specified root function")
-        parser.add_option(
-            '-l', '--leaf',
-            type="string",
-            dest="leaf", default="",
-            help="prun call graph to show only ancestors of specified leaf function")
+        parser.add_option('-z', '--root', type="string", dest="root", default="", help="prun call graph to show only decedents of specified root function")
+        parser.add_option('-l', '--leaf', type="string", dest="leaf", default="", help="prun call graph to show only ancestors of specified leaf function")
         # add a new option to control skew of the colorization curve
-        parser.add_option(
-            '--skew',
-            type="float", dest="theme_skew", default=1.0,
-            help="skew the colorization curve.  Values < 1.0 give more variety to lower percentages.  Value > 1.0 give less variety to lower percentages")
+        parser.add_option('--skew', type="float", dest="theme_skew", default=1.0, help="skew the colorization curve.  Values < 1.0 give more variety to lower percentages.  Value > 1.0 give less variety to lower percentages")
         (self.options, self.args) = parser.parse_args(sys.argv[1:])
 
         if len(self.args) > 1 and self.options.format != 'pstats':
@@ -2878,17 +2774,7 @@ class Main:
         if self.options.theme_skew:
             self.theme.skew = self.options.theme_skew
 
-        stdinFormats = {
-            "prof": GprofParser,
-            "callgrind": CallgrindParser,
-            "perf": PerfParser,
-            "oprofile": OprofileParser,
-            "sysprof": SysprofParser,
-            "hprof": HProfParser,
-            "xperf": XPerfParser,
-            "shark": SharkParser,
-            "aqtime": AQtimeParser
-        }
+        stdinFormats = {"prof": GprofParser, "callgrind": CallgrindParser, "perf": PerfParser, "oprofile": OprofileParser, "sysprof": SysprofParser, "hprof": HProfParser, "xperf": XPerfParser, "shark": SharkParser, "aqtime": AQtimeParser}
 
         if self.options.format in stdinFormats:
             if not self.args:
@@ -2922,7 +2808,7 @@ class Main:
         dot.wrap = self.options.wrap
 
         profile = self.profile
-        profile.prune(self.options.node_thres/100.0, self.options.edge_thres/100.0)
+        profile.prune(self.options.node_thres / 100.0, self.options.edge_thres / 100.0)
 
         if self.options.root:
             rootId = profile.getFunctionId(self.options.root)
