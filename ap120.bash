@@ -1,6 +1,6 @@
 #!/bin/bash -e
 n=120
-isort $*
+isort --line-length=$n --wrap-length=$n $*
 black --skip-string-normalization -l $n $*
 # autopep8 --max-line-length=$n -i $*
 # do not write with autoflake just warn
