@@ -1,6 +1,6 @@
 [submodule "TOC-Generator"]
 	path = TOC-Generator
-	url = https://github.com/cottrell/TOC-Generator.git
+	url = git@github.com:cottrell/TOC-Generator.git
 [submodule "myhome"]
 	path = myhome
-	url = https://github.com/cottrell/myhome.git
+	url = git@github.com:cottrell/myhome.git
