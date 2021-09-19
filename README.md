@@ -1022,10 +1022,13 @@ See [here](https://ethical.net/ethical/ethical-alternatives-to-medium/#:~:text=O
 
 # fast distance matrix calculations
 
-* https://stanczakdominik.github.io/posts/distance-matrix-numba/
 * https://numba.discourse.group/t/fastest-numba-code-for-computing-euclideandistance-between-a-vector-and-every-row-of-a-matrix/190
+* https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html
+* https://github.com/talboger/fastdist/blob/master/fastdist/fastdist.py
+
+Also see:
+* https://stanczakdominik.github.io/posts/distance-matrix-numba/
 * https://people.duke.edu/~ccc14/sta-663/Optimization_Bakeoff.html
 * https://www.kaggle.com/cpmpml/ultra-fast-distance-matrix-computation
 * https://stackoverflow.com/questions/60015409/speeding-up-numba-distance-calculation
-* https://pypi.org/project/fastdist/
 
