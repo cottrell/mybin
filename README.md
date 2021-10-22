@@ -16,18 +16,22 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [Top candidates for generic analytics and viz](#top-candidates-for-generic-analytics-and-viz)
         * [Research:](#research)
         * [Analytics/Viz:](#analyticsviz)
-    * [Viz for larger datasets and graphs](#viz-for-larger-datasets-and-graphs)
+            * [Other lists](#other-lists)
+            * [js dataframes](#js-dataframes)
+        * [Viz for larger datasets and graphs](#viz-for-larger-datasets-and-graphs)
         * [Other](#other)
         * [Data exploration](#data-exploration)
-    * [actual data & viz](#actual-data--viz)
-    * [TODO](#todo)
-    * [tech env notes](#tech-env-notes)
+    * [Actual data & viz](#actual-data--viz)
+        * [Markets](#markets)
+        * [Non-Markets](#non-markets)
+    * [Tech env](#tech-env)
     * [task queues](#task-queues)
     * [decentralized finance whatever that means](#decentralized-finance-whatever-that-means)
     * [Interesting protocols](#interesting-protocols)
     * [decentralized data, research, distributed fs, syncing, data versioning etc](#decentralized-data-research-distributed-fs-syncing-data-versioning-etc)
         * [RPC/caching/dataframe Frameworks like dask and spark](#rpccachingdataframe-frameworks-like-dask-and-spark)
     * [bitemporal stuff](#bitemporal-stuff)
+    * [Time Series DB analytics etc](#time-series-db-analytics-etc)
     * [Immutable db etc](#immutable-db-etc)
     * [stream processing etc](#stream-processing-etc)
     * [merkle tree](#merkle-tree)
@@ -50,6 +54,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
         * [mixture density network links](#mixture-density-network-links)
         * [lstm/rnn examples](#lstmrnn-examples)
         * [hyper param opt](#hyper-param-opt)
+            * [other lists](#other-lists-1)
         * [ml/rl environments](#mlrl-environments)
         * [GP](#gp)
         * [CV exploratory approaches](#cv-exploratory-approaches)
@@ -72,7 +77,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [semantic web and things I tend to ignore](#semantic-web-and-things-i-tend-to-ignore)
     * [articles and data](#articles-and-data)
     * [language data (dictionaries etc)](#language-data-dictionaries-etc)
-    * [todo](#todo-1)
+    * [todo](#todo)
     * [GPG etc](#gpg-etc)
     * [drone](#drone)
     * [Concurrency](#concurrency)
@@ -137,6 +142,17 @@ Stochastic, math fin etc
 * http://www.eco.uc3m.es/~mkredler/ContTime/5ExitTimes.pdf
 * https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr677.pdf
 * realized vol options etc https://pdfs.semanticscholar.org/c092/c65551a77339c952becf8ccc93a13c98ece0.pdf
+
+Brokers or MD providers with reasonable apis
+
+* IB (Interactive Brokers)
+* Saxo
+* darwinex (name I can never remember)
+* deribit
+* alpaca?
+* alphavantage?
+* quantitativebrokers?
+
 
 Trading, securities etc
 
@@ -265,27 +281,31 @@ Other tools and articles
 
 ### Analytics/Viz:
 
-* https://github.com/tiangolo/fastapi (for backend)
-* dtale (see the charts, I did not see before http://alphatechadmin.pythonanywhere.com/dtale/charts/4?chart_type=3d_scatter&query=&x=date&z=Col0&agg=raw&cpg=false&y=%5B%22security_id%22%5D )
-* https://www.streamlit.io/
+* https://echarts.apache.org/examples/en/editor.html?c=scatter3d-scatter&gl=1 ... kick the tires on this.
+* https://dash.plot.ly plotly
+* https://github.com/finos/perspective
 * https://vega.github.io/
+* https://github.com/tiangolo/fastapi (for backend)
+* https://www.streamlit.io/
 * https://pair-code.github.io/facets/
 * https://github.com/uwdata/falcon brushing and linking
-* https://github.com/finos/perspective
 * https://robinhood.engineering/faust-stream-processing-for-python-a66d3a51212d (featuers)
 * https://altair-viz.github.io/ (also built on vega and vega-lite)
 * https://idl.cs.washington.edu/projects/lyra/
 * holoviews based on bokeh. maybe easier within notebooks not sure
-* https://dash.plot.ly
 * superset
-* metabase
-
-Vega
-* https://github.com/vega/vega-tooltip
-
+* https://github.com/metabase/metabase
+* dtale (see the charts, I did not see before http://alphatechadmin.pythonanywhere.com/dtale/charts/4?chart_type=3d_scatter&query=&x=date&z=Col0&agg=raw&cpg=false&y=%5B%22security_id%22%5D )
 * observable? Plot? https://observablehq.com/@observablehq/plot-marks some javascript notebook thing
 
-Working pandas-like in javascript/front-end
+#### Other lists
+
+* https://danmackinlay.name/notebook/data_dashboards.html
+* https://danmackinlay.name/notebook/plotting_in_python.html
+* http://www.cssauthor.com/javascript-charting-libraries
+
+
+#### js dataframes
 
 2021-05: If there is some fast serializing to danfo it looks good. Look for arrow danfo interactions. See arquero.
 
@@ -300,10 +320,9 @@ Working pandas-like in javascript/front-end
 * dataframe-js https://gmousse.gitbooks.io/dataframe-js/content/#dataframe-js seems very df like. Nw
 
 
-## Viz for larger datasets and graphs
+### Viz for larger datasets and graphs
 
-
-Tire kicking only.
+* [echarts](https://echarts.apache.org/examples/en/editor.html?c=scatter3d-scatter&gl=1)? How large?
 * visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
 * [glumpy](https://glumpy.github.io/)
@@ -321,11 +340,9 @@ Tire kicking only.
 * [see this list for graph drawing](https://github.com/anvaka/graph-drawing-libraries)
 * https://nvd3.org
 * https://github.com/keen/keen-dataviz.js
-* https://github.com/metabase/metabase
 * https://github.com/Shopify/dashing
 * https://n3-charts.github.io/line-chart/#/home
 * https://c3js.org
-* good list: http://www.cssauthor.com/javascript-charting-libraries
 * http://dimplejs.org
 * https://d3plus.org/
 
@@ -334,9 +351,9 @@ Tire kicking only.
 * [openrefine](http://openrefine.org/) is still alive!?
 * http://explorer.okfnlabs.org/#start 
 
-## actual data & viz
+## Actual data & viz
 
-Markets
+### Markets
 
 * https://www.trismegistos.org/ldab/about.php
 * https://www.hkma.gov.hk/eng/data-publications-and-research/data-and-statistics/monthly-statistical-bulletin/table/
@@ -360,7 +377,7 @@ Markets
 * https://www.macrotrends.net
 * https://canalyst.com/ (fundamentals)
 
-Non-Markets
+### Non-Markets
 
 * https://ourworldindata.org/books
 * https://sentinel.esa.int/web/sentinel/sentinel-data-access
@@ -394,30 +411,19 @@ Non-Markets
 * https://www.doogal.co.uk/
 * https://ons.maps.arcgis.com/home/search.html?t=content&q=tags%3AONS%20Postcode%20Directory&start=1&sortOrder=desc&sortField=relevance
 * https://public.enigma.com/
-
-## TODO
-
 * https://dev.socrata.com/foundry/opendata.camden.gov.uk/ry6e-hbqy
 * https://github.com/xmunoz/sodapy
 * https://www.openbanking.org.uk/open-data-apis/
-* ambari
-* h2o.ai
 
-
-## tech env notes
-
-Until I get a good dotfiles and clean up the chaos.
+## Tech env
 
 * managing dotfiles https://github.com/RichiH/vcsh
 * managing multiple repos https://github.com/joeyh/myrepos
 * pathogen for vim https://github.com/tpope/vim-pathogen.
 * screenrc tab emulation ... https://gist.github.com/cottrell/2de6b1076236b0b39071
-* syncing etc https://livingthing.danmackinlay.name/synchronising_files.html
-* https://gist.github.com/jboner/2841832
-* https://medium.com/@philipfeng/modern-open-source-messaging-apache-kafka-rabbitmq-nats-pulsar-and-nsq-ca3bf7422db5
-* https://github.com/psy0rz/Synapse
-* faust
-* NATS
+* [Overview of syncthing, dat, etc ... still very good](https://livingthing.danmackinlay.name/synchronising_files.html)
+* [Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)
+* [More Napkin math, latency numbers](https://github.com/sirupsen/napkin-math)
 
 ## task queues
 
@@ -512,6 +518,11 @@ Search for bitemporal streaming or some such thing.
 * https://www.marklogic.com/blog/bitemporal/
 
 Sort of related: "A Broadcast-Only Communication Model Based on Replicated Append-Only Logs" https://ccronline.sigcomm.org/wp-content/uploads/2019/05/acmdl19-295.pdf
+
+## Time Series DB analytics etc
+
+* https://quasardb.net/
+* duckdb
 
 
 ## Immutable db etc
@@ -732,6 +743,10 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 * https://github.com/hyperopt/hyperopt
 * https://github.com/fmfn/BayesianOptimization
 * https://github.com/hawk31/pyGPGO
+
+#### other lists
+
+* https://danmackinlay.name/notebook/hyperparam_opt.html
 
 ### ml/rl environments
 
@@ -989,7 +1004,6 @@ Other links:
 * https://considerations.bmj.com/content/1/1/3
 * https://mrc.ukri.org/news/blog/from-tool-to-therapy-a-timeline-of-monoclonal-antibody-technology/
 
-
 # Alternatives to medium
 
 See [here](https://ethical.net/ethical/ethical-alternatives-to-medium/#:~:text=Other%20ethical%20alternatives%20to%20Medium,of%20a%20built%2Din%20community.)
@@ -1031,4 +1045,3 @@ Also see:
 * https://people.duke.edu/~ccc14/sta-663/Optimization_Bakeoff.html
 * https://www.kaggle.com/cpmpml/ultra-fast-distance-matrix-computation
 * https://stackoverflow.com/questions/60015409/speeding-up-numba-distance-calculation
-
