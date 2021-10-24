@@ -2,6 +2,17 @@
 
 Notes, links, scripts, memories, recommendations, ghosts etc.
 
+state:
+* `did` chron log
+* latex notes.tex -> notes.pdf math
+* mybin/README.me dumping ground
+* github notebooks sandbox code
+
+shadow state:
+* Google Keep
+* misc bookmark collections in chrome
+* misc spread sheets
+
 [See here to regenerate the TOC](https://github.com/Chris3606/TOC-Generator.git)
 
 <!--ts-->
@@ -75,6 +86,7 @@ Notes, links, scripts, memories, recommendations, ghosts etc.
     * [messaging](#messaging)
 * [data discovery and meta data etc](#data-discovery-and-meta-data-etc)
     * [semantic web and things I tend to ignore](#semantic-web-and-things-i-tend-to-ignore)
+        * [Semantic web search engines?](#semantic-web-search-engines)
     * [articles and data](#articles-and-data)
     * [language data (dictionaries etc)](#language-data-dictionaries-etc)
     * [todo](#todo)
@@ -917,12 +929,14 @@ Misc 2021
 
 ## semantic web and things I tend to ignore
 
-	OntoSpy is a lightweight Python library and command line tool for inspecting and visualizing vocabularies encoded using W3C Semantic Web standards, that is, RDF or any of its dialects (RDFS, OWL, SKOS).
-
+* OntoSpy: a lightweight Python library and command line tool for inspecting and visualizing vocabularies encoded using W3C Semantic Web standards, that is, RDF or any of its dialects (RDFS, OWL, SKOS).
 * http://wiki.dbpedia.org/
 * https://pypi.python.org/pypi/ontospy
 * https://pypi.python.org/pypi/python-skos
 * http://librdf.org/
+
+### Semantic web search engines?
+* https://www.w3.org/wiki/Search_engines
 
 ## articles and data
 
