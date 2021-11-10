@@ -683,6 +683,10 @@ Interacting Particle Systems (and duality)
 
 ## dimensional analysis
 
+* https://github.com/AndrewChap/symdim
+* https://pypi.org/project/numericalunits/
+* https://causlayer.orgs.hk/saadgroup/BuckinghamPy
+* https://pint.readthedocs.io/en/0.10.1/index.html
 * https://pubs.acs.org/doi/abs/10.1021/acs.chemmater.8b02837
 * https://advances.sciencemag.org/content/6/16/eaay2631
 * https://www.researchgate.net/profile/Stephan_Rudolph5/publication/2625410_On_the_Context_of_Dimensional_Analysis_in_Artificial_Intelligence/links/54f0a5870cf2b36214aac529/On-the-Context-of-Dimensional-Analysis-in-Artificial-Intelligence.pdf
