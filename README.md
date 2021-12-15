@@ -889,20 +889,19 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ## DB and analytics
 
-Time-series 2019
-
-* TimescaleDB
-* Marketstore
+* https://shakti.com/
+* https://www.timescale.com/
 * probably not influxdb
 * https://github.com/OpenHFT/Chronicle-Queue#design Micro second messaging that stores everything to disk
 * https://dbdb.io/db/lmdb lightning memory map database, local simple
+* Marketstore
 
 * https://github.com/mitdbg
-* https://www.pipelinedb.com
-* http://gun.js.org
+* http://docs.pipelinedb.com/introduction.html
+* http://gun.js.org (dencentralized db)
 * http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
-* https://www.arangodb.com
-* https://grakn.ai
+* https://www.arangodb.com (graph db)
+* https://vaticle.com/ (TypeDB) strongly typed db, seems like a graph db
 
 Misc 2021
 
