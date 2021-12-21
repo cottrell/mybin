@@ -25,6 +25,7 @@ shadow state:
     * [clustering, record linkage etc](#clustering-record-linkage-etc)
     * [backtesting/trading tools](#backtestingtrading-tools)
     * [Top candidates for generic analytics and viz](#top-candidates-for-generic-analytics-and-viz)
+        * [Dataframes, data ingestion](#dataframes-data-ingestion)
         * [Research:](#research)
         * [Analytics/Viz:](#analyticsviz)
             * [Other lists](#other-lists)
@@ -286,6 +287,11 @@ Other tools and articles
 
 ## Top candidates for generic analytics and viz
 
+### Dataframes, data ingestion
+
+* https://pola-rs.github.io/polars-book/api-python/polars/io.html
+* https://github.com/sfu-db/connector-x
+
 ### Research:
 
 * https://github.com/iodide-project/pyodide/ (notebook in the browser! I mean it is *in* the browser)
@@ -318,6 +324,8 @@ Other tools and articles
 
 
 #### js dataframes
+
+2021-12: keep messing around with observable as it allows state caching notebook style. See here for "recommended" libraries https://observablehq.com/@observablehq/recommended-libraries
 
 2021-05: If there is some fast serializing to danfo it looks good. Look for arrow danfo interactions. See arquero.
 
