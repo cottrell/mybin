@@ -295,6 +295,7 @@ Other tools and articles
 
 * https://echarts.apache.org/examples/en/editor.html?c=scatter3d-scatter&gl=1 ... kick the tires on this.
 * https://dash.plot.ly plotly
+* https://observablehq.com/@observablehq/plot ... is this one usable outside of observable?
 * https://github.com/finos/perspective
 * https://vega.github.io/
 * https://github.com/tiangolo/fastapi (for backend)
@@ -889,19 +890,20 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ## DB and analytics
 
-* https://shakti.com/
-* https://www.timescale.com/
+Time-series 2019
+
+* TimescaleDB
+* Marketstore
 * probably not influxdb
 * https://github.com/OpenHFT/Chronicle-Queue#design Micro second messaging that stores everything to disk
 * https://dbdb.io/db/lmdb lightning memory map database, local simple
-* Marketstore
 
 * https://github.com/mitdbg
-* http://docs.pipelinedb.com/introduction.html
-* http://gun.js.org (dencentralized db)
+* https://www.pipelinedb.com
+* http://gun.js.org
 * http://orientdb.com/ (http://orientdbleaks.blogspot.com/2016/06/one-year-of-orientdb-leaks.html)
-* https://www.arangodb.com (graph db)
-* https://vaticle.com/ (TypeDB) strongly typed db, seems like a graph db
+* https://www.arangodb.com
+* https://grakn.ai
 
 Misc 2021
 
