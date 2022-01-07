@@ -458,6 +458,10 @@ Other tools and articles
 
 * https://aave.com/
 
+## prediction markets
+
+* https://mantic.markets/
+
 ## Interesting protocols
 
 * https://minaprotocol.com/
@@ -491,6 +495,8 @@ From Alaric:
 
 * [clustered analytic db](http://www.snell-pym.org.uk/archives/2016/12/11/cool-things-i-have-worked-on-clustered-analytic-database/)
 * [low latency nosql datasore](http://www.snell-pym.org.uk/archives/2016/11/22/cool-things-i-have-worked-on-low-latency-highly-available-nosql-data-store/)
+
+paxos notes https://martinfowler.com/articles/patterns-of-distributed-systems/paxos.html
 
 Other notes
 
