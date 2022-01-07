@@ -317,6 +317,13 @@ Other tools and articles
 * dtale (see the charts, I did not see before http://alphatechadmin.pythonanywhere.com/dtale/charts/4?chart_type=3d_scatter&query=&x=date&z=Col0&agg=raw&cpg=false&y=%5B%22security_id%22%5D )
 * observable? Plot? https://observablehq.com/@observablehq/plot-marks some javascript notebook thing
 
+vega observable related
+* https://observablehq.com/@uwdata/introduction-to-vega-lite
+* https://observablehq.com/collection/@vega/vega-lite-api
+* https://observablehq.com/collection/@observablehq/observable-for-vega-lite
+* https://vega.github.io/vega-lite-api/
+
+
 #### Other lists
 
 * https://danmackinlay.name/notebook/data_dashboards.html
