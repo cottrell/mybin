@@ -25,6 +25,7 @@ shadow state:
     * [clustering, record linkage etc](#clustering-record-linkage-etc)
     * [backtesting/trading tools](#backtestingtrading-tools)
     * [Top candidates for generic analytics and viz](#top-candidates-for-generic-analytics-and-viz)
+    * [platforms](#platforms)
         * [Dataframes, data ingestion](#dataframes-data-ingestion)
         * [Research:](#research)
         * [Analytics/Viz:](#analyticsviz)
@@ -39,6 +40,7 @@ shadow state:
     * [Tech env](#tech-env)
     * [task queues](#task-queues)
     * [decentralized finance whatever that means](#decentralized-finance-whatever-that-means)
+    * [prediction markets](#prediction-markets)
     * [Interesting protocols](#interesting-protocols)
     * [decentralized data, research, distributed fs, syncing, data versioning etc](#decentralized-data-research-distributed-fs-syncing-data-versioning-etc)
         * [RPC/caching/dataframe Frameworks like dask and spark](#rpccachingdataframe-frameworks-like-dask-and-spark)
@@ -286,6 +288,13 @@ Other tools and articles
 * backtrader
 
 ## Top candidates for generic analytics and viz
+
+## platforms
+
+* snowflake
+* lakehouse
+* azure ml
+* qwak
 
 ### Dataframes, data ingestion
 
