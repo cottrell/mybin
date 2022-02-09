@@ -311,6 +311,7 @@ Other tools and articles
 * https://echarts.apache.org/examples/en/editor.html?c=scatter3d-scatter&gl=1 ... kick the tires on this.
 * https://dash.plot.ly plotly
 * https://observablehq.com/@observablehq/plot ... is this one usable outside of observable?
+* https://count.co/ ... another notebook style thing, worth checking out more.
 * https://github.com/finos/perspective
 * https://vega.github.io/
 * https://github.com/tiangolo/fastapi (for backend)
