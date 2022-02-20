@@ -13,10 +13,12 @@ shadow state:
 * misc bookmark collections in chrome
 * misc spread sheets
 
+
 [See here to regenerate the TOC](https://github.com/Chris3606/TOC-Generator.git)
 
 <!--ts-->
 * [mybin](#mybin)
+    * [Managing notes, ideas, search](#managing-notes-ideas-search)
     * [services and tools for business and productivity](#services-and-tools-for-business-and-productivity)
     * [finance/markets/trading](#financemarketstrading)
         * [Bregman etc](#bregman-etc)
@@ -25,6 +27,7 @@ shadow state:
     * [clustering, record linkage etc](#clustering-record-linkage-etc)
     * [backtesting/trading tools](#backtestingtrading-tools)
     * [Top candidates for generic analytics and viz](#top-candidates-for-generic-analytics-and-viz)
+    * [Decentralized data networks?](#decentralized-data-networks)
     * [platforms](#platforms)
         * [Dataframes, data ingestion](#dataframes-data-ingestion)
         * [Research:](#research)
@@ -57,6 +60,7 @@ shadow state:
     * [privacy, security etc](#privacy-security-etc)
     * [links uncategorized](#links-uncategorized)
     * [maths, probability, stochastic etc](#maths-probability-stochastic-etc)
+    * [feature stores](#feature-stores)
     * [ml, machine learning, rl, reinforcement learning](#ml-machine-learning-rl-reinforcement-learning)
     * [dimensional analysis](#dimensional-analysis)
         * [sequence learning related](#sequence-learning-related)
@@ -103,6 +107,14 @@ shadow state:
 * [voting](#voting)
 * [fast distance matrix calculations](#fast-distance-matrix-calculations)
 <!--te-->
+
+## Managing notes, ideas, search
+
+* https://github.com/nikitavoloboev/alfred-my-mind (search)
+* https://my.mindnode.com/
+* https://www.mindnode.com/
+* https://www.notion.so/
+* https://www.2doapp.com/
 
 ## services and tools for business and productivity
 
@@ -289,6 +301,15 @@ Other tools and articles
 
 ## Top candidates for generic analytics and viz
 
+See this list https://wiki.nikitavoloboev.xyz/data-science/data-processing
+* https://github.com/memgraph/memgraph
+
+## Decentralized data networks?
+
+Look at these 2022
+* https://developers.ceramic.network/learn/welcome/
+* https://timeflow.systems/
+
 ## platforms
 
 * snowflake
@@ -298,7 +319,7 @@ Other tools and articles
 
 ### Dataframes, data ingestion
 
-* https://pola-rs.github.io/polars-book/api-python/polars/io.html
+* https://pola-rs.github.io/polars-book/api-python/polars/io.html  compare to cylon?
 * https://github.com/sfu-db/connector-x
 
 ### Research:
@@ -488,6 +509,8 @@ vega observable related
 
 Current top of the list
 
+* https://academictorrents.com/ TODO 2022 ... not live though.
+* https://github.com/zenodo/zenodo is decentralized? on top of https://github.com/inveniosoftware/invenio
 * https://dvid.io/
 * https://qri.io
 * ipfs ipdb ipdl
@@ -548,7 +571,7 @@ Betting, smart contracts etc
 * https://github.com/modin-project/modin
 * ray-project
 * https://github.com/ranaroussi/pystore
-* https://github.com/cylondata/cylon
+* https://github.com/cylondata/cylon ... has this been compared to polars? ... is distributed I think so a bit diff.
 
 ## bitemporal stuff
 
@@ -607,6 +630,11 @@ Sort of related: "A Broadcast-Only Communication Model Based on Replicated Appen
 
 ## data pipelines, streaming etc
 
+* some paper on "differential dataflow" which is more of the usual https://github.com/timelydataflow/differential-dataflow/blob/master/differentialdataflow.pdf ... incremental data processing
+* https://github.com/grailbio/reflow incremental data proccessing ... seems scientific1G
+* https://github.com/flyteorg/flyte I have yet to dig into flyte yet. Seems TODO 2022
+* https://delta.io/sharing/ this is data sharing *protocol* ... i.e. for between orgs or something. ... wasn't there another platform called delta lake? Or is this same thing but transformed? Yes I think "delta lake" is the broader product https://delta.io/
+* https://github.com/ozontech/file.d maybe try 2022
 * https://www.slideshare.net/PoleSystematicParisRegion/building-a-highperformance-scalable-ml-nlp-platform-with-python-sheer-el-showk
 * https://code.facebook.com/posts/1072626246134461/introducing-fblearner-flow-facebook-s-ai-backbone/
 * faust
@@ -687,8 +715,15 @@ Interacting Particle Systems (and duality)
 * ligget http://users.ictp.it/~pub_off/lectures/lns017/Liggett/Liggett.pdf
 * swart https://arxiv.org/pdf/1703.10007.pdf
 
+## feature stores
+
+* https://euclidesdb.readthedocs.io/en/latest/ (ml featurestore)
+* https://medium.com/riselab/feature-stores-the-data-side-of-ml-pipelines-7083d69bff1c
+
 ## ml, machine learning, rl, reinforcement learning
 
+* reproducible research platform? https://github.com/allenai/beaker
+* https://github.com/ekzhu/datasketch (LSH etc)
 * 30 years http://www-isl.stanford.edu/~widrow/papers/j199030years.pdf
 * https://www.libspn.org/
 * https://github.com/SPFlow/SPFlow
@@ -754,6 +789,7 @@ for Sequence-to-Sequence Prediction](https://arxiv.org/pdf/1808.03867.pdf)
 
 ### nearest neighbor
 
+* https://github.com/ekzhu/datasketch (sort of) LSH etc fast prob data structures
 * https://github.com/erikbern/ann-benchmarks
 * https://github.com/spotify/annoy
 * http://www.cs.ubc.ca/research/flann
