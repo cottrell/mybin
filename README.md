@@ -592,6 +592,15 @@ Sort of related: "A Broadcast-Only Communication Model Based on Replicated Appen
 * duckdb
 
 
+## dedupe archival db related
+
+Note there is something called "upsert" in deltalake
+
+* https://www.databricks.com/blog/2019/10/03/simple-reliable-upserts-and-deletes-on-delta-lake-tables-using-python-apis.html
+* https://github.com/dedupeio/dedupe
+* https://borgbackup.readthedocs.io/en/stable/internals/data-structures.html
+
+
 ## Immutable db etc
 
 * https://www.bigchaindb.com/
