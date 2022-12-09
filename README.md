@@ -381,6 +381,15 @@ vega observable related
 
 ### Viz for larger datasets and graphs
 
+* https://github.com/vasturiano/3d-force-graph
+* https://lightningchart.com/lightningchart-js-interactive-examples/examples/lcjs-example-0016-largeScatterChartXY.html
+* https://www.highcharts.com/demo/scatter-boost/brand-light
+* https://www.scichart.com/blog/javascript-chart-performance-plotting-10-million-datapoints-in-under-25ms/
+* https://github.com/flekschas/regl-scatterplot
+* https://github.com/nomic-ai/deepscatter
+* https://echarts.apache.org/examples/en/index.html
+
+
 * [echarts](https://echarts.apache.org/examples/en/editor.html?c=scatter3d-scatter&gl=1)? How large?
 * visidata  https://www.pythonpodcast.com/visidata-exploratory-data-analysis-episode-230/
 * [example with three.js and WebGL looks good](https://github.com/vasturiano/3d-force-graph)
