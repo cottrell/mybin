@@ -49,6 +49,8 @@ shadow state:
         * [RPC/caching/dataframe Frameworks like dask and spark](#rpccachingdataframe-frameworks-like-dask-and-spark)
     * [bitemporal stuff](#bitemporal-stuff)
     * [Time Series DB analytics etc](#time-series-db-analytics-etc)
+    * [Graph DB](#graph-db)
+    * [dedupe archival db related](#dedupe-archival-db-related)
     * [Immutable db etc](#immutable-db-etc)
     * [stream processing etc](#stream-processing-etc)
     * [merkle tree](#merkle-tree)
@@ -518,11 +520,12 @@ vega observable related
 
 Current top of the list
 
+* ipfs ipdb ipdl
+* https://www.arweave.org/
 * https://academictorrents.com/ TODO 2022 ... not live though.
 * https://github.com/zenodo/zenodo is decentralized? on top of https://github.com/inveniosoftware/invenio
 * https://dvid.io/
 * https://qri.io
-* ipfs ipdb ipdl
 * https://blog.textile.io/announcing-the-textile-protocol-hub/
 * datproject
 * https://streamr.network/
@@ -600,6 +603,10 @@ Sort of related: "A Broadcast-Only Communication Model Based on Replicated Appen
 * https://quasardb.net/
 * duckdb
 
+
+## Graph DB
+
+* https://github.com/indradb/indradb
 
 ## dedupe archival db related
 
