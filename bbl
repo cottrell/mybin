@@ -4,15 +4,22 @@
 
 # 2021 try the ips in some order and use first that works
 for ip in $(tac ~/syncthing_main/lan_ip_Linux_bleepblop.txt); do
-	if $(echo $ip | grep -q ':'); then
-		echo skipping $ip
-		continue
-	elif ssh -o ConnectTimeout=1 -t cottrell@$ip echo yes >/dev/null 2>&1; then
-		cmd="ssh -t cottrell@$ip tmux -CC $*"
-		echo $ip is ok trying $cmd
-		$cmd
-		break  # no need to try others
-	else
-		echo nope $ip
-	fi
+    if $(echo $ip | grep -q ':'); then
+        echo skipping $ip
+        continue
+    elif ssh -o ConnectTimeout=1 -t cottrell@$ip echo yes >/dev/null 2>&1; then
+        if [ $(uname) = 'Darwin' ]; then
+            cmd="ssh -t cottrell@$ip tmux -CC $*"
+            echo $ip is ok trying $cmd
+            $cmd
+            break  # no need to try others
+        else
+            cmd="ssh cottrell@$ip $*"
+            echo $ip is ok trying $cmd
+            $cmd
+            break  # no need to try others
+        fi
+    else
+        echo nope $ip
+    fi
 done
