@@ -14,9 +14,11 @@ for ip in $(tac ~/syncthing_main/lan_ip_Linux_bleepblop.txt); do
             $cmd
             break  # no need to try others
         else
+            xtermcontrol --bg '#300000'
             cmd="ssh cottrell@$ip $*"
             echo $ip is ok trying $cmd
             $cmd
+            xtermcontrol --bg '#000000'
             break  # no need to try others
         fi
     else
