@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 # dirname=~/Dropbox/misc/nogithub
 dirname=~/projects/notebooks/mybin/myhome/notes
 hostname=$(hostname)
@@ -11,3 +11,4 @@ cd $dirname
 git pull
 git add $dirname/$filename
 git commit -m 'update'
+git push
