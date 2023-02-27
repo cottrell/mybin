@@ -1,13 +1,15 @@
 #!/bin/bash
 dirname=~/projects/notebooks/mybin/myhome/notes
+hostname=$(hostname)
+filename=did_$hostname.txt
 checkfile=$(mktemp)
-cat $dirname/did.txt > $checkfile
-vim +'normal G' $dirname/did.txt
+cat $dirname/$filename > $checkfile
+vim +'normal G' $dirname/$filename
 cd $dirname
-if cmp -s $checkfile $dirname/did.txt; then
+if cmp -s $checkfile $dirname/$filename; then
 	echo no change
 else
-	echo change detected between $checkfile and $dirname/did.txt
+	echo change detected between $checkfile and $dirname/$filename
 	git pull
 	git commit -m 'didr update' -a
 	rm $checkfile
