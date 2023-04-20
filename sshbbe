@@ -1,3 +1,5 @@
-#!/bin/sh -e
+#!/bin/sh
 ip=$(cat ~/syncthing_main/external_ip_Linux_bleepblop.txt)
+xtermcontrol --bg '#300000'
 ssh cottrell@$ip -p 2142
+xtermcontrol --bg '#000000'
