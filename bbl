@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh
 # ip=$(cat ~/syncthing_main/lan_ip_Linux_bleepblop.txt | head -1)
 # ssh -t cottrell@$ip tmux -CC $*
 

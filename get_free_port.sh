@@ -1,6 +1,5 @@
 #!/bin/sh
-start=3000
-[[ $1 ]] && start=$1
+start=3333
 netstat -aln | awk '
   $6 == "LISTEN" {
     if ($4 ~ "[.:][0-9]+$") {
