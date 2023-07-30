@@ -516,6 +516,13 @@ vega observable related
 * https://minaprotocol.com/
 * https://spacemesh.io/protocol/
 
+### PoST
+
+* spacemesh
+* definity
+* phala
+* nodle
+
 ## decentralized data, research, distributed fs, syncing, data versioning etc
 
 Current top of the list
