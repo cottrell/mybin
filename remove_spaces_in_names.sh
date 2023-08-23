@@ -2,7 +2,7 @@
 set -e
 
 if [[ $# -lt 1 ]]; then
-    echo usage prog sep files
+    echo usage prog [-s sep] files
     exit 1
 fi
 
@@ -37,7 +37,8 @@ something=
 for x in "$@"; do
     echo $x | grep -q ' ' || continue
     dest=$(echo $x | sed "s/ /$sep/g")
-    echo mv \"$x\" \"$dest\" >> $tmp
+    echo sep is $sep
+    echo mv -v \"$x\" \"$dest\" >> $tmp
     something="something"
 done
 if [[ "$something" = "" ]]; then
