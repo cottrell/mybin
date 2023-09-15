@@ -7,6 +7,7 @@ import os
 
 def generate_mv_command(*files):
     # for now leave old filename and just prepend if necessary
+    # note that even safer is to simply create links.
     for filename in files:
         basename = os.path.basename(filename)
         dirname = os.path.dirname(filename)
@@ -38,8 +39,8 @@ def generate_mv_command(*files):
                 print(f'skipping {filename}', file=sys.stderr)
                 continue
         if not filename.startswith(date_format):
-            new_filename = os.path.join(dirname, date_format + '_' + basename)
-            print(f"mv -v {filename} {new_filename}")
+            new_filename = os.path.join(dirname, date_format + '_' + basename.replace(' ', '_'))
+            print(f'mv -v "{filename}" "{new_filename}"')
 
 
 if __name__ == '__main__':
