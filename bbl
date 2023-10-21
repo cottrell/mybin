@@ -34,7 +34,11 @@ machine=${machine:-bleepblop}
 
 # 2021 try the ips in some order and use first that works
 for ip in $(tac ~/syncthing_main/lan_ip_Linux_"$machine".txt); do
-    if $(echo $ip | grep -q ':'); then
+    # 2023-10-21 172.17.0.1 is some docker thing?
+    if [ $ip = '172.17.0.1' ]; then
+        echo skipping $ip
+	continue
+    elif $(echo $ip | grep -q ':'); then
         echo skipping $ip
         continue
     elif ssh -o ConnectTimeout=1 -t cottrell@$ip echo yes >/dev/null 2>&1; then
