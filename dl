@@ -7,7 +7,7 @@ TRASH=$HOME/.Trash
 
 until [ "$#" = "0" ];do
     # dest inside loop to avoid collisions on multiple folders
-    dest=$TRASH/$(/bin/date +%Y%m%d:%H%M%S.%N)
+    dest=$TRASH/$(/bin/date +%Y%m%dT%H%M%S.%N)
     [[ -e "$dest" ]] || mkdir -v $dest
     # echo mv -v "$1" "$dest"
     mv -v "$1" "$dest"
