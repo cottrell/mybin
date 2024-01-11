@@ -1,0 +1,4 @@
+#!/bin/sh
+. ~/anaconda3/bin/activate
+conda activate obb
+python $HOME/dev/OpenBBTerminal/terminal.py
