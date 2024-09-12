@@ -1,0 +1,4 @@
+#!/bin/bash -x
+cd /
+sudo du -hx /* --max-depth=2 | sort -h | tail 80
+cd -
