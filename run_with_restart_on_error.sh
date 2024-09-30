@@ -2,7 +2,7 @@
 # TAG: keep running
 
 # Set default sleep time (in seconds)
-sleep_time=1
+sleep_time=5
 
 # Parse arguments
 while getopts ":s:" opt; do
