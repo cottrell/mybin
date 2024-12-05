@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo du -ah --max-depth=1 --exclude='/proc' --exclude='/mnt' --exclude='/tmp' --exclude='/run' --exclude='/media' --exclude='/dev' --exclude='/cdrom' /
