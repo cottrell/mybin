@@ -10,6 +10,12 @@ fi
 OUTPUT_FILE="$1"
 shift
 
+# assert output file does not exist
+if [ -e "$OUTPUT_FILE" ]; then
+    echo "Output file already exists! $OUTPUT_FILE"
+    exit 1
+fi
+
 # Create the compressed archive
 
 tar -cf - "$@" | xz -9 -T0 > "$OUTPUT_FILE"
