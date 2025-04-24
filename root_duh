@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo du -ah --max-depth=1 --exclude='/proc' --exclude='/mnt' --exclude='/tmp' --exclude='/run' --exclude='/media' --exclude='/dev' --exclude='/cdrom' / --exclude='/home'
+# sudo du -ah --max-depth=1 --exclude='/proc' --exclude='/mnt' --exclude='/tmp' --exclude='/run' --exclude='/media' --exclude='/dev' --exclude='/cdrom' / --exclude='/home'
+sudo du -h --max-depth=1 -x /
