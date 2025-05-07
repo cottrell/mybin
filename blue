@@ -1,0 +1,2 @@
+#!/bin/sh
+xtermcontrol --bg '#000010'
