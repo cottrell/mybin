@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 if [ $# -ne 1 ]; then
 	echo usage: prog host
 	exit 1
@@ -6,6 +6,16 @@ fi
 
 host=$1
 shift
+
+string_to_dark_color() {
+  local string="$1"
+  local hash=$(echo -n "$string" | md5sum | cut -c 1-6)
+  # Convert hex to decimal, scale to 0-80 range for darkness, add 20 to ensure min difference from black
+  local r=$(((0x${hash:0:2} % 41) + 10))
+  local g=$(((0x${hash:2:2} % 41) + 10))
+  local b=$(((0x${hash:4:2} % 41) + 10))
+  printf "#%02x%02x%02x\n" $r $g $b
+}
 
 # 2021 try the ips in some order and use first that works
 for ip in $(tac ~/syncthing_main/lan_ip_*_$host.txt); do
@@ -16,7 +26,10 @@ for ip in $(tac ~/syncthing_main/lan_ip_*_$host.txt); do
 		# cmd="ssh -t cottrell@$ip tmux -CC $*"
 		cmd="ssh cottrell@$ip"
 		echo $ip is ok trying $cmd
+		color=$(string_to_dark_color $host)
+		xtermcontrol --bg $color
 		$cmd
+		xtermcontrol --bg '#000000'
 		break  # no need to try others
 	else
 		echo nope $ip
