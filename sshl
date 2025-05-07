@@ -17,8 +17,6 @@ string_to_dark_color() {
   printf "#%02x%02x%02x\n" $r $g $b
 }
 
-echo here $(string_to_dark_color asdfasdf)
-
 # 2021 try the ips in some order and use first that works
 for ip in $(tac ~/syncthing_main/lan_ip_*_$host.txt); do
 	if $(echo $ip | grep -q ':'); then
