@@ -1,3 +1,4 @@
 #!/bin/bash
-type autoflake > /dev/null || /usr/bin/pip3 install autoflake
-autoflake --verbose --in-place --remove-all-unused-import $*
+type ruff > /dev/null || uv pip install ruff
+# autoflake --verbose --in-place --remove-all-unused-import $*
+ruff check --select F401 --fix --show-fixes "$@"
