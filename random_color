@@ -4,9 +4,9 @@ string_to_dark_color() {
   local string="$1"
   local hash=$(echo -n "$string" | md5sum | cut -c 1-6)
   # Convert hex to decimal, scale to 0-80 range for darkness, add 20 to ensure min difference from black
-  local r=$(((0x${hash:0:2} % 41) + 10))
-  local g=$(((0x${hash:2:2} % 41) + 10))
-  local b=$(((0x${hash:4:2} % 41) + 10))
+  local r=$(((0x${hash:0:2} % 21) + 10))
+  local g=$(((0x${hash:2:2} % 21) + 10))
+  local b=$(((0x${hash:4:2} % 21) + 10))
   printf "#%02x%02x%02x\n" $r $g $b
 }
 

@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 if [ $# -ne 1 ]; then
 	echo usage: prog host
 	exit 1
@@ -17,21 +17,34 @@ string_to_dark_color() {
   printf "#%02x%02x%02x\n" $r $g $b
 }
 
-# 2021 try the ips in some order and use first that works
-for ip in $(tac ~/syncthing_main/lan_ip_*_$host.txt); do
-	if $(echo $ip | grep -q ':'); then
-		echo skipping $ip
-		continue
-	elif ssh -o ConnectTimeout=1 -t cottrell@$ip echo yes >/dev/null 2>&1; then
-		# cmd="ssh -t cottrell@$ip tmux -CC $*"
-		cmd="ssh cottrell@$ip"
-		echo $ip is ok trying $cmd
-		color=$(string_to_dark_color $host)
-		xtermcontrol --bg $color
-		$cmd
-		xtermcontrol --bg '#000000'
-		break  # no need to try others
-	else
-		echo nope $ip
-	fi
-done
+# # 2021 try the ips in some order and use first that works
+# for ip in $(tac ~/syncthing_main/lan_ip_*_$host.txt); do
+# 	if $(echo $ip | grep -q ':'); then
+# 		echo skipping $ip
+# 		continue
+# 	elif ssh -o ConnectTimeout=1 -t cottrell@$ip echo yes >/dev/null 2>&1; then
+# 		# cmd="ssh -t cottrell@$ip tmux -CC $*"
+# 		cmd="ssh cottrell@$ip"
+# 		echo $ip is ok trying $cmd
+# 		color=$(string_to_dark_color $host)
+# 		xtermcontrol --bg $color
+# 		$cmd
+# 		xtermcontrol --bg '#000000'
+# 		break  # no need to try others
+# 	else
+# 		echo nope $ip
+# 	fi
+# done
+
+declare -A host_colors=(
+  [bleepbleep]="#001000"
+  [bloopbloop]="#000010"
+  [bleepblop]="#100000"
+)
+
+color="${host_colors[$host]:-$(string_to_dark_color "$host")}"
+
+xtermcontrol --bg "$color"
+trap 'xtermcontrol --bg "#000000"' EXIT
+
+ssh "cottrell@$host"
