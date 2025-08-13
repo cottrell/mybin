@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# for docsify
 
 # Script to update _sidebar.md with all .md files in the directory
 # Usage: ./update_sidebar.sh [directory]
@@ -28,13 +30,13 @@ MD_FILES=$(find "$TARGET_DIR" -maxdepth 1 -name "*.md" -not -name "_sidebar.md" 
 for md_file in $MD_FILES; do
     # Get just the filename without path
     filename=$(basename "$md_file")
-    
+
     # Check if this file is already referenced in _sidebar.md
     # Look for the pattern ]($filename) in the sidebar
     if ! grep -q "](${filename})" "$SIDEBAR_FILE" 2>/dev/null; then
         # Extract name without .md extension for the label
         name_without_ext="${filename%.md}"
-        
+
         # Add entry to _sidebar.md
         echo "* [$name_without_ext]($filename)" >> "$SIDEBAR_FILE"
         echo "Added: $filename"
