@@ -1,0 +1,9 @@
+#!/bin/bash
+[ $# -ne 1 ] && echo "usage: note notename" && exit 1
+tag=$1
+DIR="$( cd "$(dirname "$0")" ; pwd -P )"
+EDITOR=${EDITOR:-vim}
+NOTESDIR=$DIR/myhome/notes
+[ -e "$NOTESDIR" ] || mkdir $NOTESDIR
+echo $EDITOR $NOTESDIR/$tag.md
+$EDITOR $NOTESDIR/$tag.md
