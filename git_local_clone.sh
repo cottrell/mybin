@@ -54,6 +54,15 @@ echo "Cloning from git directory: $gitdir"
 git clone "$gitdir" "$dest"
 cd "$dest"
 
+# Copy all LFS objects from source if they exist
+if [ -d "$gitdir/lfs/objects" ]; then
+  echo "Copying all LFS objects from source..."
+  mkdir -p .git/lfs/objects
+  cp -rf "$gitdir/lfs/objects"/* .git/lfs/objects/ 2>/dev/null || true
+  lfs_count=$(find .git/lfs/objects -type f 2>/dev/null | wc -l)
+  echo "Copied $lfs_count LFS objects"
+fi
+
 echo "==> Normalising submodules (if any)..."
 # check if repo has submodules and handle them properly
 if [ -f .gitmodules ] && [ -s .gitmodules ]; then
@@ -71,6 +80,18 @@ if [ -f .gitmodules ] && [ -s .gitmodules ]; then
     find .git/modules -name config -type f | while read git_config; do
       # Unset core.worktree so git commands don't fail looking for old paths
       git config --file "$git_config" --unset core.worktree 2>/dev/null || true
+    done
+
+    # Copy LFS objects from submodules if they exist
+    echo "Copying LFS objects from submodules..."
+    find "$gitdir/modules" -type d -name "lfs" 2>/dev/null | while read lfs_dir; do
+      if [ -d "$lfs_dir/objects" ]; then
+        # Determine the relative path to recreate the structure
+        rel_path=$(echo "$lfs_dir" | sed "s|$gitdir/modules/||")
+        dest_lfs_dir=".git/modules/$rel_path"
+        mkdir -p "$dest_lfs_dir/objects"
+        cp -rf "$lfs_dir/objects"/* "$dest_lfs_dir/objects/" 2>/dev/null || true
+      fi
     done
 
     echo "Copied submodule git directories"
