@@ -1,21 +1,13 @@
 #!/bin/bash
 
 # Script to update _sidebar.md with all .md files in the directory
-# Usage: ./update_sidebar.sh [-s SECTION]
-#   -s SECTION  Optional: Add entries under a subsection (e.g., "Topics")
+# Usage: ./update_sidebar.sh [SECTION]
+#   SECTION  Optional: Add entries under a subsection (e.g., "Topics")
 
 # Use current working directory
 DIR="."
 SIDEBAR_FILE="$DIR/_sidebar.md"
-SECTION=""
-
-# Parse arguments
-while getopts "s:" opt; do
-    case $opt in
-        s) SECTION="$OPTARG" ;;
-        *) echo "Usage: $0 [-s SECTION]"; exit 1 ;;
-    esac
-done
+SECTION="${1:-}"
 
 # Create _sidebar.md if it doesn't exist
 if [ ! -f "$SIDEBAR_FILE" ]; then
@@ -31,6 +23,12 @@ fi
 if [ ! -w "$SIDEBAR_FILE" ]; then
     echo "Error: _sidebar.md is not writable"
     exit 1
+fi
+
+# If section specified, ensure it exists in the sidebar
+if [ -n "$SECTION" ] && ! grep -q "^\* $SECTION$" "$SIDEBAR_FILE"; then
+    echo "Adding section: $SECTION"
+    echo "* $SECTION" >> "$SIDEBAR_FILE"
 fi
 
 # Get all .md files excluding _sidebar.md, _navbar.md, and special files
