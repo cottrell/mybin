@@ -32,7 +32,8 @@ if [ -n "$SECTION" ] && ! grep -q "^\* $SECTION$" "$SIDEBAR_FILE"; then
 fi
 
 # Get all .md files excluding _sidebar.md, _navbar.md, and special files
-MD_FILES=$(find "$DIR" -maxdepth 1 -name "*.md" -not -name "_sidebar.md" -not -name "_navbar.md" -not -name "README.md" -not -name "TODO.md" | sort)
+# MD_FILES=$(find "$DIR" -maxdepth 1 -name "*.md" -not -name "_sidebar.md" -not -name "_navbar.md" -not -name "README.md" -not -name "TODO.md" | sort)
+MD_FILES=$(find "$DIR" -maxdepth 1 -name "*.md" -not -name "_sidebar.md" -not -name "_navbar.md" | sort)
 
 # Count files
 ADDED=0
