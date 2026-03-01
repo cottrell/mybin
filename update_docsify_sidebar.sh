@@ -39,7 +39,31 @@ MD_FILES=$(find "$DIR" -maxdepth 1 -name "*.md" -not -name "_sidebar.md" -not -n
 ADDED=0
 SKIPPED=0
 
-echo "Scanning for .md files in $DIR..."
+echo "Scanning for .md files and subdirs in $DIR..."
+
+# Process each depth-1 subdirectory
+for dir in $(find "$DIR" -mindepth 1 -maxdepth 1 -type d | sort); do
+    dirname=$(basename "$dir")
+    # Skip hidden dirs and dirs without _sidebar.md
+    [[ "$dirname" == .* ]] && continue
+    [ ! -f "$dir/_sidebar.md" ] && continue
+    title_cased=$(echo "$dirname" | tr '_-' '  ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1))tolower(substr($i,2))}}1')
+    LINK_SEARCH_PATTERN="]($dirname/)"
+    if ! grep -qF "$LINK_SEARCH_PATTERN" "$SIDEBAR_FILE" 2>/dev/null; then
+        if [ -n "$SECTION" ]; then
+            LINK="  * [$title_cased]($dirname/)"
+            sed -i "/^\* $SECTION$/a\\$LINK" "$SIDEBAR_FILE"
+        else
+            LINK="* [$title_cased]($dirname/)"
+            echo "$LINK" >> "$SIDEBAR_FILE"
+        fi
+        echo "  + Added dir: $dirname/"
+        ((ADDED++))
+    else
+        echo "  - Skipped dir (exists): $dirname/"
+        ((SKIPPED++))
+    fi
+done
 
 # Process each .md file
 for md_file in $MD_FILES; do
@@ -47,11 +71,12 @@ for md_file in $MD_FILES; do
     filename=$(basename "$md_file")
     name_without_ext="${filename%.md}"
 
-    # Title case: convert underscores to spaces and capitalize each word
-    title_cased=$(echo "$name_without_ext" | tr '_' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1))tolower(substr($i,2))}}1')
+    # Title case: convert underscores to spaces and capitalize each word; preserve all-caps words (e.g. README)
+    title_cased=$(echo "$name_without_ext" | tr '_' ' ' | awk '{for(i=1;i<=NF;i++){w=$i; if(w==toupper(w)&&length(w)>1){$i=w}else{$i=toupper(substr(w,1,1))tolower(substr(w,2))}}1}')
+    title_cased="${title_cased:-$name_without_ext}"
 
-    # Build the link pattern to search for (no leading slash for subdir compatibility)
-    LINK_SEARCH_PATTERN="]($name_without_ext)"
+    # Match both ](README) and ](./README) variants to avoid duplicates
+    LINK_SEARCH_PATTERN="${name_without_ext})"
 
     # Check if this file is already referenced in _sidebar.md
     if ! grep -qF "$LINK_SEARCH_PATTERN" "$SIDEBAR_FILE" 2>/dev/null; then
