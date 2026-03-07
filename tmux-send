@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Send text + Enter to a tmux target.
+# Usage: tmux-send <target> <text...>
+# Requires two send-keys calls; combining them in one does not reliably send Enter.
+if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "Usage: $0 <target> <text...>" >&2
+    exit 1
+fi
+TARGET=$1; shift
+tmux send-keys -t "$TARGET" "$*"
+tmux send-keys -t "$TARGET" Enter
