@@ -2,10 +2,17 @@
 # Send text + Enter to a tmux target.
 # Usage: tmux-send <target> <text...>
 # Requires two send-keys calls; combining them in one does not reliably send Enter.
+# NOTE: sending while an agent is mid-run (still processing) may cause odd behaviour — not fully tested.
 if [ -z "$1" ] || [ -z "$2" ]; then
     echo "Usage: $0 <target> <text...>" >&2
     exit 1
 fi
 TARGET=$1; shift
-tmux send-keys -t "$TARGET" "$*"
+MSG="$*"
+if [ -n "$TMUX" ]; then
+    SENDER=$(tmux display-message -p '#S')
+    MSG="${SENDER}: ${MSG}"
+fi
+tmux send-keys -t "$TARGET" "$MSG"
+sleep 0.1
 tmux send-keys -t "$TARGET" Enter
