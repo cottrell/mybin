@@ -1,27 +1,35 @@
 #!/bin/bash
+# Improved internet monitoring script
+# Logs timestamp, hostname, internet_status, wifi_status, packet_loss, min_rtt, avg_rtt, max_rtt
+
+TARGET="8.8.8.8"
+COUNT=3
+TIMEOUT=2
 
 while true
 do
-    # Get the current date and time
     timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-
-    # Set default values for the status
-    internet_status="offline"
-    wifi_status="wifidown"
-
-    # Check if we're connected to the internet by pinging Google's DNS server
-    if ping -c 1 -W 2 8.8.8.8 &> /dev/null
-    then
+    hostname=$(hostname)
+    wifi_status="wifidown" # Ethernet is active, wifi is ignored per user
+    
+    # Ping with RTT data
+    ping_out=$(ping -c $COUNT -W $TIMEOUT $TARGET 2>&1)
+    
+    if [ $? -eq 0 ]; then
         internet_status="online"
+        loss=$(echo "$ping_out" | grep -oP '\d+(?=% packet loss)')
+        rtts=$(echo "$ping_out" | grep 'rtt' | cut -d'=' -f2 | tr -d ' ms')
+        min_rtt=$(echo $rtts | cut -d'/' -f1)
+        avg_rtt=$(echo $rtts | cut -d'/' -f2)
+        max_rtt=$(echo $rtts | cut -d'/' -f3)
+    else
+        internet_status="offline"
+        loss=100
+        min_rtt="NaN"
+        avg_rtt="NaN"
+        max_rtt="NaN"
     fi
 
-    # Check if WiFi is up (using nmcli)
-    wifi_check=$(timeout 2 nmcli -t -f WIFI g)
-    if [[ "$wifi_check" == "enabled" ]]; then
-        wifi_status="wifiup"
-    fi
-
-    # Output the status as a CSV one-liner with the date
-    echo "$timestamp,$(hostname),$internet_status,$wifi_status"
-    sleep 1
+    echo "$timestamp,$hostname,$internet_status,$wifi_status,$loss,$min_rtt,$avg_rtt,$max_rtt"
+    sleep 5
 done
