@@ -11,10 +11,10 @@ do
     timestamp=$(date +"%Y-%m-%d %H:%M:%S")
     hostname=$(hostname)
     wifi_status="wifidown" # Ethernet is active, wifi is ignored per user
-    
+
     # Ping with RTT data
     ping_out=$(ping -c $COUNT -W $TIMEOUT $TARGET 2>&1)
-    
+
     if [ $? -eq 0 ]; then
         internet_status="online"
         loss=$(echo "$ping_out" | grep -oP '\d+(?=% packet loss)')
