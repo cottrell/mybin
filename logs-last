@@ -1,0 +1,151 @@
+#!/usr/bin/env python3
+"""Last log file per prefix under ~/logs (dated cron dumps).
+
+  logs-last              age / size / prefix / file
+  logs-last paths        paths only (for pipes)
+  logs-last of PREFIX    path for one prefix (partial ok)
+  logs-last errors       rg error-ish lines in last of each
+  logs-last tail [PREF]  tail -n 20 lasts (or -F one prefix)
+"""
+from __future__ import annotations
+
+import os
+import re
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+LOGDIR = Path(os.environ.get("LOGDIR", Path.home() / "logs"))
+PAT = re.compile(
+    r"^(?P<prefix>.+?)[._-]?(?P<ts>\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2})?)\.log$"
+)
+# only scan last 2MB of huge long-runner logs
+ERR_BYTES = 2 * 1024 * 1024
+ERR_PAT = r"Traceback|TimeoutError|CRITICAL|FATAL|panic|Error [0-9]+|make\[.*\]: \*\*\*"
+
+
+def lasts(d: Path = LOGDIR) -> dict[str, tuple[str, Path]]:
+    best: dict[str, tuple[str, Path]] = {}
+    if not d.is_dir():
+        return best
+    for p in d.iterdir():
+        if not p.is_file() or p.suffix != ".log":
+            continue
+        m = PAT.match(p.name)
+        if not m:
+            continue
+        pref, ts = m.group("prefix"), m.group("ts")
+        if not pref:
+            continue
+        if pref not in best or ts > best[pref][0]:
+            best[pref] = (ts, p)
+    return best
+
+
+def cmd_list(paths_only: bool = False) -> int:
+    now = time.time()
+    rows = []
+    for pref, (_ts, p) in lasts().items():
+        st = p.stat()
+        rows.append((st.st_mtime, now - st.st_mtime, st.st_size, pref, p))
+    rows.sort(key=lambda r: r[0], reverse=True)
+    for _mtime, age, size, pref, p in rows:
+        if paths_only:
+            print(p)
+        else:
+            print(f"{age / 3600:6.1f}h  {size:10d}  {pref:35s}  {p.name}")
+    return 0
+
+
+def resolve(prefix: str) -> Path | None:
+    items = lasts()
+    if prefix in items:
+        return items[prefix][1]
+    hits = [(k, v[1]) for k, v in items.items() if prefix in k]
+    if len(hits) == 1:
+        return hits[0][1]
+    if not hits:
+        print(f"no match for {prefix!r}", file=sys.stderr)
+        return None
+    print(f"ambiguous {prefix!r}:", file=sys.stderr)
+    for k, p in sorted(hits):
+        print(f"  {k}  {p.name}", file=sys.stderr)
+    return None
+
+
+def cmd_of(prefix: str) -> int:
+    p = resolve(prefix)
+    if p is None:
+        return 1
+    print(p)
+    return 0
+
+
+def rg_errors(path: Path) -> str:
+    """rg last ERR_BYTES of path (fast on multi-10MB logs)."""
+    if path.stat().st_size <= ERR_BYTES:
+        cmd = ["rg", "-n", "-m", "8", "-e", ERR_PAT, str(path)]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        return r.stdout if r.returncode == 0 else ""
+    tail = subprocess.run(
+        ["tail", "-c", str(ERR_BYTES), str(path)],
+        capture_output=True,
+    )
+    r = subprocess.run(
+        ["rg", "-n", "-m", "8", "-e", ERR_PAT],
+        input=tail.stdout,
+        capture_output=True,
+    )
+    return r.stdout.decode() if r.returncode == 0 and r.stdout else ""
+
+
+def cmd_errors() -> int:
+    bad = 0
+    for pref, (_ts, p) in sorted(lasts().items()):
+        out = rg_errors(p)
+        if out.strip():
+            bad += 1
+            print(f"===== {pref}  ({p.name}) =====")
+            print(out.rstrip())
+    return 1 if bad else 0
+
+
+def cmd_tail(prefix: str | None) -> int:
+    if prefix:
+        p = resolve(prefix)
+        if p is None:
+            return 1
+        os.execvp("tail", ["tail", "-F", str(p)])
+    for pref, (_ts, p) in sorted(lasts().items()):
+        print(f"===== {pref}  ({p.name}) =====")
+        subprocess.run(["tail", "-n", "20", str(p)])
+    return 0
+
+
+def main(argv: list[str]) -> int:
+    if not argv or argv[0] in ("-h", "--help", "help"):
+        print(__doc__.strip())
+        return 0
+    cmd, *rest = argv
+    if cmd in ("list", "ls"):
+        return cmd_list()
+    if cmd == "paths":
+        return cmd_list(paths_only=True)
+    if cmd == "of":
+        if not rest:
+            print("usage: logs-last of PREFIX", file=sys.stderr)
+            return 2
+        return cmd_of(rest[0])
+    if cmd in ("errors", "err", "grep"):
+        return cmd_errors()
+    if cmd == "tail":
+        return cmd_tail(rest[0] if rest else None)
+    return cmd_of(cmd)
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    if not args:
+        raise SystemExit(cmd_list())
+    raise SystemExit(main(args))
