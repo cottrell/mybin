@@ -1,0 +1,51 @@
+#!/bin/bash
+set -euo pipefail
+
+# Configuration defaults
+HOST="${ZED_HOST:-bleepblop}"
+BASE_DIR="${ZED_BASE_DIR:-/home/cottrell/dev}"
+
+usage() {
+    cat << EOF
+Usage: $(basename "$0") [PROJECT_PATH]
+
+Opens a project or directory on remote host '${HOST}' in Zed via SSH.
+
+Arguments:
+  PROJECT_PATH    Relative path under ${BASE_DIR}/ (e.g., 'myproject' or 'sub/dir').
+                  If omitted, opens ${BASE_DIR}/.
+
+Options:
+  -h, --help      Show this help message and exit
+
+Examples:
+  $(basename "$0")              # Opens ssh://${HOST}:${BASE_DIR}
+  $(basename "$0") myproject     # Opens ssh://${HOST}:${BASE_DIR}/myproject
+EOF
+}
+
+# Handle help flag
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+    usage
+    exit 0
+fi
+
+# Check if zed command exists
+if ! command -v zed >/dev/null 2>&1; then
+    echo "Error: 'zed' command not found in PATH." >&2
+    exit 1
+fi
+
+# Construct target SSH URI
+REL_PATH="${1:-}"
+REL_PATH="${REL_PATH#/}" # Remove leading slash if provided
+
+if [ -n "$REL_PATH" ]; then
+    TARGET_URI="ssh://${HOST}:${BASE_DIR}/${REL_PATH}"
+else
+    TARGET_URI="ssh://${HOST}:${BASE_DIR}"
+fi
+
+echo "Opening ${TARGET_URI} in Zed..."
+exec zed "${TARGET_URI}"
+
