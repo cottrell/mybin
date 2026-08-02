@@ -3,6 +3,8 @@
 # Normalize filenames/directories to lowercase, replacing spaces/special characters.
 
 RECURSIVE=false
+DRY_RUN=false
+INTERACTIVE=false
 TARGET_DIR="."
 
 while [[ $# -gt 0 ]]; do
@@ -11,14 +13,22 @@ while [[ $# -gt 0 ]]; do
             RECURSIVE=true
             shift
             ;;
+        -n|--dry-run)
+            DRY_RUN=true
+            shift
+            ;;
+        -i|--interactive|--review)
+            INTERACTIVE=true
+            shift
+            ;;
         -h|--help)
-            echo "Usage: $0 [-r|--recursive] [directory]"
+            echo "Usage: $0 [-r|--recursive] [-n|--dry-run] [-i|--interactive|--review] [directory]"
             echo "Normalizes filenames/directories to lowercase, replacing spaces/special characters."
             exit 0
             ;;
         -*)
             echo "Unknown option: $1"
-            echo "Usage: $0 [-r|--recursive] [directory]"
+            echo "Usage: $0 [-r|--recursive] [-n|--dry-run] [-i|--interactive|--review] [directory]"
             exit 1
             ;;
         *)
@@ -66,8 +76,20 @@ normalize_item() {
         if [ -e "$newpath" ]; then
             echo "Skipping: $newpath already exists."
         else
-            mv "$file" "$newpath"
-            echo "Renamed: $file -> $newpath"
+            if [ "$DRY_RUN" = true ]; then
+                echo "[DRY RUN] Would rename: $file -> $newpath"
+            elif [ "$INTERACTIVE" = true ]; then
+                read -p "Rename '$file' to '$newpath'? [y/N] " -r response < /dev/tty
+                if [[ "$response" =~ ^[Yy]$ ]]; then
+                    mv "$file" "$newpath"
+                    echo "Renamed: $file -> $newpath"
+                else
+                    echo "Skipping: $file"
+                fi
+            else
+                mv "$file" "$newpath"
+                echo "Renamed: $file -> $newpath"
+            fi
         fi
     fi
 }
@@ -80,7 +102,7 @@ if [ "$RECURSIVE" = true ]; then
         # Extract path parts relative to TARGET_DIR
         local_path="${file#$TARGET_DIR}"
         local_path="${local_path#/}"
-        
+
         # Skip hidden files/directories
         if [[ "$local_path" == .* || "$local_path" == */.* ]]; then
             continue
