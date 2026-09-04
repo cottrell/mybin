@@ -6,7 +6,7 @@ filename=did_$hostname.txt
 # uses the name of the (link) script in UPEPR CASE as the TAG.
 # for example: ln -s _did_post.sh todo
 name=$(basename $0 | tr '[:lower:]' '[:upper:]')
-vim +'normal Go'  +'r!date +\%a\ \%d\ \%b\ \%Y\ \%H:\%M:\%S\ \%z; echo - '$name,$hostname',' +'normal G$A' -- $dirname/$filename
+vim +'normal Go'  +'r!LC_ALL=C date +\%a\ \%d\ \%b\ \%Y\ \%H:\%M:\%S\ \%z; echo - '$name,$hostname',' +'normal G$A' -- $dirname/$filename
 # 2023-09-29 try run things in background and disown. Consider disabling pull
 # and push constantly as well now that I have partitioned by device.
 (
