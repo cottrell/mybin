@@ -1,20 +1,46 @@
 #!/bin/bash
+mapfile -t sessions < <(tmux list-sessions -F '#S' 2>/dev/null)
 
-# Simple tmux session selector
-sessions=$(tmux list-sessions -F '#S' 2>/dev/null)
-
-if [ -z "$sessions" ]; then
+if [ ${#sessions[@]} -eq 0 ]; then
     echo "No tmux sessions found."
-    exit 1
+    exit 0
 fi
 
-echo "Tmux Sessions:"
-echo "--------------"
+selected=0
 
-# This creates a numbered menu
-select session in $sessions; do
-    if [ -n "$session" ]; then
-        tmux attach -t "$session"
-        break
-    fi
+# Cursor controls
+trap 'tput cnorm; echo' EXIT
+tput civis
+
+while true; do
+    echo -en "\r\033[K\033[1;36mSelect tmux session (↑/↓, Enter to attach, q to quit):\033[0m\n"
+    for i in "${!sessions[@]}"; do
+        if [ "$i" -eq "$selected" ]; then
+            echo -e "\033[K  \033[1;32m❯ ${sessions[$i]}\033[0m"
+        else
+            echo -e "\033[K    ${sessions[$i]}"
+        fi
+    done
+
+    read -rsn1 key
+    case "$key" in
+        $'\x1b')
+            read -rsn2 -t 0.1 rest
+            case "$rest" in
+                "[A") ((selected > 0)) && ((selected--)) ;;
+                "[B") ((selected < ${#sessions[@]}-1)) && ((selected++)) ;;
+            esac
+            ;;
+        "") break ;;
+        q|Q) exit 0 ;;
+    esac
+
+    echo -en "\033[$(( ${#sessions[@]} + 1 ))A"
 done
+
+target="${sessions[$selected]}"
+if [ -n "$TMUX" ]; then
+    tmux switch-client -t "$target"
+else
+    tmux attach -t "$target"
+fi
