@@ -6,19 +6,46 @@ if [ ${#sessions[@]} -eq 0 ]; then
     exit 0
 fi
 
+# Direct argument shortcut: tma <number> or tma <name>
+if [ -n "$1" ]; then
+    if [[ "$1" =~ ^[0-9]+$ ]] && [ "$1" -ge 1 ] && [ "$1" -le ${#sessions[@]} ]; then
+        target="${sessions[$((10#$1 - 1))]}"
+    elif tmux has-session -t "$1" 2>/dev/null; then
+        target="$1"
+    else
+        echo "Session '$1' not found."
+        exit 1
+    fi
+    if [ -n "$TMUX" ]; then
+        tmux switch-client -t "$target"
+    else
+        tmux attach -t "$target"
+    fi
+    exit 0
+fi
+
 selected=0
+num_buf=""
+total=${#sessions[@]}
+pad_len=${#total}
 
 # Cursor controls
 trap 'tput cnorm; echo' EXIT
 tput civis
 
 while true; do
-    echo -en "\r\033[K\033[1;36mSelect tmux session (↑/↓, Enter to attach, q to quit):\033[0m\n"
+    prompt="Select tmux session (↑/↓/jk, 1-${total}, Enter to attach, q to quit)"
+    if [ -n "$num_buf" ]; then
+        prompt+=" [${num_buf}]"
+    fi
+    echo -en "\r\033[K\033[1;36m${prompt}:\033[0m\n"
+
     for i in "${!sessions[@]}"; do
+        num=$((i + 1))
         if [ "$i" -eq "$selected" ]; then
-            echo -e "\033[K  \033[1;32m❯ ${sessions[$i]}\033[0m"
+            printf "\033[K  \033[1;32m❯ %*d) %s\033[0m\n" "$pad_len" "$num" "${sessions[$i]}"
         else
-            echo -e "\033[K    ${sessions[$i]}"
+            printf "\033[K    %*d) %s\n" "$pad_len" "$num" "${sessions[$i]}"
         fi
     done
 
@@ -27,15 +54,37 @@ while true; do
         $'\x1b')
             read -rsn2 -t 0.1 rest
             case "$rest" in
-                "[A") ((selected > 0)) && ((selected--)) ;;
-                "[B") ((selected < ${#sessions[@]}-1)) && ((selected++)) ;;
+                "[A") num_buf=""; ((selected > 0)) && ((selected--)) ;;
+                "[B") num_buf=""; ((selected < total-1)) && ((selected++)) ;;
+                "") exit 0 ;;
             esac
+            ;;
+        k|K) num_buf=""; ((selected > 0)) && ((selected--)) ;;
+        j|J) num_buf=""; ((selected < total-1)) && ((selected++)) ;;
+        [0-9])
+            new_buf="${num_buf}${key}"
+            idx=$((10#$new_buf - 1))
+            if [ "$idx" -ge 0 ] && [ "$idx" -lt "$total" ]; then
+                num_buf="$new_buf"
+                selected=$idx
+            elif [ "$key" -ge 1 ] && [ "$((key - 1))" -lt "$total" ]; then
+                num_buf="$key"
+                selected=$((key - 1))
+            fi
+            ;;
+        $'\x7f'|$'\x08')
+            if [ -n "$num_buf" ]; then
+                num_buf="${num_buf%?}"
+                if [ -n "$num_buf" ]; then
+                    selected=$((10#$num_buf - 1))
+                fi
+            fi
             ;;
         "") break ;;
         q|Q) exit 0 ;;
     esac
 
-    echo -en "\033[$(( ${#sessions[@]} + 1 ))A"
+    echo -en "\033[$(( total + 1 ))A"
 done
 
 target="${sessions[$selected]}"
