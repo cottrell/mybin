@@ -6,7 +6,7 @@ export CONDA_DEFAULT_ENV=$1
 export CONDA_EXE=$ANACONDA_BASE_DIR/bin/conda
 export CONDA_PREFIX=$ANACONDA_BASE_DIR/envs/$1
 export CONDA_PROMPT_MODIFIER='(37) '
-export CONDA_PYTHON_EXE=/Users/davidcottrell/anaconda3/bin/python
+export CONDA_PYTHON_EXE=$HOME/anaconda3/bin/python
 export CONDA_SHLVL=1
 
 export _CONDA_EXE=$ANACONDA_BASE_DIR/bin/conda

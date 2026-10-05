@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /home/cottrell/mybin/logs-last errors "$@"
+exec "$HOME/.local/bin/logs-last" errors "$@"

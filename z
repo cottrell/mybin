@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Configuration defaults
 HOST="${ZED_HOST:-bleepblop}"
-BASE_DIR="${ZED_BASE_DIR:-/home/cottrell/dev}"
+BASE_DIR="${ZED_BASE_DIR:-$HOME/dev}"
 
 usage() {
     cat << EOF
