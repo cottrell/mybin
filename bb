@@ -1,1 +1,0 @@
-myhome/bin/bb
