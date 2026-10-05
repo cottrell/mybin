@@ -71,8 +71,8 @@ for md_file in $MD_FILES; do
     filename=$(basename "$md_file")
     name_without_ext="${filename%.md}"
 
-    # Title case: convert underscores to spaces and capitalize each word; preserve all-caps words (e.g. README)
-    title_cased=$(echo "$name_without_ext" | tr '_' ' ' | awk '{for(i=1;i<=NF;i++){w=$i; if(w==toupper(w)&&length(w)>1){$i=w}else{$i=toupper(substr(w,1,1))tolower(substr(w,2))}}1}')
+    # Title case: convert underscores and hyphens to spaces and capitalize each word; preserve all-caps words (e.g. README)
+    title_cased=$(echo "$name_without_ext" | tr '_-' '  ' | awk '{for(i=1;i<=NF;i++){w=$i; if(w==toupper(w)&&length(w)>1){$i=w}else{$i=toupper(substr(w,1,1))tolower(substr(w,2))}}}1')
     title_cased="${title_cased:-$name_without_ext}"
 
     # Match both ](README) and ](./README) variants to avoid duplicates
