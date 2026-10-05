@@ -1,8 +1,19 @@
-#!/bin/bash
-# https://gist.github.com/nucliweb/920aa39c250bde7facf7
-if [[ "$#" -ne 1 ]]; then
-    echo usage: $0 org
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -lt 1 ]]; then
+    echo "Usage: $(basename "$0") <user> [extra gh flags...]" >&2
     exit 1
 fi
-curl -s https://api.github.com/users/$1/repos | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone
 
+USER_NAME="$1"
+shift
+
+if ! command -v gh >/dev/null 2>&1; then
+    echo "Error: 'gh' CLI is required but not installed." >&2
+    exit 1
+fi
+
+gh repo list "$USER_NAME" --limit 1000 "$@" --json nameWithOwner -q '.[].nameWithOwner' | while read -r repo; do
+    [ -n "$repo" ] && gh repo clone "$repo"
+done
