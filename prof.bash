@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 for x in $*; do
     b=$(basename $x).pdf
     echo "$x -> $b"
