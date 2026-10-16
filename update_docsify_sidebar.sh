@@ -102,19 +102,19 @@ def get_entry(path, is_dir=False):
 
     if h1:
         title = h1
-        # Ensure date is first in title: [YYYY-MM-DD] Title
+        # Ensure date is first in title: YYYY-MM-DD Title
         if date_str:
-            clean_title = re.sub(r'^\[\d{4}-\d{2}-\d{2}\]\s*', '', title)
+            clean_title = re.sub(r'^\[?\d{4}-\d{2}-\d{2}\]?:?\s*', '', title)
             clean_title = re.sub(r'\s*\(\d{4}-\d{2}-\d{2}\)$', '', clean_title)
             clean_title = re.sub(r'\s*\|\s*\d{4}-\d{2}-\d{2}$', '', clean_title)
             clean_title = re.sub(r'\s*-\s*\d{4}-\d{2}-\d{2}$', '', clean_title)
-            title = f"[{date_str}] {clean_title.strip()}"
+            title = f"{date_str} {clean_title.strip()}"
     else:
         clean_name = base
         if date_str:
             clean_name = re.sub(r'(\d{4}[-_]\d{2}[-_]\d{2}|\d{8})[-_]?', '', clean_name).strip('-_ ')
             formatted = title_case(clean_name) if clean_name else "Notes"
-            title = f"[{date_str}] {formatted}"
+            title = f"{date_str} {formatted}"
         else:
             title = title_case(clean_name)
 
