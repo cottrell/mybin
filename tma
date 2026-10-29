@@ -1,5 +1,5 @@
 #!/bin/bash
-mapfile -t sessions < <(tmux list-sessions -F '#S' 2>/dev/null)
+mapfile -t sessions < <(tmux list-sessions -F '#S' 2>/dev/null | awk '/^ops-/ {ops = ops $0 "\n"; next} {print} END {printf "%s", ops}')
 
 if [ ${#sessions[@]} -eq 0 ]; then
     echo "No tmux sessions found."
