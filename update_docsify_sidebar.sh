@@ -34,9 +34,11 @@ import subprocess
 # - Dirs:  Included if containing any *.md (recursive) OR a _sidebar.md. Excludes hidden (.*).
 #          Linked as `<dir>/`. Structure note:
 #          - Neither <dir>/README.md nor <dir>/_sidebar.md is required for inclusion.
-#          - If <dir>/README.md, readme.md, or index.md exists, its '# ' H1 is used as title.
-#            Otherwise falls back to title-cased folder name.
-# - Title: First '# ' header in file/index (brackets stripped, dates normalized).
+#          - Title is the title-cased folder name.
+# - Title: from the filename (`_`/`-` -> spaces, capitalised, date first).
+# - Hand-edited sidebars: first line `<!-- manual -->` = never touched. A line
+#   `<!-- auto -->` = everything above it is kept; entries below are generated and
+#   skip any link already present above.
 # - Order: 1) Hub (README/INDEX) -> 2) Dated (newest first) -> 3) Alphabetical.
 
 def extract_date(name):
@@ -134,8 +136,30 @@ def scan_and_order(dir_path='.'):
     g2 = sorted([e for e in entries if e['priority'] == 2], key=lambda x: x['sort_key'])
     return g0 + g1 + g2, missing_sidebar_dirs
 
+AUTO = "<!-- auto -->"
+MANUAL = "<!-- manual -->"
+
+def norm_link(l):
+    l = l.strip().lstrip('./').removeprefix('#/').rstrip('/')
+    return l[:-3] if l.endswith('.md') else l
+
 def write_sidebar(dir_path, ordered):
-    lines = []
+    sidebar_file = os.path.join(dir_path, "_sidebar.md")
+    pinned = []
+    if os.path.isfile(sidebar_file):
+        with open(sidebar_file, encoding='utf-8') as f:
+            old = f.read().splitlines(keepends=True)
+        if old and old[0].strip() == MANUAL:
+            print(f"Skipped {sidebar_file} (manual)")
+            return None
+        marks = [i for i, l in enumerate(old) if l.strip() == AUTO]
+        if len(marks) > 1:
+            sys.exit(f"Error: {sidebar_file} has multiple {AUTO} markers")
+        if marks:
+            pinned = old[:marks[0] + 1]
+            seen = {norm_link(m) for l in pinned for m in re.findall(r'\]\(([^)\s]+)', l)}
+            ordered = [e for e in ordered if norm_link(e['link']) not in seen]
+    lines = list(pinned)
     g0 = [e for e in ordered if e['priority'] == 0]
     g1 = [e for e in ordered if e['priority'] == 1]
     g2 = [e for e in ordered if e['priority'] == 2]
@@ -151,7 +175,6 @@ def write_sidebar(dir_path, ordered):
         for e in g2:
             lines.append(f"* [{e['title']}]({e['link']})\n")
 
-    sidebar_file = os.path.join(dir_path, "_sidebar.md")
     with open(sidebar_file, 'w', encoding='utf-8') as f:
         f.writelines(lines)
     return sidebar_file
@@ -231,8 +254,8 @@ Intended Workflow:
             f.writelines(out)
         print(f"Updated section '{section}' in {sidebar_file} with {len(ordered)} entries.")
     else:
-        write_sidebar('.', ordered)
-        print(f"Generated {sidebar_file} with {len(ordered)} entries (newest first).")
+        if write_sidebar('.', ordered):
+            print(f"Generated {sidebar_file} with {len(ordered)} entries (newest first).")
 
     # Handle missing sidebars in included subdirectories
     if missing_sidebar_dirs:
