@@ -39,11 +39,6 @@ import subprocess
 # - Title: First '# ' header in file/index (brackets stripped, dates normalized).
 # - Order: 1) Hub (README/INDEX) -> 2) Dated (newest first) -> 3) Alphabetical.
 
-def clean_markdown_title(h1_text):
-    cleaned = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', h1_text)
-    cleaned = re.sub(r'[`*_]', '', cleaned)
-    return cleaned.strip()
-
 def extract_date(name):
     m = re.search(r'(\d{4}[-_]\d{2}[-_]\d{2})', name)
     if m:
@@ -75,66 +70,18 @@ def get_entry(path, is_dir=False, parent_dir='.'):
 
     date_str = extract_date(base)
     
-    # Inspect H1
-    target = None
-    if is_dir:
-        for cand in ['README.md', 'readme.md', 'index.md']:
-            cp = os.path.join(path, cand)
-            if os.path.isfile(cp):
-                target = cp
-                break
-    else:
-        target = path
-
-    h1 = None
-    if target and os.path.isfile(target):
-        try:
-            with open(target, 'r', encoding='utf-8') as f:
-                for line in f:
-                    line = line.strip()
-                    if line.startswith('# '):
-                        h1 = clean_markdown_title(line[2:].strip())
-                        break
-        except Exception:
-            pass
-
     link = f"{base}/" if is_dir else base
 
-    if not date_str and h1:
-        date_str = extract_date(h1)
-
-    # Overview / Hub
+    # Hub
     if base.upper() in ['README', 'INDEX']:
-        curr_dir = os.path.basename(os.path.abspath(parent_dir)).lower()
-        if curr_dir == 'research':
-            title = "Research Hub"
-        elif curr_dir == 'operations':
-            title = "Operations Hub"
-        elif curr_dir == 'portfolio':
-            title = "Portfolio Hub"
-        elif h1:
-            title = h1
-        else:
-            title = "Overview"
-        return {'link': link, 'title': title, 'priority': 0, 'sort_key': '0000-00-00'}
+        return {'link': link, 'title': title_case(base), 'priority': 0, 'sort_key': '0000-00-00'}
 
-    if h1:
-        title = h1
-        # Ensure date is first in title: YYYY-MM-DD Title
-        if date_str:
-            clean_title = re.sub(r'^\[?\d{4}-\d{2}-\d{2}\]?:?\s*', '', title)
-            clean_title = re.sub(r'\s*\(\d{4}-\d{2}-\d{2}\)$', '', clean_title)
-            clean_title = re.sub(r'\s*\|\s*\d{4}-\d{2}-\d{2}$', '', clean_title)
-            clean_title = re.sub(r'\s*-\s*\d{4}-\d{2}-\d{2}$', '', clean_title)
-            title = f"{date_str} {clean_title.strip()}"
+    clean_name = base
+    if date_str:
+        clean_name = re.sub(r'(\d{4}[-_]\d{2}[-_]\d{2}|\d{8})[-_]?', '', clean_name).strip('-_ ')
+        title = f"{date_str} {title_case(clean_name) or 'Notes'}"
     else:
-        clean_name = base
-        if date_str:
-            clean_name = re.sub(r'(\d{4}[-_]\d{2}[-_]\d{2}|\d{8})[-_]?', '', clean_name).strip('-_ ')
-            formatted = title_case(clean_name) if clean_name else "Notes"
-            title = f"{date_str} {formatted}"
-        else:
-            title = title_case(clean_name)
+        title = title_case(clean_name)
 
     if date_str:
         priority = 1
